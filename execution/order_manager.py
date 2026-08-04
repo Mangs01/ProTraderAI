@@ -1,9 +1,18 @@
+from protection.stop_loss import StopLossManager
 from loguru import logger
 
 from execution.order_builder import OrderBuilder
-from config.settings import SYMBOL, SYMBOL_TOKEN
 from risk.risk_manager import RiskManager
 from position.position_manager import PositionManager
+from core.trade_manager import TradeManager
+from config.settings import (
+    SYMBOL,
+    SYMBOL_TOKEN,
+    PAPER_BALANCE,
+    RISK_PER_TRADE,
+    MAX_DAILY_LOSS,
+    MAX_TRADE_PER_DAY
+)
 
 class OrderManager:
 
@@ -13,23 +22,40 @@ class OrderManager:
 
         # Risk Manager
         self.risk = RiskManager(
-            capital=100000,
-            risk_percent=1,
-            max_daily_loss=2000,
-            max_trade_per_day=5
+            capital=PAPER_BALANCE,
+            risk_percent=RISK_PER_TRADE,
+            max_daily_loss=MAX_DAILY_LOSS,
+            max_trade_per_day=MAX_TRADE_PER_DAY
         )
 
         self.position = PositionManager()
+        self.trade = TradeManager()
+        self.stop_loss = StopLossManager()
 
     # ----------------------------------------
 
     def buy(self, entry_price, stop_loss):
+
+        if not self.risk.can_trade():
+            logger.warning("Risk Limit Reached")
+            return
+
+        if self.trade.is_active():
+
+            logger.warning("Trade Already Active")
+
+            return
 
         if self.position.has_position():
 
             logger.warning("Position Already Open")
 
             return
+
+        quantity = self.risk.position_size(
+            entry_price,
+            stop_loss
+        )
 
         self.position.open_position(
             side="BUY",
@@ -37,29 +63,13 @@ class OrderManager:
             quantity=quantity
         )
 
-        if not self.risk.can_trade():
-            return
-
-        if self.position.has_position():
-
-            logger.warning("Position Already Open")
-
-            return
-
-        self.position.open_position(
-            side="SELL",
-            entry_price=entry_price,
-            quantity=quantity
-        )
-
-        quantity = self.risk.position_size(
-            entry_price,
-            stop_loss
-        )
+        self.trade.start_trade()
 
         logger.success(
             f"BUY ORDER | Qty={quantity}"
         )
+
+        self.stop_loss.set(stop_loss)
 
         order = OrderBuilder.market_order(
 
@@ -83,6 +93,19 @@ class OrderManager:
     def sell(self, entry_price, stop_loss):
 
         if not self.risk.can_trade():
+            logger.warning("Trading Blocked by Risk Manager")
+            return
+
+        if self.trade.is_active():
+
+           logger.warning("Trade Already Active")
+
+            return
+
+        if self.position.has_position():
+        
+            logger.warning("Position Already Open")
+        
             return
 
         quantity = self.risk.position_size(
@@ -90,9 +113,19 @@ class OrderManager:
             stop_loss
         )
 
+        self.position.open_position(
+            side="SELL",
+            entry_price=entry_price,
+            quantity=quantity
+        )
+
+        self.trade.start_trade()
+
         logger.warning(
             f"SELL ORDER | Qty={quantity}"
         )
+
+        self.stop_loss.set(stop_loss)
 
         order = OrderBuilder.market_order(
 
@@ -115,8 +148,14 @@ class OrderManager:
 
     def exit(self):
 
+        if self.trade.is_active():
+
+            self.trade.end_trade()
+
         if self.position.has_position():
 
             self.position.close_position()
+
+        self.stop_loss.clear()
 
         logger.info("EXIT ORDER")
