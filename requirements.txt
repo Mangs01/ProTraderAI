@@ -1,0 +1,13 @@
+smartapi-python
+pyotp
+python-dotenv
+pandas
+numpy
+requests
+websocket-client
+loguru
+logzero
+fastapi
+uvicorn
+pytest
+openpyxl
