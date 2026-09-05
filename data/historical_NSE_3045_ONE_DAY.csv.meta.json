@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "exchange": "NSE",
+  "symbol_token": "3045",
+  "interval": "ONE_DAY",
+  "requested_start": "2025-08-18T00:00:00",
+  "requested_end": "2026-08-14T00:00:00",
+  "actual_first_timestamp": "2025-08-18T00:00:00+05:30",
+  "actual_last_timestamp": "2026-08-14T00:00:00+05:30",
+  "columns": [
+    "datetime",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "row_count": 246,
+  "csv_sha256": "987033578ecc15cc5acffc50a34a37ee6495511f2f60ec89d50118c47150e4e1"
+}

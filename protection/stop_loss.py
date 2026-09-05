@@ -6,36 +6,35 @@ class StopLossManager:
     def __init__(self):
 
         self.stop_loss = None
+        self.side = None
 
         logger.info("Stop Loss Manager Initialized")
 
-    # ----------------------------------------
-
-    def set(self, stop_loss):
+    def set(self, stop_loss, side):
 
         self.stop_loss = stop_loss
+        self.side = side
 
-        logger.success(f"Stop Loss Set : {stop_loss}")
-
-    # ----------------------------------------
-
-    def get(self):
-
-        return self.stop_loss
-
-    # ----------------------------------------
+        logger.info(
+            f"Stop Loss Set : {stop_loss:.2f} | Side : {side}"
+        )
 
     def hit(self, price):
 
         if self.stop_loss is None:
             return False
 
-        return price <= self.stop_loss
+        if self.side == "BUY":
+            return price <= self.stop_loss
 
-    # ----------------------------------------
+        if self.side == "SELL":
+            return price >= self.stop_loss
 
-    def clear(self):
+        return False
+
+    def reset(self):
 
         self.stop_loss = None
+        self.side = None
 
-        logger.info("Stop Loss Cleared")
+        logger.info("Stop Loss Reset")

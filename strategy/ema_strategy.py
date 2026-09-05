@@ -1,57 +1,53 @@
 from loguru import logger
 
+from config.settings import EMA_SLOW_PERIOD
+
 
 class EMAStrategy:
+
+    REQUIRED_INDICATORS = ("EMA20", "EMA50", "RSI")
 
     @staticmethod
     def signal(df):
 
-        if len(df) < 50:
+        if len(df) < EMA_SLOW_PERIOD:
+
             logger.warning("Not enough candle data")
+
             return "HOLD"
 
         latest = df.iloc[-1]
-        previous = df.iloc[-2]
+
+        if any(
+            indicator not in df.columns
+            or latest[indicator] != latest[indicator]
+            for indicator in EMAStrategy.REQUIRED_INDICATORS
+        ):
+            logger.warning("EMA strategy indicators are not ready")
+            return "HOLD"
 
         ema20 = latest["EMA20"]
         ema50 = latest["EMA50"]
         rsi = latest["RSI"]
 
-        prev_ema20 = previous["EMA20"]
-        prev_ema50 = previous["EMA50"]
-
-        close = latest["close"]
-
-        # EMA Gap
-        ema_gap = abs(ema20 - ema50)
-
         logger.info(
-            f"Close={close:.2f} | EMA20={ema20:.2f} | EMA50={ema50:.2f} | RSI={rsi:.2f}"
+            f"EMA20={ema20:.2f} | "
+            f"EMA50={ema50:.2f} | "
+            f"RSI={rsi:.2f}"
         )
 
-        # Ignore weak trend
-        if ema_gap < 0.20:
-            logger.info("Weak Trend")
-            return "HOLD"
-
         # BUY
-        if (
-            ema20 > ema50
-            and prev_ema20 >= prev_ema50
-            and rsi >= 55
-        ):
+        if ema20 > ema50 and rsi > 60:
 
             logger.success("BUY SIGNAL")
+
             return "BUY"
 
         # SELL
-        if (
-            ema20 < ema50
-            and prev_ema20 <= prev_ema50
-            and rsi <= 45
-        ):
+        if ema20 < ema50 and rsi < 40:
 
             logger.warning("SELL SIGNAL")
+
             return "SELL"
 
         logger.info("NO TRADE")
