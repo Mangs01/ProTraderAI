@@ -3,3 +3,5 @@ venv/
 __pycache__/
 logs/
 *.pyc
+research/data/new_cycle_001/raw/bhavcopy/
+research/data/new_cycle_001/derived/

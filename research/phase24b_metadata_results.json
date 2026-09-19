@@ -1,0 +1,109 @@
+{
+  "acquisition_start_timestamp": "2026-09-18T09:09:01.2198679+05:30",
+  "derived_manifest_hashes": {
+    "benchmark_context_manifest.json": "3b03ad0b2e4cb69eeec0b3226241da74e6b4bd66fe8f5747e702e80f81804ad3",
+    "calendar_manifest.json": "f5a3d2b6c05d3f9b681c869248839704ced23bf4ff221f9b4724254acdea313c",
+    "corporate_action_manifest.json": "b7eb23c95dc6f4ce6a8ce14f5fa3acd62ff1f8d449b6a42ab6904aefc05f4417",
+    "future_acquisition_requests.json": "672d3d316c0af7f794e96c83785fd72ed64514cae22477ede87b1dbfc9c62595",
+    "identity_manifest.json": "0d7ce25a6613b88cc8280c58c7c205b18bc8c7eb9a1fdd98215fc577eacf12e9",
+    "liquidity_manifest.json": "e23d7b8ac667dc938c69f5c599204e9074d8957e7d30ac8a6ddb4c4264a6cf25",
+    "metadata_quality_audit.json": "019c1a6295c5a91cd704e4948f6593bf2524df29121acb2b7f1c6d073bbaf714",
+    "point_in_time_membership_manifest.json": "14209d172d6076eb963aa211cd78a4caa3ea1bca56290bddef96cdc0979216ed",
+    "sector_manifest.json": "7b73252d7c5e9608dc2a999cda24fe003c1aedb2dd865c5fcc1f3c788b95e6c2",
+    "selected_cohort_manifest.json": "51cc9617149089ea0e021b57146adb89518efe8de7b8b10aab1f5f120eafeae9",
+    "source_provenance.json": "403bf82433ab3fd1260b5f1f5dc67f0359242d5c300d4eb308dcb5f5cf6d5d22",
+    "stage_registry.json": "306dd7d2ec6fc572b3c7fb62e71256ecdc5d7f02dfea2a341ad7b6d3168d3124",
+    "visible_withheld_split.json": "edb1e66f228d7cec9aa63473397a20d16811c099ff979d85b29500493e52ccff"
+  },
+  "final_cohort_count": 0,
+  "final_validation": {
+    "compile": "96 Python files compiled",
+    "git_diff_check": "PASS",
+    "local_manifest_validation": "PASS",
+    "pytest": "465 passed, 0 failed, 0 unexpected skips"
+  },
+  "membership_status": "UNRESOLVED",
+  "network": {
+    "discovery_search_batches": 6,
+    "discovery_search_queries": 22,
+    "historical_candle_api_calls": 0,
+    "official_raw_get_successes": 14,
+    "official_raw_gets": 14,
+    "order_account_live_calls": 0,
+    "smartapi_logins": 0
+  },
+  "periods": {
+    "A": {
+      "first_session": "2024-09-17",
+      "last_session": "2025-09-16"
+    },
+    "B": {
+      "first_session": "2025-09-17",
+      "last_session": "2026-03-16"
+    },
+    "C": {
+      "first_session": "2026-03-17",
+      "last_session": "2026-09-17"
+    },
+    "selection_date": "2024-09-16"
+  },
+  "phase": "24B",
+  "phase22_protocol_sha256": "7a7454e22f9984a8cc36be1b4cc7a9477aa79094c11e605f7474b98d3fb9b67c",
+  "phase23_protocol_sha256": "8ffc9f659cae347c1233ee5e09b7a5adc9b863425bb6dd3022587270f325fde3",
+  "phase24b_metadata_sha256": "3517be7107241a68255d394f68c5996e99add8974d60e86b4d0c8dcbe0a5fd74",
+  "quality": {
+    "current_membership_substitution": false,
+    "future_information_leakage_violations": 0,
+    "status": "BLOCKED",
+    "violations": [
+      {
+        "code": "POINT_IN_TIME_MEMBERSHIP_UNRESOLVED",
+        "detail": "No official complete point-in-time NIFTY 100 constituent snapshot effective at 2024-09-16 was available from the acquired public official records. Change notices are insufficient to prove all 100 identities; current membership is prohibited as a substitute.",
+        "inference_critical": true
+      },
+      {
+        "code": "IDENTITY_SECTOR_ACTION_LIQUIDITY_DEPENDENCIES_UNRESOLVED",
+        "detail": "Candidate-level manifests cannot be authoritative without the membership snapshot.",
+        "inference_critical": true
+      }
+    ]
+  },
+  "raw_metadata_hashes": {
+    "nifty100_aug30_2024_identity_change.pdf": "2e22a0f1e9b39633aa2551553c8592eb67d9b8488e09ceab71e60d3025eee7f8",
+    "nifty100_current_page.html": "957afa52ae26d78eb6fce3392ba26de2fb4c280c2eabc9a87968dfb4ce40dced",
+    "nifty_indices_data_subscription.html": "99a7db4f0ca73c36ae9089f48affdf279bd95a4faaac542982b4955bb3f0ca04",
+    "nifty_indices_historical_reports.html": "d7ec96ade22db5c524e88233aac57dc9e9ba6491497d3e9d42a010a959596a51",
+    "nifty_indices_mar28_2024_rebalance.pdf": "5c70d043edde682a31fc5fa043a3b829a380fc9896de904bcb76d64b8319f698",
+    "nifty_indices_sep30_2024_rebalance.pdf": "efc8eab5d129eaa2219e10b57ab9a5c3ce2d0cd7b8c5ebd2c7b6bc244a38b2b8",
+    "nse_budget_session_2025.pdf": "84d12e29654e75f77baa0b9064a26f6d0e4c3ff58e64df14e01247a0c15a91be",
+    "nse_calendar_2024.pdf": "7157229ba94c179d280dd0d732da56d0992c482e862fac72d9d3879626c77c8a",
+    "nse_calendar_2025.pdf": "1e0f85615fbbcde9243dd6cafbbad4d9b581b8d2467fd9e27c0a4fe42a720c7d",
+    "nse_calendar_2026.pdf": "aa97e0afc0ce394097f2fc62631c68e3c2e4c7c23541ed35f21d9fc06b0dcacb",
+    "nse_calendar_2026_jan15_amendment.pdf": "c5d32a838b46d5044717b830a4793479a51a40f8e4e19d3896c65682d15b6ebc",
+    "nse_muhurat_2024.pdf": "dd1b8bc34a4b3c2900002341c41e4b8f165af862a74fd2a5bfb1355b0afec4a8",
+    "nse_muhurat_2025.pdf": "19b7d88003cb05eb8c6abdc8d1bfad5df821a17e4f9ae36f75e327a68a48d258",
+    "nse_nov20_2024_holiday_support.pdf": "521e7645a6d5e5fd3d4336de6705f5c454499b0ff8b72abb884bb860ec427a41"
+  },
+  "request_counts": {
+    "A": 0,
+    "B": 0,
+    "C": 0
+  },
+  "selection_date": "2024-09-16",
+  "status": "BLOCKED",
+  "terminal_session_T": "2026-09-17",
+  "title": "Authoritative metadata or universe freeze requires review",
+  "unresolved_inference_critical_items": [
+    "No official complete point-in-time NIFTY 100 constituent snapshot effective at 2024-09-16 was available from the acquired public official records. Change notices are insufficient to prove all 100 identities; current membership is prohibited as a substitute."
+  ],
+  "visible_count": 0,
+  "withheld_count": 0,
+  "zero_activity": {
+    "backtests": 0,
+    "intraday_candle_rows": 0,
+    "optimizations": 0,
+    "signals_generated": 0,
+    "strategies_created": 0,
+    "strategy_executions": 0
+  }
+}

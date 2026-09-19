@@ -1,0 +1,3134 @@
+{
+  "plan_sha256": "3f5b7223d9397e2d1f95070551975f79b67d1ccdc8ee810381fa25656ae7f846",
+  "plan": {
+    "schema": "phase27-bhavcopy-plan-v1",
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "phase26_hash": "2bc4fbf72477f1c7d634a8851522c2086e0e7625e92c9abebea2611192878aaa",
+    "requests": [
+      {
+        "date": "2023-09-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-07/cm07SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-07.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-08/cm08SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-08.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-11",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm11SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-11/cm11SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-11.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-12/cm12SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-12.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-13/cm13SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-13.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-14",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm14SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-14/cm14SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-14.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-15/cm15SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-15.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-18/cm18SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-18.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-20/cm20SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-20.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-21",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-21/cm21SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-21.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-22/cm22SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-22.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-25",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm25SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-25/cm25SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-25.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-25.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-26",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-26/cm26SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-26.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-27",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-27/cm27SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-27.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-28",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-28/cm28SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-28.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-09-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29SEP2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-09-29/cm29SEP2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-09-29.json",
+        "hash": "research/metadata/phase28a/hashes/2023-09-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-03",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-03/cm03OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-03.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-04",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-04/cm04OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-04.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-05/cm05OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-05.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-06/cm06OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-06.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-09",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm09OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-09/cm09OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-09.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-10",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm10OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-10/cm10OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-10.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-11",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm11OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-11/cm11OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-11.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-12/cm12OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-12.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-13/cm13OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-13.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-16",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm16OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-16/cm16OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-16.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-17",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm17OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-17/cm17OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-17.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-17.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-18/cm18OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-18.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-19/cm19OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-19.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-20/cm20OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-20.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-23",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm23OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-23/cm23OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-23.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-25",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm25OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-25/cm25OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-25.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-25.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-26",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-26/cm26OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-26.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-27",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-27/cm27OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-27.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-30",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm30OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-30/cm30OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-30.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-10-31",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm31OCT2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-10-31/cm31OCT2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-10-31.json",
+        "hash": "research/metadata/phase28a/hashes/2023-10-31.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-01",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-01/cm01NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-01.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-02",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm02NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-02/cm02NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-02.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-03",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-03/cm03NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-03.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-06/cm06NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-06.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-07/cm07NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-07.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-08/cm08NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-08.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-09",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm09NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-09/cm09NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-09.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-10",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm10NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-10/cm10NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-10.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-13/cm13NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-13.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-15/cm15NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-15.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-16",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm16NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-16/cm16NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-16.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-17",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm17NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-17/cm17NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-17.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-17.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-20/cm20NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-20.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-21",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-21/cm21NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-21.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-22/cm22NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-22.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-23",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm23NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-23/cm23NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-23.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-24",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm24NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-24/cm24NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-24.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-24.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-28",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-28/cm28NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-28.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-29/cm29NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-29.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-11-30",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm30NOV2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-11-30/cm30NOV2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-11-30.json",
+        "hash": "research/metadata/phase28a/hashes/2023-11-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-01",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-01/cm01DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-01.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-04",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-04/cm04DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-04.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-05/cm05DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-05.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-06/cm06DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-06.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-07/cm07DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-07.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-08/cm08DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-08.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-11",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm11DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-11/cm11DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-11.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-12/cm12DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-12.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-13/cm13DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-13.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-14",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm14DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-14/cm14DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-14.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-15/cm15DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-15.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-18/cm18DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-18.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-19/cm19DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-19.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-20/cm20DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-20.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-21",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-21/cm21DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-21.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-22/cm22DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-22.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-26",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-26/cm26DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-26.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-27",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-27/cm27DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-27.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-28",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-28/cm28DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-28.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2023-12-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29DEC2023bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2023-12-29/cm29DEC2023bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2023-12-29.json",
+        "hash": "research/metadata/phase28a/hashes/2023-12-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-01",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-01/cm01JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-01.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-02",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm02JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-02/cm02JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-03",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-03/cm03JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-03.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-04",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-04/cm04JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-04.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-05/cm05JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-08/cm08JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-08.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-09",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm09JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-09/cm09JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-10",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm10JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-10/cm10JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-10.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-11",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm11JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-11/cm11JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-11.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-12/cm12JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-15/cm15JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-15.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-16",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm16JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-16/cm16JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-17",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm17JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-17/cm17JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-17.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-17.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-18/cm18JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-18.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-19/cm19JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-22/cm22JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-23",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm23JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-23/cm23JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-23.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-24",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm24JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-24/cm24JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-24.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-24.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-25",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm25JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-25/cm25JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-25.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-25.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-29/cm29JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-29.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-30",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm30JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-30/cm30JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-30.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-01-31",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm31JAN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-01-31/cm31JAN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-01-31.json",
+        "hash": "research/metadata/phase28a/hashes/2024-01-31.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-01",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-01/cm01FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-01.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-02",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm02FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-02/cm02FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-05/cm05FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-06/cm06FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-06.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-07/cm07FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-07.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-08/cm08FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-08.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-09",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm09FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-09/cm09FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-12/cm12FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-13/cm13FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-13.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-14",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm14FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-14/cm14FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-14.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-15/cm15FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-15.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-16",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm16FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-16/cm16FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-19/cm19FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-20/cm20FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-20.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-21",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-21/cm21FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-21.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-22/cm22FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-23",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm23FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-23/cm23FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-23.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-26",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-26/cm26FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-26.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-27",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-27/cm27FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-27.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-28",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-28/cm28FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-28.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-02-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29FEB2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-02-29/cm29FEB2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-02-29.json",
+        "hash": "research/metadata/phase28a/hashes/2024-02-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-01",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-01/cm01MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-01.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-04",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-04/cm04MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-04.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-05/cm05MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-06/cm06MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-06.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-07/cm07MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-07.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-11",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm11MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-11/cm11MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-11.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-12/cm12MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-13/cm13MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-13.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-14",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm14MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-14/cm14MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-14.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-15/cm15MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-15.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-18/cm18MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-18.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-19/cm19MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-20/cm20MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-20.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-21",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-21/cm21MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-21.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-22/cm22MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-26",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-26/cm26MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-26.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-27",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-27/cm27MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-27.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-03-28",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28MAR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-03-28/cm28MAR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-03-28.json",
+        "hash": "research/metadata/phase28a/hashes/2024-03-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-01",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-01/cm01APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-01.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-02",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm02APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-02/cm02APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-03",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-03/cm03APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-03.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-04",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-04/cm04APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-04.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-05/cm05APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-08/cm08APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-08.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-09",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm09APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-09/cm09APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-10",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm10APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-10/cm10APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-10.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-12/cm12APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-15/cm15APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-15.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-16",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm16APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-16/cm16APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-18/cm18APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-18.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-19/cm19APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-22/cm22APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-23",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm23APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-23/cm23APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-23.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-24",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm24APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-24/cm24APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-24.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-24.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-25",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm25APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-25/cm25APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-25.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-25.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-26",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-26/cm26APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-26.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-29/cm29APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-29.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-04-30",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm30APR2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-04-30/cm30APR2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-04-30.json",
+        "hash": "research/metadata/phase28a/hashes/2024-04-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-02",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm02MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-02/cm02MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-03",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-03/cm03MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-03.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-06/cm06MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-06.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-07/cm07MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-07.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-08",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm08MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-08/cm08MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-08.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-09",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm09MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-09/cm09MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-10",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm10MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-10/cm10MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-10.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-13/cm13MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-13.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-14",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm14MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-14/cm14MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-14.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-15",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm15MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-15/cm15MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-15.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-16",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm16MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-16/cm16MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-17",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm17MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-17/cm17MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-17.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-17.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-20/cm20MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-20.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-21",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-21/cm21MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-21.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-22",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm22MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-22/cm22MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-23",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm23MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-23/cm23MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-23.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-24",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm24MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-24/cm24MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-24.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-24.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-27",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-27/cm27MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-27.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-28",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-28/cm28MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-28.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-29",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm29MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-29/cm29MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-29.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-30",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm30MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-30/cm30MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-30.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-05-31",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm31MAY2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-05-31/cm31MAY2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-05-31.json",
+        "hash": "research/metadata/phase28a/hashes/2024-05-31.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-03",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-03/cm03JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-03.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-04",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-04/cm04JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-04.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-05",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-05/cm05JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-06",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm06JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-06/cm06JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-06.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-07",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm07JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-07/cm07JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-07.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-10",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm10JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-10/cm10JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-10.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-11",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm11JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-11/cm11JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-11.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-12",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm12JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-12/cm12JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-13",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm13JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-13/cm13JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-13.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-14",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm14JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-14/cm14JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-14.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-18",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm18JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-18/cm18JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-18.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-19",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm19JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-19/cm19JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-20",
+        "purposes": [
+          "history"
+        ],
+        "format": "LEGACY",
+        "filename": "cm20JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-20/cm20JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-20.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-21",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm21JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-21/cm21JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-21.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-24",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm24JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-24/cm24JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-24.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-24.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-25",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm25JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-25/cm25JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-25.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-25.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-26",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm26JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-26/cm26JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-26.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-27",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm27JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-27/cm27JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-27.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-06-28",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm28JUN2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-06-28/cm28JUN2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-06-28.json",
+        "hash": "research/metadata/phase28a/hashes/2024-06-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-01",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm01JUL2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-01/cm01JUL2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-01.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-02",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm02JUL2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-02/cm02JUL2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-03",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm03JUL2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-03/cm03JUL2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-03.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-04",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm04JUL2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-04/cm04JUL2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-04.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-05",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "LEGACY",
+        "filename": "cm05JUL2024bhav.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-05/cm05JUL2024bhav.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-08",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240708_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-08/BhavCopy_NSE_CM_0_0_0_20240708_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-08.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-09",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240709_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-09/BhavCopy_NSE_CM_0_0_0_20240709_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-10",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240710_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-10/BhavCopy_NSE_CM_0_0_0_20240710_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-10.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-11",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240711_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-11/BhavCopy_NSE_CM_0_0_0_20240711_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-11.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-12",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240712_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-12/BhavCopy_NSE_CM_0_0_0_20240712_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-15",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240715_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-15/BhavCopy_NSE_CM_0_0_0_20240715_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-15.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-15.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-16",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240716_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-16/BhavCopy_NSE_CM_0_0_0_20240716_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-18",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240718_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-18/BhavCopy_NSE_CM_0_0_0_20240718_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-18.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-18.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-19",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240719_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-19/BhavCopy_NSE_CM_0_0_0_20240719_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-22",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240722_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-22/BhavCopy_NSE_CM_0_0_0_20240722_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-23",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240723_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-23/BhavCopy_NSE_CM_0_0_0_20240723_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-23.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-24",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240724_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-24/BhavCopy_NSE_CM_0_0_0_20240724_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-24.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-24.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-25",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240725_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-25/BhavCopy_NSE_CM_0_0_0_20240725_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-25.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-25.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-26",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240726_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-26/BhavCopy_NSE_CM_0_0_0_20240726_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-26.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-29",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240729_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-29/BhavCopy_NSE_CM_0_0_0_20240729_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-29.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-30",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240730_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-30/BhavCopy_NSE_CM_0_0_0_20240730_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-30.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-07-31",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240731_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-07-31/BhavCopy_NSE_CM_0_0_0_20240731_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-07-31.json",
+        "hash": "research/metadata/phase28a/hashes/2024-07-31.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-01",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240801_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-01/BhavCopy_NSE_CM_0_0_0_20240801_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-01.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-01.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-02",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240802_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-02/BhavCopy_NSE_CM_0_0_0_20240802_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-05",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240805_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-05/BhavCopy_NSE_CM_0_0_0_20240805_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-06",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240806_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-06/BhavCopy_NSE_CM_0_0_0_20240806_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-06.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-07",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240807_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-07/BhavCopy_NSE_CM_0_0_0_20240807_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-07.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-07.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-08",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240808_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-08/BhavCopy_NSE_CM_0_0_0_20240808_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-08.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-08.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-09",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240809_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-09/BhavCopy_NSE_CM_0_0_0_20240809_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-12",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240812_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-12/BhavCopy_NSE_CM_0_0_0_20240812_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-13",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240813_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-13/BhavCopy_NSE_CM_0_0_0_20240813_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-13.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-14",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240814_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-14/BhavCopy_NSE_CM_0_0_0_20240814_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-14.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-14.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-16",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240816_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-16/BhavCopy_NSE_CM_0_0_0_20240816_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-19",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240819_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-19/BhavCopy_NSE_CM_0_0_0_20240819_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-19.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-19.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-20",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240820_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-20/BhavCopy_NSE_CM_0_0_0_20240820_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-20.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-20.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-21",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240821_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-21/BhavCopy_NSE_CM_0_0_0_20240821_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-21.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-21.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-22",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240822_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-22/BhavCopy_NSE_CM_0_0_0_20240822_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-22.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-22.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-23",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240823_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-23/BhavCopy_NSE_CM_0_0_0_20240823_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-23.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-23.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-26",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240826_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-26/BhavCopy_NSE_CM_0_0_0_20240826_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-26.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-26.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-27",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240827_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-27/BhavCopy_NSE_CM_0_0_0_20240827_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-27.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-27.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-28",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240828_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-28/BhavCopy_NSE_CM_0_0_0_20240828_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-28.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-28.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-29",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240829_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-29/BhavCopy_NSE_CM_0_0_0_20240829_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-29.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-29.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-08-30",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240830_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-08-30/BhavCopy_NSE_CM_0_0_0_20240830_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-08-30.json",
+        "hash": "research/metadata/phase28a/hashes/2024-08-30.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-02",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240902_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-02/BhavCopy_NSE_CM_0_0_0_20240902_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-02.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-02.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-03",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240903_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-03/BhavCopy_NSE_CM_0_0_0_20240903_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-03.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-03.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-04",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240904_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-04/BhavCopy_NSE_CM_0_0_0_20240904_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-04.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-04.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-05",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240905_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-05/BhavCopy_NSE_CM_0_0_0_20240905_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-05.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-05.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-06",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240906_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-06/BhavCopy_NSE_CM_0_0_0_20240906_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-06.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-06.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-09",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240909_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-09/BhavCopy_NSE_CM_0_0_0_20240909_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-09.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-09.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-10",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240910_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-10/BhavCopy_NSE_CM_0_0_0_20240910_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-10.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-10.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-11",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240911_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-11/BhavCopy_NSE_CM_0_0_0_20240911_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-11.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-11.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-12",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240912_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-12/BhavCopy_NSE_CM_0_0_0_20240912_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-12.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-12.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-13",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240913_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-13/BhavCopy_NSE_CM_0_0_0_20240913_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-13.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-13.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-16",
+        "purposes": [
+          "history",
+          "liquidity"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240916_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-16/BhavCopy_NSE_CM_0_0_0_20240916_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-16.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-16.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      },
+      {
+        "date": "2024-09-17",
+        "purposes": [
+          "history",
+          "selection_universe"
+        ],
+        "format": "UDIFF",
+        "filename": "BhavCopy_NSE_CM_0_0_0_20240917_F_0000.csv.zip",
+        "raw": "research/metadata/phase28a/raw/2024-09-17/BhavCopy_NSE_CM_0_0_0_20240917_F_0000.csv.zip",
+        "metadata": "research/metadata/phase28a/metadata/2024-09-17.json",
+        "hash": "research/metadata/phase28a/hashes/2024-09-17.sha256",
+        "state": "PLANNED_NOT_AUTHORIZED"
+      }
+    ],
+    "count": 253,
+    "source": "official NSE final CM bhavcopy archive",
+    "schema_path": "research/phase26_schema_mapping.json",
+    "schema_sha256": "8ac9c2d38bd3f3c2e25f66dbf25bd8d137046f68962c50008a155c69db24945b",
+    "boundary": {
+      "legacy_through": "2024-07-05",
+      "UDiFF_from": "2024-07-08",
+      "TOTTRDVAL": "official total daily traded value",
+      "TtlTrfVal": "official total daily traded value"
+    },
+    "retry": "3 attempts; deterministic 2s/5s backoff; serial; honor Retry-After",
+    "missing": "fail closed; no substitution/imputation/date movement",
+    "validation": [
+      "HTTP success",
+      "ZIP integrity",
+      "expected member",
+      "named authoritative columns",
+      "trade-date match",
+      "format match",
+      "SHA256",
+      "immutable raw",
+      "duplicates",
+      "schema tests",
+      "252/60 completeness"
+    ],
+    "identity": "separately authorized official continuity/action evidence only when required; ambiguity fails",
+    "executed": false
+  }
+}

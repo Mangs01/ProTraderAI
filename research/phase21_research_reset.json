@@ -1,0 +1,75 @@
+﻿{
+  "phase": 21,
+  "title": "Research reset and evidence synthesis",
+  "as_of": "2026-09-16",
+  "scope": {
+    "saved_artifacts_only": true,
+    "source_phases": ["12","13","14B","15","16","17","19","20","20A","20B"],
+    "strategies_reviewed": ["A","D","E","F","G","H","I"],
+    "new_strategy_count": 0,
+    "backtest_count": 0,
+    "optimization_count": 0,
+    "network_api_activity": 0
+  },
+  "strategy_master_table": [
+    {"strategy":"A","family":"EMA/RSI state","dataset":"Mar-Sep 2026 research/validation","trades":484,"wins":174,"losses":310,"win_rate_pct":35.95,"gross_pnl":-53108.84,"charges":42517.88,"net_pnl":-95626.73,"pf":0.61,"max_dd_pct":95.78,"buy":{"trades":241,"gross":-31689.02,"net":-52485.48},"sell":{"trades":243,"gross":-21419.83,"net":-43141.25},"first_half":{"sessions":62,"gross":-36305.33,"net":-59660.45},"second_half":{"sessions":63,"gross":-16803.52,"net":-35966.27},"status":"REJECT"},
+    {"strategy":"D","family":"regime lock","dataset":"Mar-Sep 2026 research/validation","trades":130,"wins":50,"losses":80,"win_rate_pct":38.46,"gross_pnl":-25107.12,"charges":17820.84,"net_pnl":-42927.96,"pf":0.65,"max_dd_pct":45.22,"buy":{"trades":66,"gross":-16693.91,"net":-25422.57},"sell":{"trades":64,"gross":-8413.21,"net":-17505.39},"first_half":{"sessions":62,"gross":-8299.63,"net":-16926.08},"second_half":{"sessions":63,"gross":-16807.49,"net":-26001.88},"status":"REJECT"},
+    {"strategy":"E","family":"trend pullback","dataset":"Mar-Sep 2026 development","trades":92,"wins":33,"losses":59,"win_rate_pct":35.87,"gross_pnl":-21985.07,"charges":13783.24,"net_pnl":-35768.31,"pf":0.58,"max_dd_pct":39.02,"buy":{"trades":44,"gross":-11718.02,"net":-18061.80},"sell":{"trades":48,"gross":-10267.04,"net":-17706.50},"first_half":{"sessions":62,"gross":-14385.25,"net":-21430.49},"second_half":{"sessions":63,"gross":-7599.82,"net":-14337.82},"status":"REJECT"},
+    {"strategy":"F","family":"opening-range breakout","dataset":"Mar-Sep 2026 development","trades":142,"wins":53,"losses":89,"win_rate_pct":37.32,"gross_pnl":-29636.88,"charges":19035.75,"net_pnl":-48672.63,"pf":0.61,"max_dd_pct":51.68,"buy":{"trades":66,"gross":-25570.39,"net":-33936.11},"sell":{"trades":76,"gross":-4066.49,"net":-14736.51},"first_half":{"sessions":62,"gross":-12260.80,"net":-22103.96},"second_half":{"sessions":63,"gross":-17376.08,"net":-26568.67},"status":"REJECT"},
+    {"strategy":"G","family":"VWAP mean reversion","dataset":"Mar-Sep 2026 development","trades":248,"wins":78,"losses":170,"win_rate_pct":31.45,"gross_pnl":-53290.47,"charges":26527.74,"net_pnl":-79818.21,"pf":0.48,"max_dd_pct":80.15,"buy":{"trades":135,"gross":-33039.99,"net":-47441.25},"sell":{"trades":113,"gross":-20250.48,"net":-32376.96},"first_half":{"sessions":62,"gross":-33884.88,"net":-48780.33},"second_half":{"sessions":63,"gross":-19405.59,"net":-31037.88},"status":"REJECT"},
+    {"strategy":"H","family":"breakout-retest","dataset":"Mar-Sep 2026 contaminated development","trades":127,"wins":50,"losses":77,"win_rate_pct":39.37,"gross_pnl":-22844.07,"charges":16944.10,"net_pnl":-39788.17,"pf":0.6683,"max_dd_pct":39.79,"buy":{"trades":53,"gross":-21455.49,"net":-28181.49},"sell":{"trades":74,"gross":-1388.58,"net":-11606.68},"first_half":{"sessions":62,"gross":-12615.87,"net":-22276.22},"second_half":{"sessions":63,"gross":-10228.19,"net":-17511.95},"status":"REJECT"},
+    {"strategy":"I","family":"VWAP reclaim with trend alignment","dataset":"Sep 2025-Mar 2026 first held-out","trades":156,"wins":44,"losses":112,"win_rate_pct":28.21,"gross_pnl":-48363.91,"charges":22253.79,"net_pnl":-70617.70,"pf":0.3588,"max_dd_pct":70.88,"buy":{"trades":80,"gross":-17874.31,"net":-28881.38},"sell":{"trades":76,"gross":-30489.60,"net":-41736.33},"first_half":{"sessions":64,"gross":-32366.19,"net":-45883.31},"second_half":{"sessions":65,"gross":-15997.72,"net":-24734.39},"status":"REJECT","provenance":"VALIDATED"}
+  ],
+  "failure_modes": [
+    {"mode":"negative gross expectancy","class":"COMMON","evidence":"All seven gross-negative; PF 0.3588-0.6683."},
+    {"mode":"low win rate vs 1.5/2 ATR geometry","class":"COMMON","evidence":"28.21%-39.37% vs 42.86% reference break-even before costs/EOD."},
+    {"mode":"excess stop frequency","class":"COMMON","evidence":"Stops exceed targets: A 290/166,D 76/46,E 52/31,F 84/50,G 162/77,H 74/47,I 103/43."},
+    {"mode":"weak follow-through","class":"COMMON","evidence":"Phase16 E unstable, pooled F weak, G means negative all horizons; H fades by 12 bars."},
+    {"mode":"favorable excursion then reversal","class":"COMMON","evidence":"E/F/G stops reaching .5 ATR first: 59.62/51.19/51.23%; 1 ATR: 30.77/27.38/29.01%."},
+    {"mode":"fee/slippage drag","class":"COMMON","evidence":"E/F/G friction .83/.76/.86 ATR/trade; all canonical gross-negative."},
+    {"mode":"side asymmetry","class":"STRATEGY-SPECIFIC","evidence":"BUY weaker A-H; held-out I reverses ordering; both sides lose."},
+    {"mode":"regime instability","class":"COMMON","evidence":"All E/F/G volatility tertiles and A-H legacy/CAS slices negative; I fails separate period."},
+    {"mode":"chronological instability","class":"COMMON","evidence":"Every first and second half gross/net negative."},
+    {"mode":"overtrading/repeated entries","class":"STRATEGY-SPECIFIC","evidence":"A had 357 repeats; D removed them but remained gross-negative."},
+    {"mode":"insufficient sample","class":"NOT ESTABLISHED","evidence":"Full samples 92-484; only subgroups are sometimes sparse."},
+    {"mode":"large drawdown","class":"COMMON","evidence":"All realized DD at least 39.02%."},
+    {"mode":"session-policy effects","class":"NOT ESTABLISHED","evidence":"Only 27 confounded CAS sessions; I Muhurat had zero trades."}
+  ],
+  "cost_vs_edge":{"conclusion":"GROSS DIRECTIONAL EDGE GENERALLY ABSENT; COSTS MATERIAL BUT SECONDARY","evidence":"A/D/E/F/G/H/I gross -53108.84/-25107.12/-21985.07/-29636.88/-53290.47/-22844.07/-48363.91. I charges add 22253.79."},
+  "side_analysis":{"conclusion":"WEAK/INCONSISTENT","evidence":"SELL better A-H but still negative; I BUY less bad. No stable side edge."},
+  "entry_edge":{"conclusion":"C: BOTH; ENTRY TIMING/SELECTION PRIMARY, EXIT-GEOMETRY CAUSALITY NOT ESTABLISHED","evidence":"Weak/unstable returns vs friction plus frequent modest pre-stop favorable excursion and reversal; conditioned/censored MFE/MAE cannot isolate exits."},
+  "timeframe":{"classification":"MODERATE","evidence":"Weak 5-60m persistence, reversals, stop dominance and high friction are consistent with noise; no alternate timeframe tested."},
+  "single_instrument":{"conclusion":"MULTIPLE INSTRUMENTS REQUIRED FOR FUTURE WORK","evidence":"SBIN-only evidence cannot separate strategy from instrument failure and has no cross-sectional replication."},
+  "dataset_exposure_registry":[
+    {"dataset":"SBIN FIVE_MINUTE research/validation","period":"Mar-Sep 2026","exposed_by":["A","D","E","F","G","H","Phase16"],"pristine_for_new_influenced_hypothesis":false},
+    {"dataset":"SBIN FIVE_MINUTE Phase18 held-out","period":"Sep 2025-Mar 2026","exposed_by":["I Phase20","Phase20B"],"pristine_for_new_influenced_hypothesis":false}
+  ],
+  "overfitting_risk":{"rating":"HIGH","evidence":"Seven families, repeated SBIN reuse, adaptive hypotheses and detailed subgroup/forensic inspection; both histories now exposed."},
+  "decision_matrix":[
+    {"option":"A","merit":"LOW","overfitting":"VERY HIGH","complexity":"LOW","data":"new pristine data","supported":"NO"},
+    {"option":"B","merit":"MODERATE","overfitting":"HIGH","complexity":"MODERATE","data":"new development plus two held-outs","supported":"PARTIAL; SBIN-only problem remains"},
+    {"option":"C","merit":"HIGH","overfitting":"MODERATE","complexity":"HIGH","data":"multi-instrument panel plus two held-outs","supported":"CONDITIONAL after structural hypothesis"},
+    {"option":"D","merit":"HIGH","overfitting":"MODERATE if preregistered","complexity":"VERY HIGH","data":"slower multi-instrument panel plus two held-outs","supported":"CONDITIONAL; hypothesis first"},
+    {"option":"E","merit":"VERY HIGH","overfitting":"LOWEST","complexity":"MODERATE","data":"none before protocol freeze","supported":"YES; RECOMMENDED"}
+  ],
+  "selected_direction":{"option":"E","recommendation":"Pause strategy development until a stronger structural economic hypothesis is defined and preregistered.","broad_future_question":"Does slower-timescale directional persistence across a rule-selected basket of liquid NSE instruments survive realistic costs?","thresholds_defined":false},
+  "future_protocol":{
+    "development":"Rule-selected multi-instrument panel; objective universe/timeframe/data-quality rules frozen before acquisition; earliest chronological block only.",
+    "first_held_out":"Strictly later non-overlapping sealed block; one canonical run after hash/spec/integrity gates.",
+    "second_held_out":"Further later non-overlapping sealed block, opened only after unchanged first-stage pass; one confirmation run.",
+    "multiple_instruments_required":true,
+    "chronological_separation_required":true,
+    "exposure_tracking":"Hashes, metadata, first-open time, role, all exposures and pristine/exposed state.",
+    "preregistration":"Freeze mechanism, universe/timeframe rules, economics, metrics, sample/decision gates, diagnostics, code hash and defect handling.",
+    "one_run_rule":"One canonical execution per frozen hypothesis per held-out stage; defects block classification and require unexposed data."
+  },
+  "stop_conditions":[
+    "No falsifiable structural mechanism independent of A-I diagnostics.",
+    "Negative gross expectancy at a preregistered held-out gate; no exposed-sample rescue.",
+    "Failure across required multiple instruments and first held-out panel.",
+    "Failure at the preregistered slower timeframe across multiple instruments.",
+    "Post-hoc subgroup dominance or unprovable pristine validation provenance.",
+    "No new named strategy based only on an attractive descriptive pocket."
+  ],
+  "recommended_phase22":"Economic-hypothesis and protocol preregistration only; no acquisition and no strategy execution."
+}

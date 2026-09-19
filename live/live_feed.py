@@ -1,4 +1,3 @@
-from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 from loguru import logger
 
 from utils.tick_parser import TickParser
@@ -19,6 +18,8 @@ class LiveFeed:
         self.cache = LiveCache()
 
         self.builder = CandleBuilder()
+
+        from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 
         self.sws = SmartWebSocketV2(
             jwt_token,

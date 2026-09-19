@@ -1,0 +1,146 @@
+﻿{
+    "schema":  "phase25-source-feasibility-v1",
+    "generated_utc":  "2026-09-18T04:51:44.4617732Z",
+    "scope":  "Official NSE/NSE Archives feasibility evidence only",
+    "requests":  {
+                     "official_file_get_attempts":  14,
+                     "successful_official_file_gets":  13,
+                     "failed_official_file_gets":  1,
+                     "official_web_search_batches":  5,
+                     "official_web_search_queries":  20,
+                     "failure":  "Obsolete pre-UDiFF URL returned 404; official UDiFF file succeeded."
+                 },
+    "sources":  [
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_all_reports.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_all_reports.html",
+                        "bytes":  636582,
+                        "sha256":  "a33ab5d7a013ec2082c4cedd1cdf64d75f1d3524a1370dcd110f96821b4af679",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_bhavcopy_20240916.zip",
+                        "local_path":  "research/metadata/phase25/raw/nse_bhavcopy_20240916.zip",
+                        "bytes":  170322,
+                        "sha256":  "c0ee951905d113af74f36e3bb95f6777f3463b9e593760038a9f05c783131742",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_master_specification.pdf",
+                        "local_path":  "research/metadata/phase25/raw/nse_master_specification.pdf",
+                        "bytes":  817499,
+                        "sha256":  "a1e45b6de312ebf05298fac8a1c4fbe337b8339b7eb110ac75705925bd05487e",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_data_sharing_policy.pdf",
+                        "local_path":  "research/metadata/phase25/raw/nse_data_sharing_policy.pdf",
+                        "bytes":  300963,
+                        "sha256":  "e56b39137f84f7b1835537d9c277abe1e06e99a1ad01d2d47c16933da38b26de",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_series_legend.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_series_legend.html",
+                        "bytes":  306667,
+                        "sha256":  "4a9306dbb2e759403f8ab32bac8aa789f22da736560427c82a5fe573ca779656",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_bhavcopy_20240913.zip",
+                        "local_path":  "research/metadata/phase25/raw/nse_bhavcopy_20240913.zip",
+                        "bytes":  169027,
+                        "sha256":  "3f487c9b93a5cd050099ed77b6d089bd8fe32f5413da11f3f152d737627c4d0c",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_bhavcopy_20230915.zip",
+                        "local_path":  "research/metadata/phase25/raw/nse_bhavcopy_20230915.zip",
+                        "bytes":  94579,
+                        "sha256":  "3421fe70169cc0bbd18d67d815308fdf836b5139778856dabf79b73610e27328",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_securities_available.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_securities_available.html",
+                        "bytes":  1611721,
+                        "sha256":  "39f49d67f8963eace16c8c76e664b3b8bd5924fcc174d375fb0c9e9c386d1625",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_delisting.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_delisting.html",
+                        "bytes":  321493,
+                        "sha256":  "88454804d875f36fe56d7b1920440e7d7e0b158165a33344abba359404b5c774",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_listing_compliance.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_listing_compliance.html",
+                        "bytes":  332770,
+                        "sha256":  "26da0e5ae69c46cc2119fac2d3b2763ec5c77e52be33c8051887f7891bd66783",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_industry_classification.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_industry_classification.html",
+                        "bytes":  336326,
+                        "sha256":  "7c9b1c9d5c4e5a9b38b64ad2e621c44cac2b0d098ac50fb2d41cf379d6b85b8b",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_historical_reports.html",
+                        "local_path":  "research/metadata/phase25/raw/nse_historical_reports.html",
+                        "bytes":  307051,
+                        "sha256":  "f13a2d38d7d4ebd0d5d85f3860a660cdd2f4f161ff0a16822a1842dd3de471fb",
+                        "http_status":  200
+                    },
+                    {
+                        "authority":  "NSE/NSE Archives",
+                        "resource":  "nse_calendar_2024.pdf",
+                        "local_path":  "research/metadata/phase25/raw/nse_calendar_2024.pdf",
+                        "bytes":  97711,
+                        "sha256":  "7157229ba94c179d280dd0d732da56d0992c482e862fac72d9d3879626c77c8a",
+                        "http_status":  200
+                    }
+                ],
+    "inspections":  {
+                        "2024-09-16":  {
+                                           "total_rows":  2899,
+                                           "STK_EQ_rows":  1845,
+                                           "unique_EQ_ISINs":  1845,
+                                           "duplicate_EQ_ISINs":  0,
+                                           "zero_turnover_EQ_rows":  0
+                                       },
+                        "2024-09-13":  {
+                                           "total_rows":  2871,
+                                           "STK_EQ_rows":  1836,
+                                           "unique_EQ_ISINs":  1836
+                                       },
+                        "2023-09-15":  {
+                                           "total_rows":  2511,
+                                           "EQ_rows":  1699,
+                                           "unique_EQ_ISINs":  1699
+                                       },
+                        "legacy_turnover_fields":  [
+                                                       "TOTTRDQTY",
+                                                       "TOTTRDVAL"
+                                                   ],
+                        "udiff_turnover_fields":  [
+                                                      "TtlTradgVol",
+                                                      "TtlTrfVal"
+                                                  ]
+                    }
+}

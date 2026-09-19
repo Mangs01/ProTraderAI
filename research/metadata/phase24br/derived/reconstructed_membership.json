@@ -1,0 +1,39 @@
+{
+  "blocking_evidence": [
+    "Missing authoritative complete membership snapshot at any exact dated anchor usable for the target.",
+    "Missing proof that every NIFTY 100 inclusion/exclusion between a candidate anchor and 2024-09-16 has been captured.",
+    "Located notices contain symbols but not sufficient permanent identity/ISIN continuity for every event."
+  ],
+  "cardinality_violations": [
+    "No anchor state exists on which to apply ledger invariants; target cardinality cannot be tested."
+  ],
+  "identity_ambiguities": [
+    "TATAMTRDVR/TATAMOTORS corporate-scheme continuity cannot be converted to a permanent-identity invariant using the change notice alone because it supplies no ISIN/permanent ID."
+  ],
+  "independent_cross_check": {
+    "detail": "September 2024 factsheet/dashboard provide methodology/statistics, not a complete member list.",
+    "status": "UNAVAILABLE"
+  },
+  "members": [],
+  "method_A_direct_snapshot": {
+    "found": false,
+    "reason": "No official complete historical constituent file explicitly applicable to 2024-09-16 was located."
+  },
+  "method_B_anchor_chain": {
+    "anchor_candidate": {
+      "accepted": false,
+      "reason": "CSV is current and contains no embedded exact effective/as-of date; complete intervening event chain back to target is not proven.",
+      "resource": "nifty100_current_constituents.csv",
+      "row_count": 100,
+      "unique_isins": 100
+    },
+    "complete_event_chain": false,
+    "deterministic_reconstruction": false
+  },
+  "phase24b_continuation": "BLOCKED",
+  "reconstructed_target_count": 0,
+  "reconstruction_status": "NOT_PROVEN",
+  "schema_version": "phase24br-reconstruction-v1",
+  "target_effective_date": "2024-09-16",
+  "target_index": "NIFTY 100"
+}

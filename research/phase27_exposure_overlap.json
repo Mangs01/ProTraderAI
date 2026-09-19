@@ -1,0 +1,63 @@
+{
+  "exposure_sha256": "b9ddb033008b6c313dc899d9a8020375f8362a6ecd329bfc704d7dbb86166d91",
+  "exposure": {
+    "schema": "phase27-exposure-v1",
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "identity": {
+      "symbol": "SBIN",
+      "token": "3045",
+      "ISIN": "resolve authoritatively before later acquisition; exposure applies by known identity meanwhile"
+    },
+    "datasets": [
+      {
+        "path": "data/validation_NSE_3045_FIVE_MINUTE_2025-09-01_2026-03-06.csv",
+        "range": [
+          "2025-09-01",
+          "2026-03-06"
+        ]
+      },
+      {
+        "path": "data/validation_NSE_3045_FIVE_MINUTE_2026-03-08_2026-09-08.csv",
+        "range": [
+          "2026-03-09",
+          "2026-09-08"
+        ]
+      },
+      {
+        "path": "data/historical_NSE_3045_FIVE_MINUTE.csv",
+        "range": [
+          "2026-08-05",
+          "2026-09-04"
+        ]
+      }
+    ],
+    "overlap": {
+      "Stage_A": [
+        "2025-09-01",
+        "2025-09-17"
+      ],
+      "Stage_B": [
+        "2025-09-18",
+        "2026-03-17"
+      ],
+      "Stage_C": [
+        "2026-03-18",
+        "2026-09-08"
+      ]
+    },
+    "policy": {
+      "affected": "Any held-out stage/condition whose required interval overlaps an exposed identity-date range",
+      "treatment": "Instrument ineligible for pristine inference for affected full stage/condition; no trades or expectancy in pristine aggregation; remains cohort/split member and diagnostic; no replacement.",
+      "denominator": "A: all 24 selected identities",
+      "participation": "numerator is all-24 identities both pristine-eligible and qualifying participants; contaminated identity remains denominator nonparticipant",
+      "minimum": {
+        "overall": 20,
+        "visible": 13,
+        "withheld": 7,
+        "rounding": "ceil of 80% of 24/16/8"
+      },
+      "aggregation": "only pristine-eligible participants enter equal-instrument expectancy; no artificial zero profitability",
+      "failure": "below any minimum before results blocks held-out evaluation"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+﻿{
+    "schema":  "phase25-universe-feasibility-v1",
+    "phase":  25,
+    "scope":  "FEASIBILITY ONLY",
+    "probe_date":  "2024-09-16",
+    "old_cycle_registration":  "BLOCKED — HISTORICAL INDEX MEMBERSHIP NOT PUBLICLY PROVEN",
+    "hashes":  {
+                   "phase22":  "7a7454e22f9984a8cc36be1b4cc7a9477aa79094c11e605f7474b98d3fb9b67c",
+                   "phase23":  "8ffc9f659cae347c1233ee5e09b7a5adc9b863425bb6dd3022587270f325fde3",
+                   "phase24b":  "3517be7107241a68255d394f68c5996e99add8974d60e86b4d0c8dcbe0a5fd74"
+               },
+    "decision":  "NEW PUBLIC-DATA UNIVERSE FEASIBLE",
+    "decision_scope":  "Define the frame precisely as STK/EQ identities in the official final bhavcopy for the mechanically selected normal session; do not claim all-listed/nontrading coverage.",
+    "findings":  {
+                     "historical_security_master":  "PROVEN for the dated traded-EQ frame; PARTIALLY PROVEN for a broader all-listed frame because a dated master including nontrading securities was not retrieved.",
+                     "historical_EQ_series":  "PROVEN from dated official series and instrument-type fields.",
+                     "ISIN_identity":  "FEASIBLE using selection-date ISIN plus effective-dated symbol/series history; ambiguities fail closed.",
+                     "listing_history":  "FEASIBLE using frozen prior-session observations; literal legal listing dates for every candidate require corroboration.",
+                     "delisting_suspension":  "Official records exist and historical files retain later exits. Suspended/nontrading names are absent by the explicit traded-session definition.",
+                     "symbol_changes":  "FEASIBLE from official reports/circulars with effective dates.",
+                     "corporate_actions":  "FEASIBLE for identity continuity only; later outcomes cannot determine eligibility.",
+                     "daily_turnover":  "PROVEN through legacy TOTTRDVAL and UDiFF TtlTrfVal.",
+                     "price_volume_fallback":  "FEASIBLE but unnecessary while official turnover is available; it must be frozen and uniform if invoked.",
+                     "calendar":  "FEASIBLE using official annual holiday and special-session circulars; unknown sessions fail closed.",
+                     "sector_classification":  "NOT PROVEN point-in-time; a complete historical per-security snapshot was not established.",
+                     "survivorship":  "PASS for the dated-bhavcopy traded-EQ frame; a current-active-master seed fails.",
+                     "look_ahead":  "Manageable when later records resolve identity only and never alter ex-ante eligibility.",
+                     "paid_dependency":  "None for the narrow bhavcopy/calendar route; broader all-listed masters or historical sectors remain conditional."
+                 },
+    "candidate_definitions":  [
+                                  {
+                                      "id":  "A",
+                                      "rule":  "Official selection-session STK/EQ identities, frozen minimum history, median official daily traded value, deterministic top N",
+                                      "reconstructibility":  "high",
+                                      "survivorship":  "high",
+                                      "complexity":  "moderate",
+                                      "auditability":  "high",
+                                      "paid_dependency":  "none established"
+                                  },
+                                  {
+                                      "id":  "B",
+                                      "rule":  "A plus a preregistered observation/traded-value floor before top N",
+                                      "reconstructibility":  "high",
+                                      "survivorship":  "high",
+                                      "complexity":  "moderate",
+                                      "auditability":  "high",
+                                      "paid_dependency":  "none established"
+                                  },
+                                  {
+                                      "id":  "C",
+                                      "rule":  "Dated official all-listed EQ master including nontrading securities, then history/liquidity rules",
+                                      "reconstructibility":  "conditional: dated archive not proven",
+                                      "survivorship":  "potentially highest",
+                                      "complexity":  "higher",
+                                      "auditability":  "conditional",
+                                      "paid_dependency":  "unknown"
+                                  }
+                              ],
+    "cohort_size":  "20–30 remains reasonable. No evidence here supports changing 24, but the exact count must be justified and frozen later.",
+    "critical_constraints":  [
+                                 "Do not describe the traded-EQ frame as every legally listed security.",
+                                 "Do not carry forward the old sector cap unless historical official sectors are proven; otherwise preregister another objective public diversification treatment.",
+                                 "Freeze and test the legacy-to-UDiFF schema mapping.",
+                                 "Fail closed on identity ambiguity, missing observations, and unknown special sessions."
+                             ],
+    "new_protocol_must_freeze":  [
+                                     "structural hypothesis",
+                                     "universe rule",
+                                     "selection-date rule",
+                                     "identity rule",
+                                     "liquidity measure",
+                                     "cohort size",
+                                     "diversification treatment",
+                                     "timeframes",
+                                     "Stage A/B/C chronology",
+                                     "visible/withheld design",
+                                     "economics",
+                                     "primary metric",
+                                     "continuation/rejection gates",
+                                     "statistical plan",
+                                     "exposure registry",
+                                     "defect handling",
+                                     "stop rules"
+                                 ],
+    "exposure":  "Previously used SBIN historical periods are EXPOSED, not pristine held-out evidence.",
+    "counters":  {
+                     "historical_candle_API_calls":  0,
+                     "intraday_rows":  0,
+                     "strategies":  0,
+                     "strategy_executions":  0,
+                     "backtests":  0,
+                     "optimizations":  0,
+                     "SmartAPI_logins":  0,
+                     "SmartAPI_account_order_live_calls":  0,
+                     "final_cohorts":  0,
+                     "candle_acquisition_manifests":  0
+                 },
+    "network_requests":  {
+                             "official_file_get_attempts":  14,
+                             "successful_official_file_gets":  13,
+                             "failed_official_file_gets":  1,
+                             "official_web_search_batches":  5,
+                             "official_web_search_queries":  20,
+                             "failure":  "Obsolete pre-UDiFF URL returned 404; official UDiFF file succeeded."
+                         },
+    "source_manifest":  "research/metadata/phase25/source_feasibility_manifest.json",
+    "validation":  {
+                       "precheck_pytest":  "465 passed",
+                       "precheck_compile":  "97 files",
+                       "precheck_diff":  "PASS",
+                       "final_pytest":  "465 passed in 12.83s",
+                       "final_compile":  "PASS: 98 Python files",
+                       "final_diff":  "PASS",
+                       "old_artifacts":  "PASS: 49 snapshotted files unchanged",
+                       "git_status":  "Dirty pre-existing workspace preserved; Phase 25 files untracked under research/."
+                   },
+    "recommended_next_phase":  "Draft and preregister a new protocol using A or B after resolving diversification; candle acquisition remains separately unauthorized."
+}

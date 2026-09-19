@@ -1,0 +1,13 @@
+﻿{
+  "phase":"24A",
+  "title":"Offline acquisition governance, manifests, sealing and access guards",
+  "parent_protocols":{"phase22_expected":"7a7454e22f9984a8cc36be1b4cc7a9477aa79094c11e605f7474b98d3fb9b67c","phase22_recalculated":"7a7454e22f9984a8cc36be1b4cc7a9477aa79094c11e605f7474b98d3fb9b67c","phase23_expected":"8ffc9f659cae347c1233ee5e09b7a5adc9b863425bb6dd3022587270f325fde3","phase23_recalculated":"8ffc9f659cae347c1233ee5e09b7a5adc9b863425bb6dd3022587270f325fde3"},
+  "implementation_files":["research/governance/__init__.py","research/governance/core.py"],
+  "tests_added":["tests/test_phase24a_governance.py"],
+  "governance_invariants":["canonical UTF-8 sorted compact JSON with non-finite and unsupported values rejected","exact Phase22/23 bindings","Phase23 roles and states only","held-out reads require matching offline authorization","Stage C requires completed and passing Stage B with unchanged spec","first read records exposure separately from canonical execution","canonical run atomically locks 0 to 1 and never resets","hash mismatch never repairs","cohort split, periods, universe, bars and gates are deterministic","request validation sends nothing"],
+  "negative_path_coverage":["protocol/hash/dataset/role mismatch","missing/invalid manifest","invalid and reverse state transitions","sealed read without authorization","second and interrupted canonical run","Stage C predecessor fail","duplicate identities","cohort below 20","eligibility failures","bar gaps/cross-session/CAS exclusion","insufficient samples/breadth/condition/chronology","undefined friction/concentration/PF","invalid bootstrap config","invalid acquisition requests"],
+  "counts":{"focused_tests":26,"network_attempts":0,"api_calls":0,"market_data_reads":0,"market_data_acquisitions":0,"strategy_executions":0,"backtests":0,"production_changes":0},
+  "preservation":{"production_strategy":true,"BacktestEngine":true,"strategies_A_I":true,"risk_charges_slippage_sizing":true,"broker_historical_live":true,"env_credentials":true,"existing_market_data":true,"phase18A_19_20_20A_20B_21_22_23":true},
+  "unresolved_todos":[],
+  "phase24b_metadata_acquisition_readiness":"READY SUBJECT TO SEPARATE EXPLICIT NETWORK/METADATA AUTHORIZATION"
+}

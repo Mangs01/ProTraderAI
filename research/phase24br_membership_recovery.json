@@ -1,0 +1,170 @@
+{
+  "additions": 10,
+  "anchor_candidates": [
+    {
+      "accepted": false,
+      "reason": "CSV is current and contains no embedded exact effective/as-of date; complete intervening event chain back to target is not proven.",
+      "resource": "nifty100_current_constituents.csv",
+      "row_count": 100,
+      "unique_isins": 100
+    }
+  ],
+  "blocking_evidence": [
+    "Missing authoritative complete membership snapshot at any exact dated anchor usable for the target.",
+    "Missing proof that every NIFTY 100 inclusion/exclusion between a candidate anchor and 2024-09-16 has been captured.",
+    "Located notices contain symbols but not sufficient permanent identity/ISIN continuity for every event."
+  ],
+  "cardinality_violations": [
+    "No anchor state exists on which to apply ledger invariants; target cardinality cannot be tested."
+  ],
+  "change_notices_found": 3,
+  "counters": {
+    "backtests": 0,
+    "historical_candle_api_calls": 0,
+    "intraday_candle_rows": 0,
+    "smartapi_order_account_live_calls": 0,
+    "strategy_executions": 0
+  },
+  "deletions": 11,
+  "direct_snapshot_found": false,
+  "event_chain_complete": false,
+  "event_chain_interval": "2024-03-28 through 2024-09-30 located notices; no complete anchor-to-target interval proven",
+  "final_validation": {
+    "compile": "97 Python files compiled",
+    "git_diff_check": "PASS",
+    "git_status": "Recorded; existing dirty/untracked workspace preserved",
+    "phase24b_preservation": "PASS \u2014 32 pre-existing Phase24B files hash-identical",
+    "pytest": "465 passed, 0 failed, 0 unexpected skips"
+  },
+  "identity_ambiguities": [
+    "TATAMTRDVR/TATAMOTORS corporate-scheme continuity cannot be converted to a permanent-identity invariant using the change notice alone because it supplies no ISIN/permanent ID."
+  ],
+  "independent_cross_check": {
+    "detail": "September 2024 factsheet/dashboard provide methodology/statistics, not a complete member list.",
+    "status": "UNAVAILABLE"
+  },
+  "network_requests": {
+    "official_raw_get_successes": 9,
+    "official_raw_gets": 9,
+    "open_find_click_calls": 5,
+    "search_batches": 4,
+    "search_queries": 15,
+    "web_discovery_calls": 9
+  },
+  "phase": "24B-R",
+  "phase22_hash": "7a7454e22f9984a8cc36be1b4cc7a9477aa79094c11e605f7474b98d3fb9b67c",
+  "phase23_hash": "8ffc9f659cae347c1233ee5e09b7a5adc9b863425bb6dd3022587270f325fde3",
+  "phase24b_continuation": "BLOCKED",
+  "phase24b_hash": "3517be7107241a68255d394f68c5996e99add8974d60e86b4d0c8dcbe0a5fd74",
+  "recommended_next_action": [
+    "A. Obtain licensed/official historical constituent data.",
+    "B. Redesign the research protocol in a NEW preregistered cycle using an objectively available universe definition."
+  ],
+  "reconstructed_target_count": 0,
+  "reconstruction_status": "NOT_PROVEN",
+  "source_hashes": {
+    "nifty100_aug30_2024_dvr_exclusion.pdf": "2e22a0f1e9b39633aa2551553c8592eb67d9b8488e09ceab71e60d3025eee7f8",
+    "nifty100_current_constituents.csv": "1a40e33a0febf458986a178bc76f7b0051f163718f2a8bc11a726ba70a39c0a9",
+    "nifty100_current_page.html": "957afa52ae26d78eb6fce3392ba26de2fb4c280c2eabc9a87968dfb4ce40dced",
+    "nifty100_mar28_2024_rebalance.pdf": "5c70d043edde682a31fc5fa043a3b829a380fc9896de904bcb76d64b8319f698",
+    "nifty100_sep2024_partial_factsheet.pdf": "aef266596bb7eac1fa11dd69277af3fe3d014a20bdf36fa966c20e143bf61735",
+    "nifty100_sep30_2024_rebalance.pdf": "efc8eab5d129eaa2219e10b57ab9a5c3ce2d0cd7b8c5ebd2c7b6bc244a38b2b8",
+    "nifty_indices_data_subscription.html": "99a7db4f0ca73c36ae9089f48affdf279bd95a4faaac542982b4955bb3f0ca04",
+    "nifty_indices_press_release_archive.html": "ab971765193d6e7f2ef5f443ce1da9943e9b95df80b916902fc830b850826797",
+    "nifty_indices_sep2024_dashboard.pdf": "685656d239ec001b4420faa4b6390501d64905ed8d57f3d1d1777149e772ec48"
+  },
+  "source_provenance": [
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "2e22a0f1e9b39633aa2551553c8592eb67d9b8488e09ceab71e60d3025eee7f8",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty100_aug30_2024_dvr_exclusion.pdf",
+      "resource_id": "nifty100_aug30_2024_dvr_exclusion",
+      "retrieval_timestamp": "2026-09-18T04:14:45.6182181Z",
+      "url": "https://www.niftyindices.com/Press_Release/ind_prs23082024_1.pdf"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "1a40e33a0febf458986a178bc76f7b0051f163718f2a8bc11a726ba70a39c0a9",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty100_current_constituents.csv",
+      "resource_id": "nifty100_current_constituents",
+      "retrieval_timestamp": "2026-09-18T04:14:40.8685270Z",
+      "url": "https://www.niftyindices.com/IndexConstituent/ind_nifty100list.csv"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "957afa52ae26d78eb6fce3392ba26de2fb4c280c2eabc9a87968dfb4ce40dced",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty100_current_page.html",
+      "resource_id": "nifty100_current_page",
+      "retrieval_timestamp": "2026-09-18T04:14:41.7509441Z",
+      "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty-100"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "5c70d043edde682a31fc5fa043a3b829a380fc9896de904bcb76d64b8319f698",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty100_mar28_2024_rebalance.pdf",
+      "resource_id": "nifty100_mar28_2024_rebalance",
+      "retrieval_timestamp": "2026-09-18T04:14:43.6484094Z",
+      "url": "https://www.niftyindices.com/Press_Release/ind_prs28022024.pdf"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "aef266596bb7eac1fa11dd69277af3fe3d014a20bdf36fa966c20e143bf61735",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty100_sep2024_partial_factsheet.pdf",
+      "resource_id": "nifty100_sep2024_partial_factsheet",
+      "retrieval_timestamp": "2026-09-18T04:14:47.6938093Z",
+      "url": "https://www.niftyindices.com/Factsheet/Factsheet_Nifty_100_EW_Index.pdf"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "efc8eab5d129eaa2219e10b57ab9a5c3ce2d0cd7b8c5ebd2c7b6bc244a38b2b8",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty100_sep30_2024_rebalance.pdf",
+      "resource_id": "nifty100_sep30_2024_rebalance",
+      "retrieval_timestamp": "2026-09-18T04:14:46.2981086Z",
+      "url": "https://www.niftyindices.com/Press_Release/ind_prs23082024.pdf"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "99a7db4f0ca73c36ae9089f48affdf279bd95a4faaac542982b4955bb3f0ca04",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty_indices_data_subscription.html",
+      "resource_id": "nifty_indices_data_subscription",
+      "retrieval_timestamp": "2026-09-18T04:14:42.8696268Z",
+      "url": "https://www.niftyindices.com/offerings/data-subscription"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "ab971765193d6e7f2ef5f443ce1da9943e9b95df80b916902fc830b850826797",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty_indices_press_release_archive.html",
+      "resource_id": "nifty_indices_press_release_archive",
+      "retrieval_timestamp": "2026-09-18T04:14:50.6917491Z",
+      "url": "https://www.niftyindices.com/press-release"
+    },
+    {
+      "authority": "NSE Indices Limited",
+      "content_sha256": "685656d239ec001b4420faa4b6390501d64905ed8d57f3d1d1777149e772ec48",
+      "fallback_status": "OFFICIAL_PRIMARY",
+      "http_status": 200,
+      "local_raw_path": "research/metadata/phase24br/raw/nifty_indices_sep2024_dashboard.pdf",
+      "resource_id": "nifty_indices_sep2024_dashboard",
+      "retrieval_timestamp": "2026-09-18T04:14:48.4534942Z",
+      "url": "https://www.niftyindices.com/Index_Dashboard/Index_Dashboard_SEP2024.pdf"
+    }
+  ],
+  "status": "BLOCKED",
+  "target_selection_date": "2024-09-16"
+}

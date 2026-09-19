@@ -1,0 +1,2987 @@
+{
+  "status": "ACQUIRED",
+  "requested_start": "2026-03-08 09:15:00+05:30",
+  "requested_end": "2026-09-08 15:30:00+05:30",
+  "calendar_day_span": 184,
+  "planned_chunks": [
+    {
+      "number": 1,
+      "from": "2026-03-08 09:15:00+05:30",
+      "to": "2026-04-07 09:15:00+05:30",
+      "span": 30
+    },
+    {
+      "number": 2,
+      "from": "2026-04-07 09:15:00+05:30",
+      "to": "2026-05-07 09:15:00+05:30",
+      "span": 30
+    },
+    {
+      "number": 3,
+      "from": "2026-05-07 09:15:00+05:30",
+      "to": "2026-06-06 09:15:00+05:30",
+      "span": 30
+    },
+    {
+      "number": 4,
+      "from": "2026-06-06 09:15:00+05:30",
+      "to": "2026-07-06 09:15:00+05:30",
+      "span": 30
+    },
+    {
+      "number": 5,
+      "from": "2026-07-06 09:15:00+05:30",
+      "to": "2026-08-05 09:15:00+05:30",
+      "span": 30
+    },
+    {
+      "number": 6,
+      "from": "2026-08-05 09:15:00+05:30",
+      "to": "2026-09-04 09:15:00+05:30",
+      "span": 30
+    },
+    {
+      "number": 7,
+      "from": "2026-09-04 09:15:00+05:30",
+      "to": "2026-09-08 15:30:00+05:30",
+      "span": 4
+    }
+  ],
+  "frozen_before": {
+    "data/historical_NSE_3045_FIVE_MINUTE.csv": "90f80ee25bb8a9ec65300fb1db7b11c1e5b62ad3416bdb0520a65c6c21d9fdc5",
+    "data/historical_NSE_3045_FIVE_MINUTE.csv.meta.json": "22e61e12aa5f4d97db7489e13b43d66f8b681b67fbb0228f43c116b7cf9f0de9"
+  },
+  "session_policy": {
+    "version": 2,
+    "cas_eligible": true,
+    "cas_effective_date": "2026-08-03",
+    "legacy_final_bar_start": "15:25:00",
+    "cas_continuous_final_bar_start": "15:10:00",
+    "interval_minutes": 5
+  },
+  "profile_calls": 0,
+  "account_calls": 0,
+  "order_calls": 0,
+  "websocket_calls": 0,
+  "coverage_limitation": "No authoritative offline holiday calendar. Absent weekdays are unclassified, not presumed missing sessions.",
+  "network_disabled_afterward": true,
+  "acquisition_timestamp": "2026-09-08T23:44:30.987815+05:30",
+  "events": [
+    {
+      "operation": "login",
+      "http_status": 200,
+      "api_success": true
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 1351
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 1501
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 1575
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 1426
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 1647
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 1595
+    },
+    {
+      "operation": "candles",
+      "http_status": 200,
+      "api_success": true,
+      "rows": 219
+    }
+  ],
+  "authentication_call_count": 1,
+  "candle_request_count": 7,
+  "download_diagnostics": {
+    "interval": "FIVE_MINUTE",
+    "requested_fromdate": "2026-03-08 09:15:00+05:30",
+    "requested_todate": "2026-09-08 15:30:00+05:30",
+    "chunks": [
+      {
+        "chunk_number": 1,
+        "requested_fromdate": "2026-03-08 09:15",
+        "requested_todate": "2026-04-07 09:15",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 1351,
+            "first_raw_candle_timestamp": "2026-03-09 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-04-07 09:15:00+05:30",
+            "attempt": 1
+          }
+        ]
+      },
+      {
+        "chunk_number": 2,
+        "requested_fromdate": "2026-04-07 09:15",
+        "requested_todate": "2026-05-07 09:15",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 1501,
+            "first_raw_candle_timestamp": "2026-04-07 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-05-07 09:15:00+05:30",
+            "attempt": 1
+          }
+        ]
+      },
+      {
+        "chunk_number": 3,
+        "requested_fromdate": "2026-05-07 09:15",
+        "requested_todate": "2026-06-06 09:15",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 1575,
+            "first_raw_candle_timestamp": "2026-05-07 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-06-05 15:25:00+05:30",
+            "attempt": 1
+          }
+        ]
+      },
+      {
+        "chunk_number": 4,
+        "requested_fromdate": "2026-06-06 09:15",
+        "requested_todate": "2026-07-06 09:15",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 1426,
+            "first_raw_candle_timestamp": "2026-06-08 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-07-06 09:15:00+05:30",
+            "attempt": 1
+          }
+        ]
+      },
+      {
+        "chunk_number": 5,
+        "requested_fromdate": "2026-07-06 09:15",
+        "requested_todate": "2026-08-05 09:15",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 1647,
+            "first_raw_candle_timestamp": "2026-07-06 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-08-05 09:15:00+05:30",
+            "attempt": 1
+          }
+        ]
+      },
+      {
+        "chunk_number": 6,
+        "requested_fromdate": "2026-08-05 09:15",
+        "requested_todate": "2026-09-04 09:15",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 1595,
+            "first_raw_candle_timestamp": "2026-08-05 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-09-04 09:15:00+05:30",
+            "attempt": 1
+          }
+        ]
+      },
+      {
+        "chunk_number": 7,
+        "requested_fromdate": "2026-09-04 09:15",
+        "requested_todate": "2026-09-08 15:30",
+        "attempts": [
+          {
+            "response_status": true,
+            "api_message": "SUCCESS",
+            "error_code": "",
+            "data_exists": true,
+            "raw_row_count": 219,
+            "first_raw_candle_timestamp": "2026-09-04 09:15:00+05:30",
+            "last_raw_candle_timestamp": "2026-09-08 15:25:00+05:30",
+            "attempt": 1
+          }
+        ]
+      }
+    ],
+    "dates": [
+      {
+        "date": "2026-03-09",
+        "row_count": 75,
+        "first_timestamp": "2026-03-09 09:15:00+05:30",
+        "last_timestamp": "2026-03-09 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-10",
+        "row_count": 75,
+        "first_timestamp": "2026-03-10 09:15:00+05:30",
+        "last_timestamp": "2026-03-10 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-11",
+        "row_count": 75,
+        "first_timestamp": "2026-03-11 09:15:00+05:30",
+        "last_timestamp": "2026-03-11 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-12",
+        "row_count": 75,
+        "first_timestamp": "2026-03-12 09:15:00+05:30",
+        "last_timestamp": "2026-03-12 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-13",
+        "row_count": 75,
+        "first_timestamp": "2026-03-13 09:15:00+05:30",
+        "last_timestamp": "2026-03-13 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-16",
+        "row_count": 75,
+        "first_timestamp": "2026-03-16 09:15:00+05:30",
+        "last_timestamp": "2026-03-16 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-17",
+        "row_count": 75,
+        "first_timestamp": "2026-03-17 09:15:00+05:30",
+        "last_timestamp": "2026-03-17 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-18",
+        "row_count": 75,
+        "first_timestamp": "2026-03-18 09:15:00+05:30",
+        "last_timestamp": "2026-03-18 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-19",
+        "row_count": 75,
+        "first_timestamp": "2026-03-19 09:15:00+05:30",
+        "last_timestamp": "2026-03-19 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-20",
+        "row_count": 75,
+        "first_timestamp": "2026-03-20 09:15:00+05:30",
+        "last_timestamp": "2026-03-20 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-23",
+        "row_count": 75,
+        "first_timestamp": "2026-03-23 09:15:00+05:30",
+        "last_timestamp": "2026-03-23 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-24",
+        "row_count": 75,
+        "first_timestamp": "2026-03-24 09:15:00+05:30",
+        "last_timestamp": "2026-03-24 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-25",
+        "row_count": 75,
+        "first_timestamp": "2026-03-25 09:15:00+05:30",
+        "last_timestamp": "2026-03-25 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-27",
+        "row_count": 75,
+        "first_timestamp": "2026-03-27 09:15:00+05:30",
+        "last_timestamp": "2026-03-27 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-03-30",
+        "row_count": 75,
+        "first_timestamp": "2026-03-30 09:15:00+05:30",
+        "last_timestamp": "2026-03-30 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-04-01",
+        "row_count": 75,
+        "first_timestamp": "2026-04-01 09:15:00+05:30",
+        "last_timestamp": "2026-04-01 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-04-02",
+        "row_count": 75,
+        "first_timestamp": "2026-04-02 09:15:00+05:30",
+        "last_timestamp": "2026-04-02 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-04-06",
+        "row_count": 75,
+        "first_timestamp": "2026-04-06 09:15:00+05:30",
+        "last_timestamp": "2026-04-06 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          1
+        ]
+      },
+      {
+        "date": "2026-04-07",
+        "row_count": 75,
+        "first_timestamp": "2026-04-07 09:15:00+05:30",
+        "last_timestamp": "2026-04-07 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-08",
+        "row_count": 75,
+        "first_timestamp": "2026-04-08 09:15:00+05:30",
+        "last_timestamp": "2026-04-08 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-09",
+        "row_count": 75,
+        "first_timestamp": "2026-04-09 09:15:00+05:30",
+        "last_timestamp": "2026-04-09 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-10",
+        "row_count": 75,
+        "first_timestamp": "2026-04-10 09:15:00+05:30",
+        "last_timestamp": "2026-04-10 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-13",
+        "row_count": 75,
+        "first_timestamp": "2026-04-13 09:15:00+05:30",
+        "last_timestamp": "2026-04-13 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-15",
+        "row_count": 75,
+        "first_timestamp": "2026-04-15 09:15:00+05:30",
+        "last_timestamp": "2026-04-15 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-16",
+        "row_count": 75,
+        "first_timestamp": "2026-04-16 09:15:00+05:30",
+        "last_timestamp": "2026-04-16 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-17",
+        "row_count": 75,
+        "first_timestamp": "2026-04-17 09:15:00+05:30",
+        "last_timestamp": "2026-04-17 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-20",
+        "row_count": 75,
+        "first_timestamp": "2026-04-20 09:15:00+05:30",
+        "last_timestamp": "2026-04-20 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-21",
+        "row_count": 75,
+        "first_timestamp": "2026-04-21 09:15:00+05:30",
+        "last_timestamp": "2026-04-21 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-22",
+        "row_count": 75,
+        "first_timestamp": "2026-04-22 09:15:00+05:30",
+        "last_timestamp": "2026-04-22 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-23",
+        "row_count": 75,
+        "first_timestamp": "2026-04-23 09:15:00+05:30",
+        "last_timestamp": "2026-04-23 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-24",
+        "row_count": 75,
+        "first_timestamp": "2026-04-24 09:15:00+05:30",
+        "last_timestamp": "2026-04-24 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-27",
+        "row_count": 75,
+        "first_timestamp": "2026-04-27 09:15:00+05:30",
+        "last_timestamp": "2026-04-27 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-28",
+        "row_count": 75,
+        "first_timestamp": "2026-04-28 09:15:00+05:30",
+        "last_timestamp": "2026-04-28 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-29",
+        "row_count": 75,
+        "first_timestamp": "2026-04-29 09:15:00+05:30",
+        "last_timestamp": "2026-04-29 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "row_count": 75,
+        "first_timestamp": "2026-04-30 09:15:00+05:30",
+        "last_timestamp": "2026-04-30 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-05-04",
+        "row_count": 75,
+        "first_timestamp": "2026-05-04 09:15:00+05:30",
+        "last_timestamp": "2026-05-04 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "row_count": 75,
+        "first_timestamp": "2026-05-05 09:15:00+05:30",
+        "last_timestamp": "2026-05-05 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "row_count": 75,
+        "first_timestamp": "2026-05-06 09:15:00+05:30",
+        "last_timestamp": "2026-05-06 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          2
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "row_count": 75,
+        "first_timestamp": "2026-05-07 09:15:00+05:30",
+        "last_timestamp": "2026-05-07 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "row_count": 75,
+        "first_timestamp": "2026-05-08 09:15:00+05:30",
+        "last_timestamp": "2026-05-08 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "row_count": 75,
+        "first_timestamp": "2026-05-11 09:15:00+05:30",
+        "last_timestamp": "2026-05-11 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-12",
+        "row_count": 75,
+        "first_timestamp": "2026-05-12 09:15:00+05:30",
+        "last_timestamp": "2026-05-12 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-13",
+        "row_count": 75,
+        "first_timestamp": "2026-05-13 09:15:00+05:30",
+        "last_timestamp": "2026-05-13 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "row_count": 75,
+        "first_timestamp": "2026-05-14 09:15:00+05:30",
+        "last_timestamp": "2026-05-14 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "row_count": 75,
+        "first_timestamp": "2026-05-15 09:15:00+05:30",
+        "last_timestamp": "2026-05-15 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "row_count": 75,
+        "first_timestamp": "2026-05-18 09:15:00+05:30",
+        "last_timestamp": "2026-05-18 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "row_count": 75,
+        "first_timestamp": "2026-05-19 09:15:00+05:30",
+        "last_timestamp": "2026-05-19 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "row_count": 75,
+        "first_timestamp": "2026-05-20 09:15:00+05:30",
+        "last_timestamp": "2026-05-20 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "row_count": 75,
+        "first_timestamp": "2026-05-21 09:15:00+05:30",
+        "last_timestamp": "2026-05-21 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "row_count": 75,
+        "first_timestamp": "2026-05-22 09:15:00+05:30",
+        "last_timestamp": "2026-05-22 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "row_count": 75,
+        "first_timestamp": "2026-05-25 09:15:00+05:30",
+        "last_timestamp": "2026-05-25 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "row_count": 75,
+        "first_timestamp": "2026-05-26 09:15:00+05:30",
+        "last_timestamp": "2026-05-26 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "row_count": 75,
+        "first_timestamp": "2026-05-27 09:15:00+05:30",
+        "last_timestamp": "2026-05-27 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "row_count": 75,
+        "first_timestamp": "2026-05-29 09:15:00+05:30",
+        "last_timestamp": "2026-05-29 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "row_count": 75,
+        "first_timestamp": "2026-06-01 09:15:00+05:30",
+        "last_timestamp": "2026-06-01 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "row_count": 75,
+        "first_timestamp": "2026-06-02 09:15:00+05:30",
+        "last_timestamp": "2026-06-02 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "row_count": 75,
+        "first_timestamp": "2026-06-03 09:15:00+05:30",
+        "last_timestamp": "2026-06-03 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-06-04",
+        "row_count": 75,
+        "first_timestamp": "2026-06-04 09:15:00+05:30",
+        "last_timestamp": "2026-06-04 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-06-05",
+        "row_count": 75,
+        "first_timestamp": "2026-06-05 09:15:00+05:30",
+        "last_timestamp": "2026-06-05 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          3
+        ]
+      },
+      {
+        "date": "2026-06-08",
+        "row_count": 75,
+        "first_timestamp": "2026-06-08 09:15:00+05:30",
+        "last_timestamp": "2026-06-08 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-09",
+        "row_count": 75,
+        "first_timestamp": "2026-06-09 09:15:00+05:30",
+        "last_timestamp": "2026-06-09 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-10",
+        "row_count": 75,
+        "first_timestamp": "2026-06-10 09:15:00+05:30",
+        "last_timestamp": "2026-06-10 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-11",
+        "row_count": 75,
+        "first_timestamp": "2026-06-11 09:15:00+05:30",
+        "last_timestamp": "2026-06-11 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-12",
+        "row_count": 75,
+        "first_timestamp": "2026-06-12 09:15:00+05:30",
+        "last_timestamp": "2026-06-12 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-15",
+        "row_count": 75,
+        "first_timestamp": "2026-06-15 09:15:00+05:30",
+        "last_timestamp": "2026-06-15 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-16",
+        "row_count": 75,
+        "first_timestamp": "2026-06-16 09:15:00+05:30",
+        "last_timestamp": "2026-06-16 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-17",
+        "row_count": 75,
+        "first_timestamp": "2026-06-17 09:15:00+05:30",
+        "last_timestamp": "2026-06-17 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-18",
+        "row_count": 75,
+        "first_timestamp": "2026-06-18 09:15:00+05:30",
+        "last_timestamp": "2026-06-18 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "row_count": 75,
+        "first_timestamp": "2026-06-19 09:15:00+05:30",
+        "last_timestamp": "2026-06-19 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-22",
+        "row_count": 75,
+        "first_timestamp": "2026-06-22 09:15:00+05:30",
+        "last_timestamp": "2026-06-22 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-23",
+        "row_count": 75,
+        "first_timestamp": "2026-06-23 09:15:00+05:30",
+        "last_timestamp": "2026-06-23 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-24",
+        "row_count": 75,
+        "first_timestamp": "2026-06-24 09:15:00+05:30",
+        "last_timestamp": "2026-06-24 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-25",
+        "row_count": 75,
+        "first_timestamp": "2026-06-25 09:15:00+05:30",
+        "last_timestamp": "2026-06-25 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "row_count": 75,
+        "first_timestamp": "2026-06-29 09:15:00+05:30",
+        "last_timestamp": "2026-06-29 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-06-30",
+        "row_count": 75,
+        "first_timestamp": "2026-06-30 09:15:00+05:30",
+        "last_timestamp": "2026-06-30 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "row_count": 75,
+        "first_timestamp": "2026-07-01 09:15:00+05:30",
+        "last_timestamp": "2026-07-01 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "row_count": 75,
+        "first_timestamp": "2026-07-02 09:15:00+05:30",
+        "last_timestamp": "2026-07-02 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "row_count": 75,
+        "first_timestamp": "2026-07-03 09:15:00+05:30",
+        "last_timestamp": "2026-07-03 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          4
+        ]
+      },
+      {
+        "date": "2026-07-06",
+        "row_count": 75,
+        "first_timestamp": "2026-07-06 09:15:00+05:30",
+        "last_timestamp": "2026-07-06 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "row_count": 75,
+        "first_timestamp": "2026-07-07 09:15:00+05:30",
+        "last_timestamp": "2026-07-07 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-08",
+        "row_count": 75,
+        "first_timestamp": "2026-07-08 09:15:00+05:30",
+        "last_timestamp": "2026-07-08 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-09",
+        "row_count": 75,
+        "first_timestamp": "2026-07-09 09:15:00+05:30",
+        "last_timestamp": "2026-07-09 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "row_count": 75,
+        "first_timestamp": "2026-07-10 09:15:00+05:30",
+        "last_timestamp": "2026-07-10 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-13",
+        "row_count": 75,
+        "first_timestamp": "2026-07-13 09:15:00+05:30",
+        "last_timestamp": "2026-07-13 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-14",
+        "row_count": 75,
+        "first_timestamp": "2026-07-14 09:15:00+05:30",
+        "last_timestamp": "2026-07-14 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-15",
+        "row_count": 75,
+        "first_timestamp": "2026-07-15 09:15:00+05:30",
+        "last_timestamp": "2026-07-15 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-16",
+        "row_count": 75,
+        "first_timestamp": "2026-07-16 09:15:00+05:30",
+        "last_timestamp": "2026-07-16 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "row_count": 75,
+        "first_timestamp": "2026-07-17 09:15:00+05:30",
+        "last_timestamp": "2026-07-17 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "row_count": 75,
+        "first_timestamp": "2026-07-20 09:15:00+05:30",
+        "last_timestamp": "2026-07-20 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-21",
+        "row_count": 75,
+        "first_timestamp": "2026-07-21 09:15:00+05:30",
+        "last_timestamp": "2026-07-21 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "row_count": 75,
+        "first_timestamp": "2026-07-22 09:15:00+05:30",
+        "last_timestamp": "2026-07-22 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-23",
+        "row_count": 75,
+        "first_timestamp": "2026-07-23 09:15:00+05:30",
+        "last_timestamp": "2026-07-23 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-24",
+        "row_count": 75,
+        "first_timestamp": "2026-07-24 09:15:00+05:30",
+        "last_timestamp": "2026-07-24 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "row_count": 75,
+        "first_timestamp": "2026-07-27 09:15:00+05:30",
+        "last_timestamp": "2026-07-27 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-28",
+        "row_count": 75,
+        "first_timestamp": "2026-07-28 09:15:00+05:30",
+        "last_timestamp": "2026-07-28 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "row_count": 75,
+        "first_timestamp": "2026-07-29 09:15:00+05:30",
+        "last_timestamp": "2026-07-29 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-30",
+        "row_count": 75,
+        "first_timestamp": "2026-07-30 09:15:00+05:30",
+        "last_timestamp": "2026-07-30 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-07-31",
+        "row_count": 75,
+        "first_timestamp": "2026-07-31 09:15:00+05:30",
+        "last_timestamp": "2026-07-31 15:25:00+05:30",
+        "unique_bar_count": 75,
+        "duplicate_count": 0,
+        "session_regime": "LEGACY_REGULAR",
+        "expected_regular_bar_count": 75,
+        "regular_row_count": 75,
+        "regular_unique_bar_count": 75,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-08-03",
+        "row_count": 73,
+        "first_timestamp": "2026-08-03 09:15:00+05:30",
+        "last_timestamp": "2026-08-03 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "row_count": 73,
+        "first_timestamp": "2026-08-04 09:15:00+05:30",
+        "last_timestamp": "2026-08-04 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          5
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "row_count": 73,
+        "first_timestamp": "2026-08-05 09:15:00+05:30",
+        "last_timestamp": "2026-08-05 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-06",
+        "row_count": 73,
+        "first_timestamp": "2026-08-06 09:15:00+05:30",
+        "last_timestamp": "2026-08-06 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "row_count": 73,
+        "first_timestamp": "2026-08-07 09:15:00+05:30",
+        "last_timestamp": "2026-08-07 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-10",
+        "row_count": 73,
+        "first_timestamp": "2026-08-10 09:15:00+05:30",
+        "last_timestamp": "2026-08-10 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-11",
+        "row_count": 73,
+        "first_timestamp": "2026-08-11 09:15:00+05:30",
+        "last_timestamp": "2026-08-11 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "row_count": 73,
+        "first_timestamp": "2026-08-12 09:15:00+05:30",
+        "last_timestamp": "2026-08-12 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-13",
+        "row_count": 73,
+        "first_timestamp": "2026-08-13 09:15:00+05:30",
+        "last_timestamp": "2026-08-13 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-14",
+        "row_count": 73,
+        "first_timestamp": "2026-08-14 09:15:00+05:30",
+        "last_timestamp": "2026-08-14 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-17",
+        "row_count": 73,
+        "first_timestamp": "2026-08-17 09:15:00+05:30",
+        "last_timestamp": "2026-08-17 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-18",
+        "row_count": 73,
+        "first_timestamp": "2026-08-18 09:15:00+05:30",
+        "last_timestamp": "2026-08-18 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-19",
+        "row_count": 72,
+        "first_timestamp": "2026-08-19 09:15:00+05:30",
+        "last_timestamp": "2026-08-19 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-20",
+        "row_count": 72,
+        "first_timestamp": "2026-08-20 09:15:00+05:30",
+        "last_timestamp": "2026-08-20 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-21",
+        "row_count": 72,
+        "first_timestamp": "2026-08-21 09:15:00+05:30",
+        "last_timestamp": "2026-08-21 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-24",
+        "row_count": 72,
+        "first_timestamp": "2026-08-24 09:15:00+05:30",
+        "last_timestamp": "2026-08-24 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-25",
+        "row_count": 72,
+        "first_timestamp": "2026-08-25 09:15:00+05:30",
+        "last_timestamp": "2026-08-25 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-26",
+        "row_count": 72,
+        "first_timestamp": "2026-08-26 09:15:00+05:30",
+        "last_timestamp": "2026-08-26 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-27",
+        "row_count": 72,
+        "first_timestamp": "2026-08-27 09:15:00+05:30",
+        "last_timestamp": "2026-08-27 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-28",
+        "row_count": 72,
+        "first_timestamp": "2026-08-28 09:15:00+05:30",
+        "last_timestamp": "2026-08-28 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-08-31",
+        "row_count": 72,
+        "first_timestamp": "2026-08-31 09:15:00+05:30",
+        "last_timestamp": "2026-08-31 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-09-01",
+        "row_count": 72,
+        "first_timestamp": "2026-09-01 09:15:00+05:30",
+        "last_timestamp": "2026-09-01 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-09-02",
+        "row_count": 72,
+        "first_timestamp": "2026-09-02 09:15:00+05:30",
+        "last_timestamp": "2026-09-02 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-09-03",
+        "row_count": 72,
+        "first_timestamp": "2026-09-03 09:15:00+05:30",
+        "last_timestamp": "2026-09-03 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          6
+        ]
+      },
+      {
+        "date": "2026-09-04",
+        "row_count": 72,
+        "first_timestamp": "2026-09-04 09:15:00+05:30",
+        "last_timestamp": "2026-09-04 15:10:00+05:30",
+        "unique_bar_count": 72,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": false,
+        "has_15_30": false,
+        "source_chunks": [
+          7
+        ]
+      },
+      {
+        "date": "2026-09-07",
+        "row_count": 73,
+        "first_timestamp": "2026-09-07 09:15:00+05:30",
+        "last_timestamp": "2026-09-07 15:25:00+05:30",
+        "unique_bar_count": 73,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          7
+        ]
+      },
+      {
+        "date": "2026-09-08",
+        "row_count": 74,
+        "first_timestamp": "2026-09-08 09:15:00+05:30",
+        "last_timestamp": "2026-09-08 15:25:00+05:30",
+        "unique_bar_count": 74,
+        "duplicate_count": 0,
+        "session_regime": "CAS_ELIGIBLE",
+        "expected_regular_bar_count": 72,
+        "regular_row_count": 72,
+        "regular_unique_bar_count": 72,
+        "auxiliary_cas_bar_starts": [
+          "15:20",
+          "15:25"
+        ],
+        "missing_expected_bar_starts": [],
+        "unexpected_bar_starts": [],
+        "has_09_15": true,
+        "has_15_25": true,
+        "has_15_30": false,
+        "source_chunks": [
+          7
+        ]
+      }
+    ],
+    "validation_error": null
+  },
+  "raw_row_count": 9314,
+  "frozen_after": {
+    "data/historical_NSE_3045_FIVE_MINUTE.csv": "90f80ee25bb8a9ec65300fb1db7b11c1e5b62ad3416bdb0520a65c6c21d9fdc5",
+    "data/historical_NSE_3045_FIVE_MINUTE.csv.meta.json": "22e61e12aa5f4d97db7489e13b43d66f8b681b67fbb0228f43c116b7cf9f0de9"
+  },
+  "frozen_unchanged": true,
+  "raw_duplicate_timestamps": 5,
+  "raw_naive_timestamp_count": 0,
+  "raw_off_grid_count": 0,
+  "raw_pre_open_count": 0,
+  "raw_unexpected_post_session_count": 0,
+  "raw_cas_auxiliary_count": 15,
+  "actual_first_timestamp": "2026-03-09 09:15:00+05:30",
+  "actual_last_timestamp": "2026-09-08 15:25:00+05:30",
+  "unique_session_count": 125,
+  "absent_weekdays_unclassified": [
+    "2026-03-26",
+    "2026-03-31",
+    "2026-04-03",
+    "2026-04-14",
+    "2026-05-01",
+    "2026-05-28",
+    "2026-06-26"
+  ],
+  "weekend_dates": [
+    "2026-03-08",
+    "2026-03-14",
+    "2026-03-15",
+    "2026-03-21",
+    "2026-03-22",
+    "2026-03-28",
+    "2026-03-29",
+    "2026-04-04",
+    "2026-04-05",
+    "2026-04-11",
+    "2026-04-12",
+    "2026-04-18",
+    "2026-04-19",
+    "2026-04-25",
+    "2026-04-26",
+    "2026-05-02",
+    "2026-05-03",
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-16",
+    "2026-05-17",
+    "2026-05-23",
+    "2026-05-24",
+    "2026-05-30",
+    "2026-05-31",
+    "2026-06-06",
+    "2026-06-07",
+    "2026-06-13",
+    "2026-06-14",
+    "2026-06-20",
+    "2026-06-21",
+    "2026-06-27",
+    "2026-06-28",
+    "2026-07-04",
+    "2026-07-05",
+    "2026-07-11",
+    "2026-07-12",
+    "2026-07-18",
+    "2026-07-19",
+    "2026-07-25",
+    "2026-07-26",
+    "2026-08-01",
+    "2026-08-02",
+    "2026-08-08",
+    "2026-08-09",
+    "2026-08-15",
+    "2026-08-16",
+    "2026-08-22",
+    "2026-08-23",
+    "2026-08-29",
+    "2026-08-30",
+    "2026-09-05",
+    "2026-09-06"
+  ],
+  "dataset_path": "data\\validation_NSE_3045_FIVE_MINUTE_2026-03-08_2026-09-08.csv",
+  "metadata_path": "data\\validation_NSE_3045_FIVE_MINUTE_2026-03-08_2026-09-08.csv.meta.json",
+  "dataset_sha256": "fe9126c1745f61957ae24a840569600ff7e036b59d0cc55be6c68ae6d3603ed6",
+  "metadata_sha256": "e10135f17a9bf00cc9aa62c5150c081d461461f7ad8b13652f7323832b56ee67",
+  "accepted_regular_row_count": 9294
+}

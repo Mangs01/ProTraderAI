@@ -1,0 +1,55 @@
+{
+  "phase": 26,
+  "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+  "phase26_protocol_sha256": "2bc4fbf72477f1c7d634a8851522c2086e0e7625e92c9abebea2611192878aaa",
+  "schema": {
+    "id": "NSE_BHAVCOPY_CANONICAL_V1",
+    "fields": [
+      "trade_date",
+      "instrument_type",
+      "series",
+      "symbol",
+      "isin",
+      "open",
+      "high",
+      "low",
+      "close",
+      "total_traded_quantity",
+      "total_traded_value"
+    ],
+    "legacy": {
+      "trade_date": "TIMESTAMP",
+      "instrument_type": "STK only when authoritative legacy equity schema establishes it; otherwise unresolved",
+      "series": "SERIES",
+      "symbol": "SYMBOL",
+      "isin": "ISIN",
+      "open": "OPEN",
+      "high": "HIGH",
+      "low": "LOW",
+      "close": "CLOSE",
+      "total_traded_quantity": "TOTTRDQTY",
+      "total_traded_value": "TOTTRDVAL"
+    },
+    "udiff": {
+      "trade_date": "TradDt",
+      "instrument_type": "FinInstrmTp",
+      "series": "SctySrs",
+      "symbol": "TckrSymb",
+      "isin": "ISIN",
+      "open": "OpnPric",
+      "high": "HghPric",
+      "low": "LwPric",
+      "close": "ClsPric",
+      "total_traded_quantity": "TtlTradgVol",
+      "total_traded_value": "TtlTrfVal"
+    },
+    "rules": [
+      "map authoritative header names, never column positions",
+      "ISO date; exact base-10 decimal numeric parsing",
+      "ISIN permanent identity; symbol/series effective-dated",
+      "TOTTRDVAL and TtlTrfVal have one canonical official traded-value semantic",
+      "missing/ambiguous critical field fails closed",
+      "no close-times-volume fallback in this cycle"
+    ]
+  }
+}

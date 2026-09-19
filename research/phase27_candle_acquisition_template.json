@@ -1,0 +1,37 @@
+{
+  "template_sha256": "cef3720cadd3a7968982934fb82a2cb273051b0c65c52f0fedb08672e6c988ac",
+  "template": {
+    "schema": "phase27-candle-template-v1",
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "requests": [],
+    "request_template": {
+      "ISIN": "REQUIRED",
+      "symbol": "REQUIRED",
+      "series": "EQ",
+      "token": "REQUIRED_EFFECTIVE_DATED",
+      "stage": "REQUIRED_NEW_STAGE",
+      "interval": "FIVE_MINUTE",
+      "start": "FROZEN_STAGE_START",
+      "end": "FROZEN_STAGE_END",
+      "chunking": "deterministic provider-limit-aware nonoverlap",
+      "rate": "conservative compliant serial",
+      "retry": "bounded/logged",
+      "session_policy_hash": "13274fbe46c6df033b93537feda34532ccced0670c9153ccd135fba6b3084c72",
+      "raw_destination": "future immutable stage/ISIN path",
+      "metadata_destination": "future metadata path",
+      "content_hash": "required",
+      "dataset_role": "bound"
+    },
+    "reject": [
+      "malformed/reversed date",
+      "wrong interval",
+      "missing identity",
+      "path collision",
+      "duplicate",
+      "wrong hash",
+      "wrong role",
+      "order/account/live endpoint"
+    ],
+    "state": "TEMPLATE_ONLY_NOT_AUTHORIZED"
+  }
+}

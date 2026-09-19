@@ -20,6 +20,10 @@ MPIN = os.getenv("MPIN")
 
 TOTP_SECRET = os.getenv("TOTP_SECRET")
 
+CLIENT_LOCAL_IP = os.getenv("CLIENT_LOCAL_IP")
+CLIENT_PUBLIC_IP = os.getenv("CLIENT_PUBLIC_IP")
+CLIENT_MAC = os.getenv("CLIENT_MAC")
+
 # ======================================
 # Trading Settings
 # ======================================

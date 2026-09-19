@@ -1,0 +1,85 @@
+{
+  "completeness_proof": {
+    "proven": false,
+    "reason": "The public press-release archive identifies notices but does not certify that the located subset is the complete NIFTY 100 event chain between a dated complete anchor and 2024-09-16. No dated complete anchor was found."
+  },
+  "events": [
+    {
+      "additions": [
+        "ADANIPOWER",
+        "IRFC",
+        "JIOFIN",
+        "PFC",
+        "RECLTD"
+      ],
+      "deletions": [
+        "AWL",
+        "MUTHOOTFIN",
+        "PIIND",
+        "PGHH",
+        "UPL"
+      ],
+      "document_id": "ind_prs28022024",
+      "effective_date": "2024-03-28",
+      "identity_isin": null,
+      "index": "NIFTY 100",
+      "notes": "Official 5-for-5 semiannual replacement; symbols only.",
+      "publication_date": "2024-02-28",
+      "source_hash": "5c70d043edde682a31fc5fa043a3b829a380fc9896de904bcb76d64b8319f698",
+      "source_path": "research/metadata/phase24br/raw/nifty100_mar28_2024_rebalance.pdf",
+      "title": "Replacements in indices"
+    },
+    {
+      "additions": [],
+      "deletions": [
+        "TATAMTRDVR"
+      ],
+      "document_id": "ind_prs23082024_1",
+      "effective_date": "2024-08-30",
+      "identity_isin": null,
+      "index": "NIFTY 100",
+      "notes": "Corporate scheme exclusion and TATAMOTORS IWF revision; notice does not supply a complete membership state or ISINs.",
+      "old_new_symbol": {
+        "continuing_related_security": "TATAMOTORS",
+        "old": "TATAMTRDVR"
+      },
+      "publication_date": "2024-08-23",
+      "source_hash": "2e22a0f1e9b39633aa2551553c8592eb67d9b8488e09ceab71e60d3025eee7f8",
+      "source_path": "research/metadata/phase24br/raw/nifty100_aug30_2024_dvr_exclusion.pdf",
+      "title": "Replacements in indices \u2014 Tata Motors DVR exclusion"
+    },
+    {
+      "additions": [
+        "BHEL",
+        "JSWENERGY",
+        "LODHA",
+        "NHPC",
+        "UNIONBANK"
+      ],
+      "deletions": [
+        "BERGEPAINT",
+        "COLPAL",
+        "MARICO",
+        "SBICARD",
+        "SRF"
+      ],
+      "document_id": "ind_prs23082024",
+      "effective_date": "2024-09-30",
+      "identity_isin": null,
+      "index": "NIFTY 100",
+      "notes": "Official 5-for-5 event after target date; usable only if paired with a valid anchor.",
+      "publication_date": "2024-08-23",
+      "source_hash": "efc8eab5d129eaa2219e10b57ab9a5c3ce2d0cd7b8c5ebd2c7b6bc244a38b2b8",
+      "source_path": "research/metadata/phase24br/raw/nifty100_sep30_2024_rebalance.pdf",
+      "title": "Replacements in indices and revision in criteria"
+    }
+  ],
+  "schema_version": "phase24br-event-ledger-v1",
+  "status": "INCOMPLETE",
+  "target_effective_date": "2024-09-16",
+  "target_index": "NIFTY 100",
+  "totals": {
+    "additions": 10,
+    "deletions": 11
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "exchange": "NSE",
+  "symbol_token": "3045",
+  "interval": "FIVE_MINUTE",
+  "requested_start": "2026-08-05T09:15:00",
+  "requested_end": "2026-09-04T15:30:00",
+  "actual_first_timestamp": "2026-08-05T09:15:00+05:30",
+  "actual_last_timestamp": "2026-09-04T15:10:00+05:30",
+  "columns": [
+    "datetime",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "row_count": 1666,
+  "csv_sha256": "90f80ee25bb8a9ec65300fb1db7b11c1e5b62ad3416bdb0520a65c6c21d9fdc5",
+  "session_policy": {
+    "version": 2,
+    "cas_eligible": true,
+    "cas_effective_date": "2026-08-03",
+    "legacy_final_bar_start": "15:25:00",
+    "cas_continuous_final_bar_start": "15:10:00",
+    "interval_minutes": 5
+  }
+}

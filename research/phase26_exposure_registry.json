@@ -1,0 +1,52 @@
+{
+  "phase": 26,
+  "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+  "phase26_protocol_sha256": "2bc4fbf72477f1c7d634a8851522c2086e0e7625e92c9abebea2611192878aaa",
+  "status": "PREREGISTERED_NO_DATA",
+  "prior_cycle": "BLOCKED — HISTORICAL INDEX MEMBERSHIP NOT PUBLICLY PROVEN",
+  "known_exposures": [
+    {
+      "identity": "SBIN",
+      "ISIN": "resolve authoritatively before acquisition",
+      "periods": "all prior registered SBIN exposures",
+      "status": "EXPOSED",
+      "rule": "If selected, retain in 24-cohort, split and logistics. Exclude overlapping exposed SBIN Stage B/C observations from pristine inference, bootstrap inputs, participation denominators and gates; do not replace. Only registry-proven non-overlap may be pristine."
+    }
+  ],
+  "datasets": [
+    {
+      "id": "NEW_STAGE_A_DEVELOPMENT",
+      "role": "DEVELOPMENT",
+      "state": "NOT_ACQUIRED",
+      "run_count": 0
+    },
+    {
+      "id": "NEW_STAGE_B_SEALED",
+      "role": "SEALED",
+      "state": "NOT_ACQUIRED",
+      "run_count": 0
+    },
+    {
+      "id": "NEW_STAGE_C_SEALED",
+      "role": "SEALED",
+      "state": "NOT_ACQUIRED",
+      "run_count": 0
+    }
+  ],
+  "required_bindings": [
+    "protocol hash",
+    "dataset ID",
+    "role",
+    "cohort hash",
+    "calendar hash",
+    "identity hash",
+    "liquidity hash",
+    "raw hashes",
+    "derived hashes",
+    "first-read timestamp",
+    "strategy/spec hash",
+    "canonical-run count",
+    "exposure status"
+  ],
+  "acquisition_authorized": false
+}

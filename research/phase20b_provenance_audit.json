@@ -1,0 +1,251 @@
+{
+  "source_hashes": {
+    "csv": "ade5eb291d420577878ada5e6ebf63dd109206deed5939745cde768a2efea16a",
+    "metadata": "cafa32c5b4c33734091047bda870df30ef97319280a0765f76551b93e4ebd884",
+    "trades": "6709b5ccbff53b6c37e56da280522545b79b5ec1a34fb90867bff965e04e3078",
+    "results": "f45d06af1249d74df3a1016a112c88b52cd76ae7c594aa581bc5b52b63371e73",
+    "lock": "ecfa1828ecf90b2ab7d68a2688bb0509e88ab39cc9c82740ef7489c7d308abd9",
+    "preregistration": "7055eb7bcb2eabe5603fa3d9074b197d820f6792d323659b2c934905d16dc1e9"
+  },
+  "lock": {
+    "status": "COMPLETE",
+    "canonical_run_count": 1,
+    "spec_hash": "97a972931ee6213fa946869ef1a394ac3606273f6f9c39a9962b7c2ac91c0b62"
+  },
+  "phase19_spec_hash_recalculated": "97a972931ee6213fa946869ef1a394ac3606273f6f9c39a9962b7c2ac91c0b62",
+  "phase19_spec_hash_recorded": "97a972931ee6213fa946869ef1a394ac3606273f6f9c39a9962b7c2ac91c0b62",
+  "dataset": {
+    "rows": 9612,
+    "represented_sessions": 129,
+    "normal_legacy": 128,
+    "special_muhurat": 1,
+    "special_date": "2025-10-21",
+    "CAS": 0,
+    "missing_required_bars": 0,
+    "duplicates": 0,
+    "off_grid_rows": 0,
+    "timezone_anomalies": 0,
+    "incomplete_rejected_sessions": 0,
+    "overlap_rows": 0,
+    "metadata_row_count": 9612
+  },
+  "capture_counts": {
+    "canonical_run_count": 1,
+    "signal_calls": 9612,
+    "evaluations": 9612,
+    "deviations": 242,
+    "events": 160,
+    "entries": 156,
+    "closures": 156,
+    "trades": 156,
+    "errors": 0
+  },
+  "saved_trade_rows": 156,
+  "recomputed": {
+    "trades": 156,
+    "wins": 44,
+    "losses": 112,
+    "win_rate": 28.205128205128204,
+    "gross_profit": 27064.14126181483,
+    "gross_loss": -75428.05293262006,
+    "gross_pnl": -48363.911670805224,
+    "charges": 22253.79285832324,
+    "net_pnl": -70617.70452912846,
+    "profit_factor": 0.35880736953386894,
+    "buy": 80,
+    "sell": 76,
+    "reasons": {
+      "END_OF_SESSION": 10,
+      "TARGET": 43,
+      "STOP_LOSS": 103
+    },
+    "final_capital": 29382.295470871588,
+    "max_drawdown": 70875.67912076549,
+    "max_drawdown_percent": 70.87567912076548,
+    "average_gross_trade": -310.02507481285403,
+    "average_net_trade": -452.6775931354388,
+    "average_net_win": 481.47176358049495,
+    "average_net_loss": -819.6648404166987,
+    "turnover": 83965102.0180097,
+    "average_charge_trade": 142.65251832258485,
+    "equity_points": 157,
+    "side": {
+      "BUY": {
+        "trades": 80,
+        "wins": 25,
+        "losses": 55,
+        "win_rate": 31.25,
+        "gross_profit": 16579.001671736092,
+        "gross_loss": -34453.310252288684,
+        "gross_pnl": -17874.308580552588,
+        "charges": 11007.06821784751,
+        "net_pnl": -28881.3767984001,
+        "profit_factor": 0.4812019962765341,
+        "buy": 80,
+        "sell": 0,
+        "reasons": {
+          "END_OF_SESSION": 7,
+          "TARGET": 24,
+          "STOP_LOSS": 49
+        }
+      },
+      "SELL": {
+        "trades": 76,
+        "wins": 19,
+        "losses": 57,
+        "win_rate": 25.0,
+        "gross_profit": 10485.13959007874,
+        "gross_loss": -40974.74268033138,
+        "gross_pnl": -30489.603090252636,
+        "charges": 11246.72464047573,
+        "net_pnl": -41736.327730728364,
+        "profit_factor": 0.2558927501236462,
+        "buy": 0,
+        "sell": 76,
+        "reasons": {
+          "STOP_LOSS": 54,
+          "TARGET": 19,
+          "END_OF_SESSION": 3
+        }
+      }
+    },
+    "exit_reasons": {
+      "END_OF_SESSION": 10,
+      "TARGET": 43,
+      "STOP_LOSS": 103
+    }
+  },
+  "charge_components_recomputed": {
+    "brokerage": 6240.0,
+    "transaction_charges": 2577.6446668508797,
+    "stt": 10489.592263292363,
+    "stamp_duty": 1260.2019889452076,
+    "sebi_charges": 83.9651020180097,
+    "ipft": 0.0839651020180097,
+    "gst": 1602.3048721147632,
+    "total": 22253.792858323242
+  },
+  "timing_violations": [],
+  "slippage_violations": [],
+  "signal_rule_audit": "NOT ESTABLISHED FROM SAVED EVIDENCE",
+  "atr_sizing_stop_target_audit": "NOT ESTABLISHED FROM SAVED EVIDENCE",
+  "lookahead_audit": "NOT ESTABLISHED beyond saved timestamps",
+  "accounting_violations": 0,
+  "charge_violations": 0,
+  "classification": "REJECT",
+  "network_api_counts": {
+    "login": 0,
+    "historical_candles": 0,
+    "profile": 0,
+    "account": 0,
+    "funds": 0,
+    "holdings": 0,
+    "positions": 0,
+    "orders": 0,
+    "trade_book": 0,
+    "websocket_live": 0
+  },
+  "candidate_reruns": 0,
+  "lock_resets": 0,
+  "source_repairs": 0,
+  "half_recomputed": {
+    "FIRST_HALF": {
+      "sessions": 64,
+      "trades": 77,
+      "wins": 21,
+      "losses": 56,
+      "gross_pnl": -32366.19051471318,
+      "net_pnl": -45883.31353954292,
+      "charges": 13517.123024829743,
+      "profit_factor": 0.34105338528549684,
+      "buy": 39,
+      "sell": 38
+    },
+    "SECOND_HALF": {
+      "sessions": 65,
+      "trades": 79,
+      "wins": 23,
+      "losses": 56,
+      "gross_pnl": -15997.721156092046,
+      "net_pnl": -24734.390989585543,
+      "charges": 8736.669833493497,
+      "profit_factor": 0.3919522710750125,
+      "buy": 41,
+      "sell": 38
+    }
+  },
+  "muhurat_audit": {
+    "deviations": [
+      {
+        "side": "SELL",
+        "index": 2625,
+        "timestamp": "2025-10-21 13:45:00+05:30",
+        "close": 907.95,
+        "vwap": 907.9499999999999,
+        "rsi": 58.36575875486423
+      },
+      {
+        "side": "BUY",
+        "index": 2636,
+        "timestamp": "2025-10-21 14:40:00+05:30",
+        "close": 907.05,
+        "vwap": 907.7916240615689,
+        "rsi": 43.790849673202395
+      }
+    ],
+    "reclaims": [],
+    "signals": [],
+    "entries": 0,
+    "exits": [],
+    "metrics": {
+      "trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "breakeven": 0,
+      "win_rate": 0,
+      "gross_profit": 0,
+      "gross_loss": 0,
+      "gross_pnl": 0,
+      "charges": 0,
+      "net_pnl": 0,
+      "profit_factor": null,
+      "average_net_trade": 0,
+      "max_drawdown": 0,
+      "max_drawdown_percent": 0,
+      "buy_trades": 0,
+      "sell_trades": 0,
+      "end_of_session": 0,
+      "average_gross_trade": null,
+      "average_net_win": null,
+      "average_net_loss": null
+    },
+    "grid": "13:45 through 14:40; 12 bars",
+    "policy_respected": true
+  },
+  "concentration": {
+    "largest_winning_trade_gross": 1095.4462578750267,
+    "gross_profit_share_percent": 4.047592891560195,
+    "largest_profitable_session": "2025-10-30",
+    "largest_session_net": 1296.7612360316275,
+    "net_profit_share_percent": null,
+    "session_gate": "NOT ESTABLISHED because total net profit denominator is negative"
+  },
+  "artifact_consistency": {
+    "results_json": {
+      "strategy_id": "I (from preregistration; no explicit field)",
+      "spec_hash_match": true,
+      "csv_hash_match": true,
+      "metadata_hash_match": true,
+      "trade_count_match": true,
+      "wins_match": true,
+      "losses_match": true,
+      "gross_pnl_difference": 7.275957614183426e-12,
+      "charges_difference": 0.0,
+      "net_difference": 0.0,
+      "final_capital_difference": 0.0,
+      "classification_match": true
+    },
+    "report_markdown": "Numeric values agree with JSON within stored decimal precision; report has mojibake currency glyphs only, no numeric discrepancy",
+    "trades_csv": "156 rows and all recomputed accounting/timing fields agree"
+  }
+}

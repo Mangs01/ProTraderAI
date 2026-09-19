@@ -1,0 +1,62 @@
+{
+  "phase": 20,
+  "status": "BLOCKED",
+  "final_classification": null,
+  "PHASE19_SPEC_SHA256_expected": "97a972931ee6213fa946869ef1a394ac3606273f6f9c39a9962b7c2ac91c0b62",
+  "PHASE19_SPEC_SHA256_recalculated": "97a972931ee6213fa946869ef1a394ac3606273f6f9c39a9962b7c2ac91c0b62",
+  "spec_hash_gate": "PASS",
+  "held_out": {
+    "csv_sha256": "ade5eb291d420577878ada5e6ebf63dd109206deed5939745cde768a2efea16a",
+    "dataset_path": "data/validation_NSE_3045_FIVE_MINUTE_2025-09-01_2026-03-06.csv",
+    "metadata_sha256": "cafa32c5b4c33734091047bda870df30ef97319280a0765f76551b93e4ebd884",
+    "provenance": "Supplied Phase 18A constants only; neither file opened, parsed or hashed by preregistration",
+    "csv_actual_sha256": null,
+    "metadata_actual_sha256": null,
+    "integrity_status": "NOT REACHED; no held-out exposure"
+  },
+  "canonical_run_count": 0,
+  "canonical_run_lock": "NOT ACQUIRED: source defect prevents execution",
+  "correctness_audit": {
+    "confirmed_source_defects": 1,
+    "historical_trade_violations": null,
+    "lookahead_violations": null,
+    "session_policy_cutoff_violations": null
+  },
+  "synthetic_evidence": {
+    "initial_signal": "HOLD",
+    "signal_returned_at_bar_2": "BUY",
+    "event_timestamp": "2025-01-02 09:20:00",
+    "current_bar_timestamp": "2025-01-02 09:25:00",
+    "current_close": 100,
+    "current_vwap": 100
+  },
+  "full_metrics": null,
+  "half_metrics": null,
+  "side_metrics": null,
+  "exit_metrics": null,
+  "concentration_metrics": null,
+  "audit": {
+    "external_network_attempts": 0,
+    "held_out_access_attempts": 0
+  },
+  "audit_note": "Initial overbroad socket guard blocked pandas platform detection via local socket.gethostname; this was not external network activity. Confirmation uses stdlib synthetic rows, without pandas.",
+  "forbidden_api_counts": {
+    "login": 0,
+    "candle_endpoint": 0,
+    "profile": 0,
+    "account": 0,
+    "funds": 0,
+    "holdings": 0,
+    "positions": 0,
+    "orders": 0,
+    "trade_book": 0,
+    "websocket_live": 0
+  },
+  "precheck": {
+    "passed": 430,
+    "failed": 0,
+    "skipped": 0,
+    "compile_files": 91,
+    "diff_check": "PASS"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "access_sha256": "5bfd14476bec02365f1f3aab7e64e0e276e7dc41b43426bd4eaad072b0317c92",
+  "access": {
+    "schema": "phase27-access-v1",
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "datasets": [
+      {
+        "id": "NEW_STAGE_A_DEVELOPMENT",
+        "lifecycle": [
+          "ACQUIRE",
+          "VALIDATE",
+          "HASH",
+          "REGISTER",
+          "DEVELOPMENT_READABLE"
+        ],
+        "state": "NOT_ACQUIRED"
+      },
+      {
+        "id": "NEW_STAGE_B_SEALED",
+        "lifecycle": [
+          "ACQUIRE",
+          "VALIDATE",
+          "HASH",
+          "REGISTER",
+          "SEALED"
+        ],
+        "state": "NOT_ACQUIRED"
+      },
+      {
+        "id": "NEW_STAGE_C_SEALED",
+        "lifecycle": [
+          "ACQUIRE",
+          "VALIDATE",
+          "HASH",
+          "REGISTER",
+          "SEALED"
+        ],
+        "state": "NOT_ACQUIRED"
+      }
+    ],
+    "physical_presence_permission": false,
+    "Stage_B_first_read": [
+      "Phase26 exact",
+      "Phase27 exact",
+      "cohort frozen",
+      "Stage A complete",
+      "spec frozen",
+      "dataset hashes exact",
+      "contamination frozen",
+      "explicit authorization",
+      "run count 0"
+    ],
+    "first_read_record": [
+      "timestamp",
+      "spec hash",
+      "dataset hash",
+      "authorization",
+      "exposure transition"
+    ],
+    "Stage_C": [
+      "Stage B run exactly once",
+      "all continuation gates pass",
+      "spec unchanged",
+      "hashes unchanged",
+      "Stage C hash exact",
+      "contamination unchanged",
+      "explicit authorization"
+    ],
+    "silent_reset": false
+  }
+}

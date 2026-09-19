@@ -1,0 +1,35 @@
+{
+  "template_sha256": "953cdd79e262317517d832a661ae9f6af790b1c24a37c2a2478657c2ef145a04",
+  "template": {
+    "schema": "phase27-cohort-template-v1",
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "selection_session": "2024-09-17",
+    "fields": [
+      "source_bhavcopy_hash",
+      "candidate_ISIN",
+      "symbol",
+      "STK_EQ_eligibility",
+      "history_252_complete",
+      "liquidity_60_complete",
+      "median_traded_value",
+      "identity_continuity_status",
+      "corporate_action_status",
+      "liquidity_rank",
+      "tie_break_ISIN",
+      "tie_break_symbol",
+      "final_selected",
+      "exclusion_reason"
+    ],
+    "candidates": [],
+    "selection_executed": false,
+    "gate": [
+      "Phase26/27 exact",
+      "calendar/T/selection/windows frozen",
+      "schema verified",
+      "bhavcopies acquired/validated",
+      "identity/actions resolved",
+      "zero critical TODOs",
+      "explicit Phase28B authorization"
+    ]
+  }
+}

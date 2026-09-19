@@ -1,0 +1,413 @@
+{
+  "phase": 26,
+  "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+  "canonicalization": {
+    "encoding": "UTF-8",
+    "serialization": "JSON with lexicographically sorted object keys, separators comma/colon without whitespace, ensure_ascii=false",
+    "hash_input": "canonical_protocol only; wrapper and hash field excluded",
+    "digest": "SHA-256 lowercase hex"
+  },
+  "phase26_protocol_sha256": "2bc4fbf72477f1c7d634a8851522c2086e0e7625e92c9abebea2611192878aaa",
+  "canonical_protocol": {
+    "version": "1.0.0",
+    "phase": 26,
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "prior_cycle": {
+      "status": "BLOCKED — HISTORICAL INDEX MEMBERSHIP NOT PUBLICLY PROVEN",
+      "immutable": true,
+      "authorization_inherited": false,
+      "heldout_inherited": false
+    },
+    "phase25_hashes": {
+      "json": "2095de47c674dc67d9987fa78fddfc5c2f39c8d1023ebc3dbf93e49efe78f00e",
+      "markdown": "ac7780c449e67859225cc21c896d935b0facad8a79e168331f3cc74b46e8c31c",
+      "source_manifest": "8f207632ef473bd868e945f0b407e82ce7487860f836b1cea1707b805d0644cc"
+    },
+    "hypothesis": {
+      "name": "SLOWER-TIMESCALE DIRECTIONAL PERSISTENCE",
+      "mechanism": "Gradual information incorporation and institutionally split order flow may create short-lived continuation at slower intraday horizons.",
+      "entry_rules": null,
+      "forbidden": [
+        "EMA rules",
+        "RSI rules",
+        "VWAP rules",
+        "ORB rules",
+        "candlestick patterns",
+        "indicator combinations"
+      ],
+      "falsification": "Falsified for this cycle if no implementable preregistered formulation shows broadly positive Stage-A gross edge, or canonical Stage B fails pooled gross edge, either co-primary timeframe, withheld edge, breadth, economic, concentration, or chronological gates."
+    },
+    "universe": {
+      "name": "traded STK/EQ selection-session universe",
+      "definition": "Every unique security in the official NSE FINAL bhavcopy for the mechanically frozen selection session with instrument_type=STK and series=EQ.",
+      "limitation": "Not all NSE equities and not every legally listed security; nontrading or suspended securities on that session are outside by definition.",
+      "identity": "ISIN",
+      "extra_liquidity_floor": false
+    },
+    "chronology": {
+      "freeze_point": "Future separately authorized acquisition-readiness start, before new market-data acquisition",
+      "T_NEW": "Latest authoritative NORMAL NSE cash-market session fully completed before that run's calendar date; immutable once resolved",
+      "window": "24 calendar months ending at T_NEW, resolved only with authoritative sessions",
+      "Stage_A": "Earliest 12 calendar months",
+      "Stage_B": "Following 6 calendar months",
+      "Stage_C": "Final 6 calendar months ending at T_NEW",
+      "boundary_rule": "First/last authoritative NORMAL sessions inside each calendar interval",
+      "selection_session": "Last authoritative NORMAL session strictly before Stage A begins",
+      "selection_exclusions": [
+        "special",
+        "Muhurat",
+        "partial",
+        "unresolved"
+      ],
+      "returns_used": false
+    },
+    "schema": {
+      "id": "NSE_BHAVCOPY_CANONICAL_V1",
+      "fields": [
+        "trade_date",
+        "instrument_type",
+        "series",
+        "symbol",
+        "isin",
+        "open",
+        "high",
+        "low",
+        "close",
+        "total_traded_quantity",
+        "total_traded_value"
+      ],
+      "legacy": {
+        "trade_date": "TIMESTAMP",
+        "instrument_type": "STK only when authoritative legacy equity schema establishes it; otherwise unresolved",
+        "series": "SERIES",
+        "symbol": "SYMBOL",
+        "isin": "ISIN",
+        "open": "OPEN",
+        "high": "HIGH",
+        "low": "LOW",
+        "close": "CLOSE",
+        "total_traded_quantity": "TOTTRDQTY",
+        "total_traded_value": "TOTTRDVAL"
+      },
+      "udiff": {
+        "trade_date": "TradDt",
+        "instrument_type": "FinInstrmTp",
+        "series": "SctySrs",
+        "symbol": "TckrSymb",
+        "isin": "ISIN",
+        "open": "OpnPric",
+        "high": "HghPric",
+        "low": "LwPric",
+        "close": "ClsPric",
+        "total_traded_quantity": "TtlTradgVol",
+        "total_traded_value": "TtlTrfVal"
+      },
+      "rules": [
+        "map authoritative header names, never column positions",
+        "ISO date; exact base-10 decimal numeric parsing",
+        "ISIN permanent identity; symbol/series effective-dated",
+        "TOTTRDVAL and TtlTrfVal have one canonical official traded-value semantic",
+        "missing/ambiguous critical field fails closed",
+        "no close-times-volume fallback in this cycle"
+      ]
+    },
+    "history": {
+      "required": 252,
+      "unit": "prior NORMAL trading-session observations before selection session",
+      "valid_observation": "Official final-bhavcopy STK/EQ row resolving to same ISIN",
+      "missing": "ineligible; never impute",
+      "listing": "listing after window begins fails unless all 252 observations exist",
+      "suspension_nontrading": "missing, not zero; ineligible",
+      "symbol_change": "join only with authoritative effective-dated continuity to same ISIN",
+      "corporate_action": "unresolved identity or liquidity comparability fails closed"
+    },
+    "liquidity": {
+      "window": "Exactly 60 NORMAL sessions immediately before selection session",
+      "measure": "median canonical official daily traded value",
+      "legacy": "TOTTRDVAL",
+      "udiff": "TtlTrfVal",
+      "required": 60,
+      "missing": "ineligible; no imputation/special-session substitution",
+      "fallback": null,
+      "arithmetic": "exact decimal"
+    },
+    "eligibility": [
+      "selection-session FINAL bhavcopy presence",
+      "STK",
+      "EQ",
+      "unique valid ISIN",
+      "252 required prior NORMAL observations",
+      "60 complete official traded-value observations",
+      "identity continuity resolved",
+      "no material corporate-action ambiguity affecting identity/liquidity"
+    ],
+    "cohort": {
+      "target": 24,
+      "allowed_count": [
+        24
+      ],
+      "fewer": "BLOCKED / data-quality review",
+      "replacement": false,
+      "rationale": [
+        "inside assessed 20–30 range",
+        "cross-sectional breadth",
+        "operational manageability",
+        "no evidence to change 24"
+      ]
+    },
+    "selection": [
+      "resolve NORMAL selection session",
+      "load official FINAL bhavcopy",
+      "retain unique STK/EQ ISINs",
+      "apply history/identity/action eligibility",
+      "require 60 prior NORMAL traded-value observations",
+      "compute median traded value",
+      "rank descending",
+      "tie-break ISIN ascending then selection-session symbol ascending",
+      "select first 24; block if fewer"
+    ],
+    "diversification": {
+      "selection_rule": null,
+      "sector_cap": false,
+      "current_sector": false,
+      "required_reports": [
+        "instrument contribution concentration",
+        "equal-instrument expectancy",
+        "positive-instrument breadth",
+        "leave-one-instrument-out sensitivity"
+      ],
+      "later_point_in_time_sector_data": "descriptive only absent a new preregistration before exposure"
+    },
+    "timeframes": {
+      "co_primary": [
+        "30m",
+        "60m"
+      ],
+      "winner_selection": false,
+      "source": "FIVE_MINUTE",
+      "anchor": "session open",
+      "cross_session": false,
+      "30m": {
+        "source_bars": 6,
+        "normal_complete": 12,
+        "residual_minutes": 15
+      },
+      "60m": {
+        "source_bars": 12,
+        "normal_complete": 6,
+        "residual_minutes": 15
+      },
+      "residual": "QC only; exclude from research; never pad/merge/fabricate",
+      "special": "manifest-driven",
+      "CAS": "exclude auxiliary rows per validated policy"
+    },
+    "contamination": {
+      "pre_acquisition": "compare all stages/identities to exposure registry",
+      "SBIN": "If selected, retain in 24-cohort, split and logistics. Exclude overlapping exposed SBIN Stage B/C observations from pristine inference, bootstrap inputs, participation denominators and gates; do not replace. Only registry-proven non-overlap may be pristine.",
+      "other": "same identity-date rule for every exposure",
+      "chronology_move": false,
+      "insufficient_pristine_sample": "fail gate; never relax threshold"
+    },
+    "split": {
+      "visible": 16,
+      "withheld": 8,
+      "algorithm": "digest=SHA256(UTF-8 phase26_protocol_sha256 + ':' + ISIN); sort digest ascending then ISIN ascending; first 16 visible, last 8 withheld",
+      "returns": false,
+      "identity_visibility": "allowed for logistics; withheld development price behavior inaccessible"
+    },
+    "roles": {
+      "NEW_STAGE_A_DEVELOPMENT": "readable after authorized acquisition/validation",
+      "NEW_STAGE_B_SEALED": "sealed until spec freeze and canonical authorization",
+      "NEW_STAGE_C_SEALED": "sealed until unchanged Stage B passes all gates",
+      "relabel": false
+    },
+    "budget": {
+      "mechanisms": 1,
+      "max_formulations": 2,
+      "allowed": [
+        "defect repair",
+        "necessary normalization",
+        "choice between two preregistered formulations"
+      ],
+      "forbidden": [
+        "threshold sweeps",
+        "timeframe winner selection",
+        "indicator mining",
+        "repeated stop/target tuning",
+        "remove losing instruments/side/sessions",
+        "post-outcome filters"
+      ],
+      "exhaustion": "new cycle required"
+    },
+    "economics": {
+      "charges": "complete preserved NSE model",
+      "slippage": "preserved adverse model",
+      "position_risk": 0.01,
+      "portfolio_risk": 0.02,
+      "daily_loss_latch": 0.02,
+      "trades_per_day": 3,
+      "trade_limit": "portfolio-wide across all instruments and timeframes; each opened position counts once",
+      "overnight": false,
+      "signal": "completed derived bar only",
+      "execution": "next physical eligible bar/open under frozen implementation; no same-bar hindsight"
+    },
+    "metrics": {
+      "primary": {
+        "name": "equal-condition, equal-instrument gross expectancy per trade in initial-risk units",
+        "aggregation": [
+          "trade gross R",
+          "per-instrument mean R",
+          "equal-instrument condition mean",
+          "equal 30m/60m condition mean"
+        ],
+        "zero_trade": "participation only; no artificial zero profitability"
+      },
+      "secondary": [
+        "net expectancy/P&L",
+        "aggregate gross PF",
+        "realized portfolio drawdown",
+        "trade count",
+        "cost/slippage drag",
+        "positive-instrument breadth",
+        "visible/withheld consistency",
+        "chronological consistency",
+        "concentration",
+        "leave-one-instrument-out sensitivity"
+      ]
+    },
+    "gates": {
+      "sample": {
+        "total": 240,
+        "per_timeframe": 120,
+        "participation_overall": 0.8,
+        "participation_visible": 0.8,
+        "participation_withheld": 0.8,
+        "blocks": 3,
+        "trades_per_block": 60,
+        "session_coverage": 0.9,
+        "change": "none; compatible with 24 instruments and two co-primary conditions"
+      },
+      "signal": {
+        "pooled": ">0",
+        "30m": ">0",
+        "60m": ">0",
+        "visible": ">0",
+        "withheld": ">0",
+        "median_participant": ">0",
+        "positive_fraction": ">=0.60",
+        "winner_or_side_rescue": false
+      },
+      "economic": {
+        "gross_PF": ">=1.10",
+        "max_drawdown": "<=0.20",
+        "net": ">0",
+        "friction": "bounded frozen formula",
+        "cost_rescues_negative_gross": false
+      },
+      "concentration": {
+        "single_trade": "<=0.10",
+        "single_session": "<=0.10",
+        "single_instrument": "<=0.25",
+        "denominator": "zero/non-positive fails closed where governance requires",
+        "LOIO": "report; one-instrument dependence fails"
+      },
+      "chronological": {
+        "blocks": "3 predetermined contiguous blocks; session counts differ by at most one, remainder assigned earliest",
+        "trades_each": ">=60",
+        "positive_blocks": ">=2",
+        "one_positive_block_share": "<=0.60",
+        "posthoc": false
+      }
+    },
+    "statistics": {
+      "replications": 10000,
+      "method": "hierarchical moving-block bootstrap",
+      "seed": 230023,
+      "CI": "95% percentile",
+      "identity": "resample within visible/withheld strata",
+      "time": "contiguous day blocks",
+      "Holm": "two co-primary timeframe tests",
+      "IID_trade": false,
+      "phase26_computation": false
+    },
+    "quality": {
+      "fail_closed": [
+        "wrong timezone",
+        "duplicate source rows",
+        "missing required bars",
+        "off-grid bars",
+        "unresolved special session",
+        "unresolved CAS",
+        "identity mismatch",
+        "token mismatch",
+        "corporate-action ambiguity",
+        "schema mismatch",
+        "incomplete liquidity window",
+        "hash mismatch",
+        "source-format ambiguity"
+      ],
+      "schema_tests_before_selection": true
+    },
+    "governance": {
+      "new_bindings": [
+        "protocol hash",
+        "dataset ID",
+        "role",
+        "cohort hash",
+        "calendar hash",
+        "identity hash",
+        "liquidity hash",
+        "raw hashes",
+        "derived hashes",
+        "first-read timestamp",
+        "strategy/spec hash",
+        "canonical-run count",
+        "exposure status"
+      ],
+      "old_registry_mutation": false,
+      "canonical": "one authorized Stage B read/run; Stage C only after unchanged Stage B passes",
+      "acquisition_authorized": false
+    },
+    "defects": {
+      "before_heldout": "synthetic/Stage-A correction then full revalidation",
+      "after_heldout": "no silent patch/rerun; record contamination",
+      "semantic_change": "fresh unexposed validation",
+      "one_run": true
+    },
+    "stops": [
+      "no implementable structural formulation",
+      "Stage A broad gross edge absent",
+      "budget exhausted",
+      "Stage B pooled gross <=0",
+      "either timeframe gross <=0",
+      "withheld gross <=0",
+      "insufficient breadth",
+      "one-instrument dependence",
+      "negative net economics",
+      "excessive friction",
+      "PF failure",
+      "drawdown failure",
+      "provenance/correctness failure",
+      "post-hoc subgroup dependence"
+    ],
+    "phase27": {
+      "status": "READY for acquisition-readiness/freeze work only",
+      "candles_authorized": false,
+      "inference_critical_TODOs": []
+    },
+    "counters": {
+      "network_requests": 0,
+      "external_metadata_reads": 0,
+      "bhavcopy_downloads": 0,
+      "cohort_selections": 0,
+      "candle_calls": 0,
+      "intraday_rows": 0,
+      "strategy_implementations": 0,
+      "strategy_executions": 0,
+      "signals": 0,
+      "backtests": 0,
+      "optimizations": 0,
+      "SmartAPI_calls": 0
+    }
+  }
+}

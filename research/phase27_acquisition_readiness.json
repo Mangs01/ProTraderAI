@@ -1,0 +1,186 @@
+{
+  "phase": 27,
+  "canonicalization": "SHA256 over readiness object canonical UTF-8 JSON; sorted keys; comma/colon separators; ensure_ascii=false; wrapper/hash excluded",
+  "phase27_readiness_sha256": "9f3903d1e82f0e5d1cc3fd0d9f727ef66b1c367717ccc6b60addd74bcfa88815",
+  "readiness": {
+    "schema": "phase27-readiness-v1",
+    "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+    "phase26_protocol_sha256": "2bc4fbf72477f1c7d634a8851522c2086e0e7625e92c9abebea2611192878aaa",
+    "acquisition_start": {
+      "utc": "2026-09-18T06:25:02.6411324Z",
+      "local": "2026-09-18T11:55:03.3197372+05:30",
+      "timezone": "Asia/Calcutta",
+      "calendar_date": "2026-09-18"
+    },
+    "network": {
+      "calendar_GET_attempts": 7,
+      "calendar_successful_HTTP": 5,
+      "circular_session_GET_attempts": 9,
+      "circular_session_successes": 8,
+      "search_batches": 9,
+      "search_queries": 29,
+      "bhavcopy_GETs": 0,
+      "security_price_turnover_GETs": 0,
+      "SmartAPI_logins": 0,
+      "historical_candle_calls": 0,
+      "intraday_rows": 0,
+      "order_account_live_calls": 0
+    },
+    "T_NEW": {
+      "date": "2026-09-17",
+      "classification": "NORMAL",
+      "candidate_prior_date": "2026-09-17",
+      "rule": "latest authoritative NORMAL session completed before Phase27 calendar date",
+      "immutable": true
+    },
+    "stages": {
+      "NEW_STAGE_A_DEVELOPMENT": {
+        "calendar_first": "2024-09-18",
+        "calendar_last": "2025-09-17",
+        "first_session": "2024-09-18",
+        "last_session": "2025-09-17",
+        "role": "DEVELOPMENT"
+      },
+      "NEW_STAGE_B_SEALED": {
+        "calendar_first": "2025-09-18",
+        "calendar_last": "2026-03-17",
+        "first_session": "2025-09-18",
+        "last_session": "2026-03-17",
+        "role": "SEALED"
+      },
+      "NEW_STAGE_C_SEALED": {
+        "calendar_first": "2026-03-18",
+        "calendar_last": "2026-09-17",
+        "first_session": "2026-03-18",
+        "last_session": "2026-09-17",
+        "role": "SEALED"
+      }
+    },
+    "selection": {
+      "date": "2024-09-17",
+      "classification": "NORMAL",
+      "excluded_from_preceding_windows": true
+    },
+    "liquidity": {
+      "first": "2024-06-21",
+      "last": "2024-09-16",
+      "count": 60,
+      "hash": "386e2c19593c40e81f271f776a0134089476596eff471aab782c1cc6b47c6398"
+    },
+    "history": {
+      "first": "2023-09-07",
+      "last": "2024-09-16",
+      "count": 252,
+      "hash": "9fe2580d123522ad6b8993236407967a060fe720b28dd7a9464636d88cefe734",
+      "selection_excluded": true
+    },
+    "bindings": {
+      "calendar_hash": "13274fbe46c6df033b93537feda34532ccced0670c9153ccd135fba6b3084c72",
+      "exposure_hash": "b9ddb033008b6c313dc899d9a8020375f8362a6ecd329bfc704d7dbb86166d91",
+      "schema_file_hash": "8ac9c2d38bd3f3c2e25f66dbf25bd8d137046f68962c50008a155c69db24945b",
+      "bhavcopy_plan_hash": "3f5b7223d9397e2d1f95070551975f79b67d1ccdc8ee810381fa25656ae7f846",
+      "cohort_template_hash": "953cdd79e262317517d832a661ae9f6af790b1c24a37c2a2478657c2ef145a04",
+      "candle_template_hash": "cef3720cadd3a7968982934fb82a2cb273051b0c65c52f0fedb08672e6c988ac",
+      "access_hash": "5bfd14476bec02365f1f3aab7e64e0e276e7dc41b43426bd4eaad072b0317c92"
+    },
+    "contamination": {
+      "affected": "Any held-out stage/condition whose required interval overlaps an exposed identity-date range",
+      "treatment": "Instrument ineligible for pristine inference for affected full stage/condition; no trades or expectancy in pristine aggregation; remains cohort/split member and diagnostic; no replacement.",
+      "denominator": "A: all 24 selected identities",
+      "participation": "numerator is all-24 identities both pristine-eligible and qualifying participants; contaminated identity remains denominator nonparticipant",
+      "minimum": {
+        "overall": 20,
+        "visible": 13,
+        "withheld": 7,
+        "rounding": "ceil of 80% of 24/16/8"
+      },
+      "aggregation": "only pristine-eligible participants enter equal-instrument expectancy; no artificial zero profitability",
+      "failure": "below any minimum before results blocks held-out evaluation"
+    },
+    "sealing": {
+      "schema": "phase27-access-v1",
+      "cycle_id": "NSE_PUBLIC_STKEQ_24_CYCLE_001",
+      "datasets": [
+        {
+          "id": "NEW_STAGE_A_DEVELOPMENT",
+          "lifecycle": [
+            "ACQUIRE",
+            "VALIDATE",
+            "HASH",
+            "REGISTER",
+            "DEVELOPMENT_READABLE"
+          ],
+          "state": "NOT_ACQUIRED"
+        },
+        {
+          "id": "NEW_STAGE_B_SEALED",
+          "lifecycle": [
+            "ACQUIRE",
+            "VALIDATE",
+            "HASH",
+            "REGISTER",
+            "SEALED"
+          ],
+          "state": "NOT_ACQUIRED"
+        },
+        {
+          "id": "NEW_STAGE_C_SEALED",
+          "lifecycle": [
+            "ACQUIRE",
+            "VALIDATE",
+            "HASH",
+            "REGISTER",
+            "SEALED"
+          ],
+          "state": "NOT_ACQUIRED"
+        }
+      ],
+      "physical_presence_permission": false,
+      "Stage_B_first_read": [
+        "Phase26 exact",
+        "Phase27 exact",
+        "cohort frozen",
+        "Stage A complete",
+        "spec frozen",
+        "dataset hashes exact",
+        "contamination frozen",
+        "explicit authorization",
+        "run count 0"
+      ],
+      "first_read_record": [
+        "timestamp",
+        "spec hash",
+        "dataset hash",
+        "authorization",
+        "exposure transition"
+      ],
+      "Stage_C": [
+        "Stage B run exactly once",
+        "all continuation gates pass",
+        "spec unchanged",
+        "hashes unchanged",
+        "Stage C hash exact",
+        "contamination unchanged",
+        "explicit authorization"
+      ],
+      "silent_reset": false
+    },
+    "authorization": {
+      "Phase28A": "READY for separate explicit daily/bhavcopy acquisition and validation only",
+      "Phase28B": "NOT_AUTHORIZED",
+      "Phase28C": "NOT_AUTHORIZED",
+      "cohort_selection": false,
+      "candles": false,
+      "strategy_backtest": false
+    },
+    "TODOs": [],
+    "counters": {
+      "cohort_selections": 0,
+      "liquidity_rankings": 0,
+      "strategies": 0,
+      "signals": 0,
+      "backtests": 0,
+      "optimizations": 0
+    }
+  }
+}

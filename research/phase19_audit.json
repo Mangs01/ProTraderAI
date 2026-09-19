@@ -1,0 +1,10 @@
+{
+  "held_out_csv_read_attempts": 0,
+  "held_out_metadata_read_attempts": 0,
+  "network_attempts": 0,
+  "historical_strategy_i_evaluations": 0,
+  "strategy_signal_calls": 0,
+  "engine_calls": 0,
+  "specification_hash": "97a972931ee6213fa946869ef1a394ac3606273f6f9c39a9962b7c2ac91c0b62",
+  "hash_reconciliation": true
+}
