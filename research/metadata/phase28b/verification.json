@@ -1,0 +1,42 @@
+{
+  "compile": {
+    "python_sources": 103,
+    "status": "PASS"
+  },
+  "counters": {
+    "SmartAPI_calls": 0,
+    "Stage_B_C_reads": 0,
+    "broker_requests": 0,
+    "candle_requests": 0,
+    "intraday_rows": 0,
+    "network_requests": 0,
+    "orders": 0,
+    "research_backtests": 0,
+    "research_strategy_executions": 0
+  },
+  "final_artifact_binding_checks": "PASS",
+  "full_offline_repeat_run": {
+    "cohort_and_all_selection_products_identical": true,
+    "phase28b_selection_sha256": "5f676f6fe9e4d1fd752bb8d9d94aecf78f38740817ea1b59cd1581e3d952b7e5",
+    "raw_files_revalidated_again": 253,
+    "status": "PASS"
+  },
+  "git_status": "?? research/metadata/phase28a/\n?? research/metadata/phase28ar/\n?? research/metadata/phase28b/\n?? research/phase28a_daily.py\n?? research/phase28ar_daily.py\n?? research/phase28b_selection.py\n?? tests/test_phase28a_daily.py\n?? tests/test_phase28ar_daily.py\n?? tests/test_phase28b_selection.py",
+  "historical_evidence_unchanged": true,
+  "nothing_staged_committed_pushed": true,
+  "source_sha256": "3c90afe699f920be25ef166fddf14d4a4e8ad53931e0f6bed1452b9974205d9a",
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_FAILURES",
+  "test_sha256": "ed2a2db8e2d1dee45235980c7acb66dc5e6086dc17df86155850c5858224df10",
+  "tests": {
+    "command": "python -m pytest -q",
+    "failed": 3,
+    "known_failures": [
+      "tests/test_phase17_research.py::test_frozen_production_engine_and_prior_artifacts",
+      "tests/test_phase19_preregistration.py::test_unchanged_sources_match_preimplementation_snapshot",
+      "tests/test_phase19_preregistration.py::test_phase20a_frozen_spec_and_preservation"
+    ],
+    "new_failures": 0,
+    "passed": 526,
+    "phase28b_passed": 27
+  }
+}

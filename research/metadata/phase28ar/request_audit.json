@@ -1,0 +1,37 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "bytes": 95451,
+      "date": "2023-09-05",
+      "ended_utc": "2026-09-20T07:10:20.051199+00:00",
+      "http_status": 200,
+      "result": "SUCCESS",
+      "sha256": "cc837a2ac70a3117ebd0d278ca80840f4e2361d1e5e0284a3bcd40037ef5fb51",
+      "started_utc": "2026-09-20T07:10:18.101300+00:00",
+      "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2023/SEP/cm05SEP2023bhav.csv.zip"
+    },
+    {
+      "attempt": 1,
+      "bytes": 95020,
+      "date": "2023-09-06",
+      "ended_utc": "2026-09-20T07:10:21.749092+00:00",
+      "http_status": 200,
+      "result": "SUCCESS",
+      "sha256": "b69d6d9c82005e7ec2542c37426760b31263004c86cc3e9c801040ff91e66f41",
+      "started_utc": "2026-09-20T07:10:21.083557+00:00",
+      "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2023/SEP/cm06SEP2023bhav.csv.zip"
+    }
+  ],
+  "counters": {
+    "failed_attempts": 0,
+    "failures": 0,
+    "http_failures": 0,
+    "malformed_payloads": 0,
+    "non_200_responses": 0,
+    "official_file_requests": 2,
+    "retries": 0,
+    "schema_failures": 0,
+    "successes": 2
+  }
+}

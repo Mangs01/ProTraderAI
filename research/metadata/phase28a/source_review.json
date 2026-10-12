@@ -1,0 +1,30 @@
+{
+  "canonical_sources": "Official NSE public archive URLs recorded per request; no mirrors or substitutes",
+  "credential_reads": 0,
+  "disposition": "BLOCKED; no date substitution or frozen artifact modification; future calendar/protocol review requires separate authorization",
+  "format_reference": "https://www.nseindia.com/all-reports",
+  "frozen_legacy_value": "TOTTRDVAL",
+  "frozen_udiff_value": "TtlTrfVal",
+  "legacy_identity_evidence": "Preserved Phase25 official CM legacy sample and NSE EQ series legend; EQ covers the cash instrument family including ETFs, matching official UDiFF STK/EQ sample. Other legacy series are not classified as STK.",
+  "metadata_web_open_calls": 4,
+  "metadata_web_search_batches": 2,
+  "metadata_web_search_queries": 3,
+  "missing_sessions": [
+    {
+      "attempts": 3,
+      "date": "2024-01-22",
+      "finding": "Official NSE Clearing notice addresses January 22 public holiday and references NSE/CMTR/60338; direct CMTR60338 web open failed",
+      "frozen_classification": "NORMAL",
+      "http_status": 404,
+      "official_reference": "https://nsearchives.nseindia.com/content/circulars/CMPT60343.pdf"
+    },
+    {
+      "attempts": 3,
+      "date": "2024-05-20",
+      "finding": "Official NSE capital-market circular explicitly declares May 20 a trading holiday",
+      "frozen_classification": "NORMAL",
+      "http_status": 404,
+      "official_reference": "https://nsearchives.nseindia.com/content/circulars/CMTR61518.pdf"
+    }
+  ]
+}

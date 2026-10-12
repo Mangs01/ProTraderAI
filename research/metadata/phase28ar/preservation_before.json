@@ -1,0 +1,28 @@
+{
+  "branch": "main",
+  "files": {
+    "research/metadata/phase28a/identity_anomalies.json": "76a339763a5bb43d8b4ae4a4656e7654f37a0c2ec6932649fdd8354aa1893af1",
+    "research/metadata/phase28a/precheck.json": "79e40e457603173c60793335e9fe6cfa548b892d5b048db95b69b15cd56c4186",
+    "research/metadata/phase28a/report.md": "6c38478fd6476de3e6464209b496c9516f48a081e7da07c71981c4145f828ab9",
+    "research/metadata/phase28a/request_audit.json": "7d9d52fd9bdc7aea28b1727b05890a736eef554a959105f2084835fc60bbb967",
+    "research/metadata/phase28a/result.json": "741452eff821b6a9d3e5ff8f2661ca0cf8a18e07296905dc05a7c050d53ce0d1",
+    "research/metadata/phase28a/session_index.json": "4ba04816486cdb7a5b3eb9c646ea761db7db57f343e05964ae46b3b37985175f",
+    "research/metadata/phase28a/source_review.json": "ed1d263d14564f1f6c9063001687feca5377eb2d99541a53c86ae7dd16f95897",
+    "research/metadata/phase28a/validation_audit.json": "ec582d8a9ff557183cf7f7252fa42034bcc35642486eeb9462a4b85bb826fa0e",
+    "research/metadata/phase28a/verification.json": "efa47374b6097dc8f09f05865fc2ecfc67b3a7f0997413b780900d35d578ee7b",
+    "research/phase26_exposure_registry.json": "739ec5189a0ba2038999ac9c9cbb38eeebac6c18766b0c9d6055db7ba5e52df2",
+    "research/phase26_new_cycle_protocol.json": "9d0852edeb1085cce85a19bd26a89f175632b0a4547ef9fe406c6ea9632ffc26",
+    "research/phase26_schema_mapping.json": "8ac9c2d38bd3f3c2e25f66dbf25bd8d137046f68962c50008a155c69db24945b",
+    "research/phase27_access_registry.json": "4109d9b129ea6c0dcf36aeac30d1bc442c8913191fe2017f1a6dbcbc2f2958d5",
+    "research/phase27_acquisition_readiness.json": "762ed33451cba5ba9d09a1e76cd27794de8656fc01e040662cfc266b743603f0",
+    "research/phase27_bhavcopy_acquisition_plan.json": "c8924795e14b55fca5006bd4a263754938aac1ab9ef455440a627d0ec53878b7",
+    "research/phase27_calendar_manifest.json": "d3cc50c96ea574c4c56f44c81fd180ecbb95aa69004679e1d1c1e00582144459",
+    "research/phase27_candle_acquisition_template.json": "addee29fbec41534a50dec1056e4e5cb9fe9caca8e915fa545cfb0813f0ecc69",
+    "research/phase27_cohort_selection_template.json": "c2a45492b27c17619e205f3c670747b44ddd1fea64d371e8c82638d5a84f27be",
+    "research/phase27_exposure_overlap.json": "64dec7b20bdb93a08f594f6cca91528c01d0f02153284609f5b2df0c913a6918",
+    "research/phase28a_daily.py": "6d51066caa509863e22c7d8e314c26369aa1e8e168101fe4b79dbc46e947d197",
+    "tests/test_phase28a_daily.py": "f78ee432b7b011ad843436d1ed6ad608031580f6d15533e71771d671077470e3"
+  },
+  "head": "7ff8b3e227f1507424aa6611e7cb62120a5a76a6",
+  "original_blocked_raw_manifest": "b96b6681664c08d70408e9274c0e188b9ad82fbaaac32149a8aa4e7ecd9da7e5"
+}

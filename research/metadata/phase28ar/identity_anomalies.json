@@ -1,0 +1,576 @@
+{
+  "corporate_action_review_complete": false,
+  "resolution": "UNRESOLVED; Phase28B must assess authoritative continuity/action evidence; no eligibility decision, merging or replacement",
+  "same_isin_multiple_symbols": {
+    "INE00LM01011": [
+      "SONAMCLOCK",
+      "SONAMLTD"
+    ],
+    "INE069I01010": [
+      "EMBDL",
+      "IBREALEST"
+    ],
+    "INE071N01016": [
+      "EPIGRAL",
+      "MFL"
+    ],
+    "INE148I01020": [
+      "IBULHSGFIN",
+      "SAMMAANCAP"
+    ],
+    "INE152B01027": [
+      "ACLGATI",
+      "GATI"
+    ],
+    "INE192B01031": [
+      "WELSPUNIND",
+      "WELSPUNLIV"
+    ],
+    "INE208C01025": [
+      "AEGISCHEM",
+      "AEGISLOG"
+    ],
+    "INE285H01022": [
+      "ATLANTA",
+      "ATLANTAA"
+    ],
+    "INE498L01015": [
+      "L&TFH",
+      "LTF"
+    ],
+    "INE749B01020": [
+      "ORTINGLOBE",
+      "ORTINLAB"
+    ],
+    "INE818H01020": [
+      "DAAWAT",
+      "LTFOODS"
+    ],
+    "INE854D01024": [
+      "MCDOWELL-N",
+      "UNITDSPR"
+    ],
+    "INE885A01032": [
+      "AMARAJABAT",
+      "ARE&M"
+    ],
+    "INF109K012R6": [
+      "ICICINIFTY",
+      "NIFTYIETF"
+    ],
+    "INF109KA1962": [
+      "ICICINF100",
+      "NIF100IETF"
+    ],
+    "INF109KB10T8": [
+      "ICICILOVOL",
+      "LOWVOLIETF"
+    ],
+    "INF109KB1WY5": [
+      "ICICINV20",
+      "NV20IETF"
+    ],
+    "INF109KB1XT3": [
+      "ICICIMCAP",
+      "MIDSELIETF"
+    ],
+    "INF109KC10S8": [
+      "PSUBANKICI",
+      "PSUBNKIETF"
+    ],
+    "INF109KC14A8": [
+      "GSEC5IETF",
+      "ICICI5GSEC"
+    ],
+    "INF109KC15I8": [
+      "BANKIETF",
+      "ICICIBANKN"
+    ],
+    "INF109KC15T5": [
+      "ICICIQTY30",
+      "QUAL30IETF"
+    ],
+    "INF109KC16E5": [
+      "ICICIINFRA",
+      "INFRAIETF"
+    ],
+    "INF109KC16I6": [
+      "ICICITECH",
+      "ITIETF"
+    ],
+    "INF109KC17C7": [
+      "ICICIMOM30",
+      "MOM30IETF"
+    ],
+    "INF109KC17L8": [
+      "FINIETF",
+      "ICICIFIN"
+    ],
+    "INF109KC18O0": [
+      "GSEC10IETF",
+      "ICICI10GS"
+    ],
+    "INF109KC19O8": [
+      "COMMOIETF",
+      "ICICICOMMO"
+    ],
+    "INF109KC1E35": [
+      "ICICIBANKP",
+      "PVTBANIETF"
+    ],
+    "INF109KC1G82": [
+      "ICICIM150",
+      "MIDCAPIETF"
+    ],
+    "INF109KC1KT9": [
+      "ICICILIQ",
+      "LIQUIDIETF"
+    ],
+    "INF109KC1N59": [
+      "ALPL30IETF",
+      "ICICIALPLV"
+    ],
+    "INF109KC1NS5": [
+      "ICICINXT50",
+      "NEXT50IETF"
+    ],
+    "INF109KC1NT3": [
+      "GOLDIETF",
+      "ICICIGOLD"
+    ],
+    "INF109KC1Q72": [
+      "HEALTHIETF",
+      "ICICIPHARM"
+    ],
+    "INF109KC1R48": [
+      "FMCGIETF",
+      "ICICIFMCG"
+    ],
+    "INF109KC1V42": [
+      "CONSUMIETF",
+      "ICICICONSU"
+    ],
+    "INF109KC1V59": [
+      "BSE500IETF",
+      "ICICI500"
+    ],
+    "INF109KC1Y49": [
+      "AUTOIETF",
+      "ICICIAUTO"
+    ],
+    "INF109KC1Y56": [
+      "ICICISILVE",
+      "SILVERIETF"
+    ],
+    "INF174K014P6": [
+      "KOTAKNIFTY",
+      "NIFTY1"
+    ],
+    "INF174K01F59": [
+      "BANKNIFTY1",
+      "KOTAKBKETF"
+    ],
+    "INF174K01Z71": [
+      "KOTAKNV20",
+      "NV20"
+    ],
+    "INF174KA1GC5": [
+      "IT",
+      "KOTAKIT"
+    ],
+    "INF174KA1HJ8": [
+      "GOLD1",
+      "KOTAKGOLD"
+    ],
+    "INF174KA1IA5": [
+      "ALPHA",
+      "KOTAKALPHA"
+    ],
+    "INF174KA1IB3": [
+      "KOTAKMID50",
+      "MIDCAP"
+    ],
+    "INF174KA1IY5": [
+      "KOTAKLOVOL",
+      "LOWVOL1"
+    ],
+    "INF174KA1JE5": [
+      "CONS",
+      "KOTAKCONS"
+    ],
+    "INF174KA1JF2": [
+      "KOTAKMNC",
+      "MNC"
+    ],
+    "INF174KA1KU9": [
+      "KOTAKSILVE",
+      "SILVER1"
+    ],
+    "INF174KA1LV5": [
+      "KOTAKLIQ",
+      "LIQUID1"
+    ],
+    "INF346A01034": [
+      "ICICISENSX",
+      "SENSEXIETF"
+    ],
+    "INF373I01023": [
+      "KOTAKPSUBK",
+      "PSUBANK"
+    ],
+    "INF666M01IH2": [
+      "GROWEV",
+      "GROWWEV"
+    ],
+    "INF740KA1CL0": [
+      "DSPN50ETF",
+      "NIFTY50ADD"
+    ],
+    "INF740KA1QK2": [
+      "DSPNEWETF",
+      "EQUAL50ADD"
+    ],
+    "INF740KA1QL0": [
+      "DSPQ50ETF",
+      "MIDQ50ADD"
+    ],
+    "INF740KA1RE3": [
+      "DSPSILVETF",
+      "SILVERADD"
+    ],
+    "INF740KA1RX3": [
+      "BANKETFADD",
+      "DSPBANKETF"
+    ],
+    "INF740KA1SW3": [
+      "DSPGOLDETF",
+      "GOLDETFADD"
+    ],
+    "INF740KA1SX1": [
+      "DSPITETF",
+      "ITETFADD"
+    ],
+    "INF740KA1SY9": [
+      "DSPPSBKETF",
+      "PSUBANKADD"
+    ],
+    "INF740KA1SZ6": [
+      "DSPSENXETF",
+      "SENSEXADD"
+    ],
+    "INF740KA1TA7": [
+      "DSPPVBKETF",
+      "PVTBANKADD"
+    ]
+  },
+  "same_symbol_multiple_isins": {
+    "AARTECH": [
+      "INE01C001018",
+      "INE01C001026"
+    ],
+    "ADFFOODS": [
+      "INE982B01019",
+      "INE982B01027"
+    ],
+    "ALMONDZ": [
+      "INE326B01027",
+      "INE326B01035"
+    ],
+    "ALPL30IETF": [
+      "INF109KC17V7",
+      "INF109KC1N59"
+    ],
+    "ANDHRAPAP": [
+      "INE435A01028",
+      "INE435A01051"
+    ],
+    "ATALREAL": [
+      "INE0ALR01011",
+      "INE0ALR01029"
+    ],
+    "AUTOIETF": [
+      "INF109KC10V2",
+      "INF109KC1Y49"
+    ],
+    "BALAXI": [
+      "INE618N01014",
+      "INE618N01022"
+    ],
+    "BBL": [
+      "INE464A01028",
+      "INE464A01036"
+    ],
+    "BCLIND": [
+      "INE412G01016",
+      "INE412G01024"
+    ],
+    "BDL": [
+      "INE171Z01018",
+      "INE171Z01026"
+    ],
+    "BHAGCHEM": [
+      "INE414D01019",
+      "INE414D01027"
+    ],
+    "BTML": [
+      "INE0EEJ01015",
+      "INE0EEJ01023"
+    ],
+    "CANBK": [
+      "INE476A01014",
+      "INE476A01022"
+    ],
+    "CANTABIL": [
+      "INE068L01016",
+      "INE068L01024"
+    ],
+    "CGCL": [
+      "INE180C01026",
+      "INE180C01042"
+    ],
+    "COCHINSHIP": [
+      "INE704P01017",
+      "INE704P01025"
+    ],
+    "DAVANGERE": [
+      "INE179G01011",
+      "INE179G01029"
+    ],
+    "DOLPHIN": [
+      "INE920A01029",
+      "INE920A01037"
+    ],
+    "ELECON": [
+      "INE205B01023",
+      "INE205B01031"
+    ],
+    "FILATFASH": [
+      "INE185E01013",
+      "INE185E01021"
+    ],
+    "FMCGIETF": [
+      "INF109KC19V3",
+      "INF109KC1R48"
+    ],
+    "FOCUS": [
+      "INE593W01010",
+      "INE593W01028"
+    ],
+    "HAL": [
+      "INE066F01012",
+      "INE066F01020"
+    ],
+    "HDFCLOWVOL": [
+      "INF179KC1DN2",
+      "INF179KC1HU8"
+    ],
+    "HDFCMID150": [
+      "INF179KC1FA4",
+      "INF179KC1HT0"
+    ],
+    "HDFCMOMENT": [
+      "INF179KC1DM4",
+      "INF179KC1HV6"
+    ],
+    "HDFCNEXT50": [
+      "INF179KC1DA9",
+      "INF179KC1HS2"
+    ],
+    "HDFCNIF100": [
+      "INF179KC1DB7",
+      "INF179KC1HR4"
+    ],
+    "HDFCNIFBAN": [
+      "INF179KC1AN8",
+      "INF179KC1HY0"
+    ],
+    "HDFCNIFIT": [
+      "INF179KC1DX1",
+      "INF179KC1IA8"
+    ],
+    "HDFCPVTBAN": [
+      "INF179KC1DW3",
+      "INF179KC1HZ7"
+    ],
+    "HDFCSENSEX": [
+      "INF179KC1973",
+      "INF179KC1HX2"
+    ],
+    "HMAAGRO": [
+      "INE0ECP01016",
+      "INE0ECP01024"
+    ],
+    "HPAL": [
+      "INE0GSL01016",
+      "INE0GSL01024"
+    ],
+    "JAYBARMARU": [
+      "INE571B01028",
+      "INE571B01036"
+    ],
+    "JBCHEPHARM": [
+      "INE572A01028",
+      "INE572A01036"
+    ],
+    "KAMOPAINTS": [
+      "INE0BTI01029",
+      "INE0BTI01037"
+    ],
+    "KAUSHALYA": [
+      "INE234I01010",
+      "INE234I01028"
+    ],
+    "KIMS": [
+      "INE967H01017",
+      "INE967H01025"
+    ],
+    "KPIGREEN": [
+      "INE542W01017",
+      "INE542W01025"
+    ],
+    "KSB": [
+      "INE999A01015",
+      "INE999A01023"
+    ],
+    "LAL": [
+      "INE740X01015",
+      "INE740X01023"
+    ],
+    "LOWVOLIETF": [
+      "INF109KB10T8",
+      "INF109KC19U5"
+    ],
+    "MANORAMA": [
+      "INE00VM01010",
+      "INE00VM01036"
+    ],
+    "MIDCAPIETF": [
+      "INF109KC11W8",
+      "INF109KC1G82"
+    ],
+    "MIDSELIETF": [
+      "INF109KB1XT3",
+      "INF109KC10W0"
+    ],
+    "MITTAL": [
+      "INE997Y01019",
+      "INE997Y01027"
+    ],
+    "MKPL": [
+      "INE964W01013",
+      "INE964W01021"
+    ],
+    "NESTLEIND": [
+      "INE239A01016",
+      "INE239A01024"
+    ],
+    "NIF100IETF": [
+      "INF109KA1962",
+      "INF109KC16V9"
+    ],
+    "NV20IETF": [
+      "INF109KB1WY5",
+      "INF109KC11V0"
+    ],
+    "PERSISTENT": [
+      "INE262H01013",
+      "INE262H01021"
+    ],
+    "PGEL": [
+      "INE457L01011",
+      "INE457L01029"
+    ],
+    "PGIL": [
+      "INE940H01014",
+      "INE940H01022"
+    ],
+    "PREMEXPLN": [
+      "INE863B01011",
+      "INE863B01029"
+    ],
+    "PVTBANIETF": [
+      "INF109KC18U7",
+      "INF109KC1E35"
+    ],
+    "QUAL30IETF": [
+      "INF109KC15T5",
+      "INF109KC18V5"
+    ],
+    "REFEX": [
+      "INE056I01017",
+      "INE056I01025"
+    ],
+    "REMSONSIND": [
+      "INE474C01015",
+      "INE474C01023"
+    ],
+    "RPPL": [
+      "INE760W01015",
+      "INE760W01023"
+    ],
+    "RUSHIL": [
+      "INE573K01017",
+      "INE573K01025"
+    ],
+    "SAPPHIRE": [
+      "INE806T01012",
+      "INE806T01020"
+    ],
+    "SBGLP": [
+      "INE05ST01010",
+      "INE05ST01028"
+    ],
+    "SDBL": [
+      "INE480C01020",
+      "INE480C01038"
+    ],
+    "SHAILY": [
+      "INE151G01010",
+      "INE151G01028"
+    ],
+    "SHAREINDIA": [
+      "INE932X01018",
+      "INE932X01026"
+    ],
+    "SIGACHI": [
+      "INE0D0K01014",
+      "INE0D0K01022"
+    ],
+    "SONAMLTD": [
+      "INE00LM01011",
+      "INE00LM01029"
+    ],
+    "SPORTKING": [
+      "INE885H01011",
+      "INE885H01029"
+    ],
+    "SURYAROSNI": [
+      "INE335A01012",
+      "INE335A01020"
+    ],
+    "TALBROAUTO": [
+      "INE187D01011",
+      "INE187D01029"
+    ],
+    "THEMISMED": [
+      "INE083B01016",
+      "INE083B01024"
+    ],
+    "UTINIFTETF": [
+      "INF789F1AZC0",
+      "INF789FB1X41"
+    ],
+    "VARDMNPOLY": [
+      "INE835A01011",
+      "INE835A01029"
+    ],
+    "VBL": [
+      "INE200M01021",
+      "INE200M01039"
+    ],
+    "VERTOZ": [
+      "INE188Y01015",
+      "INE188Y01023"
+    ]
+  }
+}

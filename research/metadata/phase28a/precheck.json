@@ -1,0 +1,33 @@
+{
+  "all_normal": true,
+  "branch": "main",
+  "bulk_paths_ignored": true,
+  "calendar_sha256": "13274fbe46c6df033b93537feda34532ccced0670c9153ccd135fba6b3084c72",
+  "credentials_required": false,
+  "duplicate_dates": 0,
+  "frozen_file_sha256": {
+    "research/phase26_exposure_registry.json": "739ec5189a0ba2038999ac9c9cbb38eeebac6c18766b0c9d6055db7ba5e52df2",
+    "research/phase26_new_cycle_protocol.json": "9d0852edeb1085cce85a19bd26a89f175632b0a4547ef9fe406c6ea9632ffc26",
+    "research/phase26_schema_mapping.json": "8ac9c2d38bd3f3c2e25f66dbf25bd8d137046f68962c50008a155c69db24945b",
+    "research/phase27_access_registry.json": "4109d9b129ea6c0dcf36aeac30d1bc442c8913191fe2017f1a6dbcbc2f2958d5",
+    "research/phase27_acquisition_readiness.json": "762ed33451cba5ba9d09a1e76cd27794de8656fc01e040662cfc266b743603f0",
+    "research/phase27_bhavcopy_acquisition_plan.json": "c8924795e14b55fca5006bd4a263754938aac1ab9ef455440a627d0ec53878b7",
+    "research/phase27_calendar_manifest.json": "d3cc50c96ea574c4c56f44c81fd180ecbb95aa69004679e1d1c1e00582144459",
+    "research/phase27_candle_acquisition_template.json": "addee29fbec41534a50dec1056e4e5cb9fe9caca8e915fa545cfb0813f0ecc69",
+    "research/phase27_cohort_selection_template.json": "c2a45492b27c17619e205f3c670747b44ddd1fea64d371e8c82638d5a84f27be",
+    "research/phase27_exposure_overlap.json": "64dec7b20bdb93a08f594f6cca91528c01d0f02153284609f5b2df0c913a6918"
+  },
+  "history_sha256": "9fe2580d123522ad6b8993236407967a060fe720b28dd7a9464636d88cefe734",
+  "initial_clean_evidence": "Read-only git status before Phase28A file creation returned no entries",
+  "initial_working_tree_clean": true,
+  "liquidity_sha256": "386e2c19593c40e81f271f776a0134089476596eff471aab782c1cc6b47c6398",
+  "planned_dates": 253,
+  "protocol_sha256": "2bc4fbf72477f1c7d634a8851522c2086e0e7625e92c9abebea2611192878aaa",
+  "public_source": "https://www.nseindia.com/all-reports",
+  "readiness_sha256": "9f3903d1e82f0e5d1cc3fd0d9f727ef66b1c367717ccc6b60addd74bcfa88815",
+  "selection_occurrences": 1,
+  "starting_head": "7ff8b3e227f1507424aa6611e7cb62120a5a76a6",
+  "status": "PASS",
+  "storage_override": "User-authorized local-only bulk paths; no frozen plan mutation",
+  "transport": "HTTPS public archive; no credentials/cookies/login; redirects disabled; trust_env=False"
+}

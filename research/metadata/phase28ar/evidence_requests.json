@@ -1,0 +1,66 @@
+[
+  {
+    "attempt": 1,
+    "bytes": 3425,
+    "ended_utc": "2026-09-20T06:43:49.319122+00:00",
+    "http_status": 404,
+    "reference": "CMTR60338",
+    "result": "FAILED",
+    "started_utc": "2026-09-20T06:43:48.220626+00:00",
+    "url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf"
+  },
+  {
+    "attempt": 2,
+    "bytes": 3425,
+    "ended_utc": "2026-09-20T06:43:51.542966+00:00",
+    "http_status": 404,
+    "reference": "CMTR60338",
+    "result": "FAILED",
+    "started_utc": "2026-09-20T06:43:51.329771+00:00",
+    "url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf"
+  },
+  {
+    "attempt": 3,
+    "bytes": 3425,
+    "ended_utc": "2026-09-20T06:43:56.809418+00:00",
+    "http_status": 404,
+    "reference": "CMTR60338",
+    "result": "FAILED",
+    "started_utc": "2026-09-20T06:43:56.615617+00:00",
+    "url": "https://nsearchives.nseindia.com/content/circulars/CMTR60338.pdf"
+  },
+  {
+    "attempt": 1,
+    "bytes": 68003,
+    "ended_utc": "2026-09-20T06:43:58.250250+00:00",
+    "http_status": 200,
+    "local_path": "research/metadata/phase28ar/evidence/CMTR61518.pdf",
+    "reference": "CMTR61518",
+    "result": "ACQUIRED",
+    "sha256": "8f44e5dab885e081e9809aa41cbc6017309cf35281d29655a219d822e6f31a39",
+    "started_utc": "2026-09-20T06:43:57.894420+00:00",
+    "url": "https://nsearchives.nseindia.com/content/circulars/CMTR61518.pdf"
+  },
+  {
+    "attempt": 1,
+    "bytes": 3425,
+    "ended_utc": "2026-09-20T06:44:54.488005+00:00",
+    "http_status": 404,
+    "reference": "CMTR60338_archive",
+    "result": "FAILED",
+    "started_utc": "2026-09-20T06:44:53.327482+00:00",
+    "url": "https://archives.nseindia.com/content/circulars/CMTR60338.pdf"
+  },
+  {
+    "attempt": 1,
+    "bytes": 95947,
+    "ended_utc": "2026-09-20T06:44:56.977409+00:00",
+    "http_status": 200,
+    "local_path": "research/metadata/phase28ar/evidence/SURV60342.pdf",
+    "reference": "SURV60342",
+    "result": "ACQUIRED",
+    "sha256": "8772f06a149e42733aa1a8391d991548c734485ce13112a7c5e6d5eb865d843a",
+    "started_utc": "2026-09-20T06:44:55.590776+00:00",
+    "url": "https://nsearchives.nseindia.com/content/circulars/SURV60342.pdf"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "bulk_tracked_files": [],
+  "compile_command": "python -m py_compile research/phase28a_daily.py tests/test_phase28a_daily.py",
+  "compile_result": "PASS",
+  "failed": 3,
+  "frozen_artifacts_unchanged": true,
+  "git_status": "?? research/metadata/phase28a/\n?? research/phase28a_daily.py\n?? tests/test_phase28a_daily.py",
+  "known_failures": [
+    "tests/test_phase17_research.py::test_frozen_production_engine_and_prior_artifacts",
+    "tests/test_phase19_preregistration.py::test_unchanged_sources_match_preimplementation_snapshot",
+    "tests/test_phase19_preregistration.py::test_phase20a_frozen_spec_and_preservation"
+  ],
+  "new_failures": 0,
+  "passed": 486,
+  "phase28a_tests_passed": 24,
+  "reason": "Only the documented historical phase16_forensics.py preservation mismatch; no changes to expectations or historical files",
+  "staged_changes": [],
+  "test_command": "python -m pytest -q",
+  "tracked_changes": []
+}

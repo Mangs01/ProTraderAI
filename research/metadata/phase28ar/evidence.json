@@ -1,0 +1,41 @@
+{
+  "extension_calendar": {
+    "local_path": "research/metadata/phase27/raw/calendar_2023_CMTR54757.pdf",
+    "method": "Extend original Phase27 weekday-minus-official-holidays methodology only as far backwards as needed; retain every existing special-session classification",
+    "reference": "NSE/CMTR/54757 dated 2022-12-08",
+    "september_holidays": [
+      "2023-09-19"
+    ],
+    "sha256": "035ea9a4178e322549b87c6d72f7fc74c7cec06e2d6074c01ac2a7e6a5a7b621",
+    "supported_first": "2023-09-01",
+    "supported_last": "2023-09-06",
+    "url": "https://nsearchives.nseindia.com/content/circulars/CMTR54757.pdf"
+  },
+  "holidays": {
+    "2024-01-22": {
+      "authority": "National Stock Exchange of India",
+      "classification": "HOLIDAY",
+      "direct_cmtr60338_status": "404 on both official archive hosts; corroborating exchange circular used",
+      "evidence_basis": "Official equity surveillance circular explicitly identifies January 22 as a trading holiday and moves company encumbrance margins to January 23; not inferred from bank/settlement closure",
+      "local_path": "research/metadata/phase28ar/evidence/SURV60342.pdf",
+      "market": "NSE Capital Market equities",
+      "reference": "NSE/SURV/60342 dated 2024-01-19, explicitly citing NSE/CMTR/60338",
+      "sha256": "8772f06a149e42733aa1a8391d991548c734485ce13112a7c5e6d5eb865d843a",
+      "url": "https://nsearchives.nseindia.com/content/circulars/SURV60342.pdf"
+    },
+    "2024-05-20": {
+      "authority": "National Stock Exchange of India",
+      "classification": "HOLIDAY",
+      "evidence_basis": "Capital Market Segment circular declares trading holiday for Parliamentary Elections in Mumbai",
+      "local_path": "research/metadata/phase28ar/evidence/CMTR61518.pdf",
+      "market": "NSE Capital Market equities",
+      "reference": "NSE/CMTR/61518 dated 2024-04-08",
+      "sha256": "8f44e5dab885e081e9809aa41cbc6017309cf35281d29655a219d822e6f31a39",
+      "url": "https://nsearchives.nseindia.com/content/circulars/CMTR61518.pdf"
+    }
+  },
+  "research_outcomes_used": false,
+  "reviewed_utc": "2026-09-20T06:46:49.687297+00:00",
+  "schema": "phase28ar-authoritative-evidence-v1",
+  "visual_review": "First pages rendered and inspected; explicit trading-holiday wording verified"
+}

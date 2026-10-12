@@ -1,0 +1,84 @@
+{
+  "Stage_B_C_strategy_exposure": false,
+  "acquisition_end_utc": "2026-09-20T03:54:57.856367+00:00",
+  "acquisition_start_utc": "2026-09-20T03:47:42.290876+00:00",
+  "compile_result": "PASS",
+  "counters": {
+    "Angel_One_logins": 0,
+    "SmartAPI_calls": 0,
+    "backtests": 0,
+    "candle_calls": 0,
+    "failed_attempts": 6,
+    "failures": 2,
+    "http_failures": 6,
+    "malformed_payloads": 0,
+    "non_200_responses": 6,
+    "official_file_requests": 257,
+    "orders": 0,
+    "retries": 4,
+    "schema_failures": 0,
+    "strategy_calls": 0,
+    "successes": 251
+  },
+  "derived": null,
+  "derived_daily_layer_rows": 0,
+  "derived_daily_layer_sha256": null,
+  "duplicate_planned_dates": 0,
+  "duplicate_raw_hashes": [],
+  "final_cohort_selected": false,
+  "frozen_artifacts_unchanged": true,
+  "full_tests_passed": 486,
+  "identity_anomalies": "identity_anomalies.json",
+  "identity_isin_change_groups": 76,
+  "identity_symbol_change_groups": 65,
+  "known_preservation_failures": 3,
+  "metadata_web_open_calls": 4,
+  "metadata_web_search_batches": 2,
+  "metadata_web_search_queries": 3,
+  "metadata_web_urls": [
+    "https://www.nseindia.com/all-reports",
+    "https://www.nseindia.com/resources/exchange-communication-circulars"
+  ],
+  "missing_dates": [
+    {
+      "date": "2024-01-22",
+      "reason": "HTTP 404",
+      "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2024/JAN/cm22JAN2024bhav.csv.zip"
+    },
+    {
+      "date": "2024-05-20",
+      "reason": "HTTP 404",
+      "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2024/MAY/cm20MAY2024bhav.csv.zip"
+    }
+  ],
+  "new_test_failures": 0,
+  "phase28a_tests_passed": 24,
+  "planned_dates": 253,
+  "precheck": "PASS",
+  "raw_file_count": 251,
+  "raw_hash_manifest_rule": "SHA256 canonical JSON ordered date/sha256 pairs from session_index.json",
+  "raw_hash_manifest_sha256": "b96b6681664c08d70408e9274c0e188b9ad82fbaaac32149a8aa4e7ecd9da7e5",
+  "schema_counts": {
+    "LEGACY": 201,
+    "UDIFF": 50
+  },
+  "selection_statistics": {
+    "duplicate_isins": 0,
+    "duplicate_source_rows": 0,
+    "invalid_missing_isins": 0,
+    "missing_traded_values": 0,
+    "schema": "UDIFF",
+    "source_rows": 2867,
+    "stk_eq_rows": 1838,
+    "unique_isins": 1838,
+    "zero_traded_values": 0
+  },
+  "source_review": "source_review.json",
+  "status": "BLOCKED",
+  "successful_unique_dates": 251,
+  "validated_history_sessions": 250,
+  "validated_liquidity_sessions": 60,
+  "validated_stk_eq_rows": 460174,
+  "validation_audit": "validation_audit.json",
+  "verification": "verification.json"
+}

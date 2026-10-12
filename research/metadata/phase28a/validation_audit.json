@@ -1,0 +1,17 @@
+{
+  "derived_daily_layer_created": false,
+  "derived_daily_layer_rows": 0,
+  "derived_daily_layer_sha256": null,
+  "duplicate_files": 0,
+  "files": 251,
+  "history_coverage": "250/252",
+  "isin_change_groups": 76,
+  "liquidity_coverage": "60/60",
+  "network_requests": 0,
+  "partial_files": 0,
+  "raw_sha256_verified": 251,
+  "selection_frame": "1838 unique identities validated in memory; no cohort selected",
+  "status": "PASS_FOR_ACQUIRED_FILES_ONLY",
+  "symbol_change_groups": 65,
+  "validated_stk_eq_rows": 460174
+}
