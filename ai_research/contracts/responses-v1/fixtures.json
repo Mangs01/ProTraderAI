@@ -1,0 +1,13 @@
+{
+  "reference_version": "AI-R3A-R1-RESPONSES-CONTRACT-1",
+  "provenance": "Handwritten synthetic fragments from verified documentation; never captured API traffic; not full response envelopes",
+  "cases": [
+    {"id": "created_at", "source_id": "responses-create", "location": "envelope", "fragment": {"created_at": 1756315696}, "current_error": "UNKNOWN_RESPONSE_FIELDS"},
+    {"id": "empty_logprobs", "source_id": "responses-create", "location": "output_text", "fragment": {"logprobs": []}, "current_error": "OUTPUT_SCHEMA_MISMATCH"},
+    {"id": "reasoning_before_message", "source_id": "migrate-to-responses", "location": "prepend_output", "fragment": {"id": "rs_offline", "type": "reasoning", "summary": [], "content": []}, "current_error": "OUTPUT_SCHEMA_MISMATCH"},
+    {"id": "cache_write_tokens", "source_id": "responses-create", "location": "usage", "fragment": {"input_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0}}, "current_error": "INVALID_USAGE"}
+  ],
+  "response_statuses": ["completed", "failed", "in_progress", "cancelled", "queued", "incomplete"],
+  "item_statuses": ["in_progress", "completed", "incomplete"],
+  "incomplete_reasons": ["max_output_tokens", "max_messages", "content_filter", "steered"]
+}

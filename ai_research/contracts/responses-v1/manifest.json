@@ -1,0 +1,101 @@
+{
+  "reference_version": "AI-R3A-R1-RESPONSES-CONTRACT-1",
+  "retrieval_date": "2026-10-14",
+  "scope": "Pinned documentation for offline R2 work; no live compatibility or readiness grant",
+  "sources": [
+    {
+      "source_id": "responses-create",
+      "official_url": "https://developers.openai.com/api/reference/resources/responses/methods/create",
+      "retrieved_at_utc": "2026-10-14T08:18:30.996415+00:00",
+      "retrieval_date": "2026-10-14",
+      "retrieval_method": "Public HTTPS GET using PowerShell Invoke-WebRequest; no authentication",
+      "hash_scope": "Exact downloaded HTML bytes; not a server release or semantic contract hash",
+      "files": [
+        {
+          "path": "sources/responses-create.html",
+          "sha256": "7610c291e4237ec275515fddb7d225b410291410c4de76b0cf9679ab04659a6c",
+          "bytes": 12017557
+        },
+        {
+          "path": "sources/responses-create.txt",
+          "sha256": "03d0ec97e5991d70a32f25e08bcb291b1f843ee3400acf9fa1ec90e5e7e1756d",
+          "bytes": 543363
+        }
+      ]
+    },
+    {
+      "source_id": "structured-outputs",
+      "official_url": "https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses",
+      "retrieved_at_utc": "2026-10-14T08:18:38.865992+00:00",
+      "retrieval_date": "2026-10-14",
+      "retrieval_method": "Public HTTPS GET using PowerShell Invoke-WebRequest; no authentication",
+      "hash_scope": "Exact downloaded HTML bytes; not a server release or semantic contract hash",
+      "files": [
+        {
+          "path": "sources/structured-outputs.html",
+          "sha256": "b909db35ab6e43d6fcc107a6f9be03fc6aeec916f40771af77060db5bef02636",
+          "bytes": 3281962
+        },
+        {
+          "path": "sources/structured-outputs.txt",
+          "sha256": "84304ad312cb8ce2b4a282e8dbdb37252218e3ec9ff6800a80fa575b4de9db7b",
+          "bytes": 283514
+        }
+      ]
+    },
+    {
+      "source_id": "reasoning",
+      "official_url": "https://developers.openai.com/api/docs/guides/reasoning",
+      "retrieved_at_utc": "2026-10-14T08:18:33.271233+00:00",
+      "retrieval_date": "2026-10-14",
+      "retrieval_method": "Public HTTPS GET using PowerShell Invoke-WebRequest; no authentication",
+      "hash_scope": "Exact downloaded HTML bytes; not a server release or semantic contract hash",
+      "files": [
+        {
+          "path": "sources/reasoning.html",
+          "sha256": "ad7392a9496b6fb75ac7b731437166b76cefd018214ffcb10b8ec978dbb77938",
+          "bytes": 1091754
+        },
+        {
+          "path": "sources/reasoning.txt",
+          "sha256": "ad841d64f2a03dac96366e17b120af4ccba289449028fc3df67aad7a78b14ef2",
+          "bytes": 96570
+        }
+      ]
+    },
+    {
+      "source_id": "migrate-to-responses",
+      "official_url": "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+      "retrieved_at_utc": "2026-10-14T08:18:35.008773+00:00",
+      "retrieval_date": "2026-10-14",
+      "retrieval_method": "Public HTTPS GET using PowerShell Invoke-WebRequest; no authentication",
+      "hash_scope": "Exact downloaded HTML bytes; not a server release or semantic contract hash",
+      "files": [
+        {
+          "path": "sources/migrate-to-responses.html",
+          "sha256": "6ae1da81849cbf999a7a7aa05e7584f2c122a5fe53b36218f3eb9bb236caf0a0",
+          "bytes": 986283
+        },
+        {
+          "path": "sources/migrate-to-responses.txt",
+          "sha256": "12f7a8bfe6bf0dd5cbca5b1b31d9d5941fb56b1a16ff4ad589d2ef20cc242200",
+          "bytes": 74138
+        }
+      ]
+    }
+  ],
+  "existing_ai_research_sha256": {
+    "__init__.py": "8f6d09460b5bf3ec873f915950ae5dea0289a32dcedc92eedbbb0e16b1eedd88",
+    "__main__.py": "e28f17631c23876e85de980dee30d406d5602862f2878f8f681dcbe42276f25a",
+    "AI_R2.md": "4bcc0689bef04d20acebbeabc9e49bc875a7d2b20f1331c8706867cde4f68804",
+    "AI_R3A.md": "a3157f357a213929e65df6fb4a24b2d24de5d2c7ad18bd6f56aba84f6ac3e173",
+    "foundation.py": "10d1cc3f9b3aa0696f4114d8527f5608c01d159588074c06550f588cec1ed6ef",
+    "openai_provider.py": "ecdeb5ba6a6095d9363d293fdc19ca46910d365532c4e049216780362a2d89f2",
+    "README.md": "a5f02398882eca63597a855f57b5accdc5a4a7206305b7bdc44e89471870886c",
+    "real_transport.py": "1156fa397d369c0eeab9222a6a851b9c4ad43333fea3af08493d46828d706e35",
+    "tests/test_foundation.py": "09193c1e31e04aea16125afe0276de9e234144e5d5c8daff1e3b71596bb08c6b",
+    "tests/test_openai_provider.py": "542279a7cb2a5ce291e14095cbbe0a1ad69689619bc316907f971d3920ec860e",
+    "tests/test_real_transport.py": "64eb49f533b655a9f39dc73479b40d4cff13ee26cb5f0fbe327c927e1c612918"
+  },
+  "baseline_scope": "Existing implementation, tests and documents at pin creation; no R2 edits"
+}

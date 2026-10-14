@@ -1,0 +1,25 @@
+AI-R3A-R1 documentation recovery and pin validation
+Date: 2026-10-14 UTC
+
+Operator-supplied previous audit: 180 passed, 104 deselected; no files changed.
+Original raw audit log not recovered from the existing ai_research files.
+
+Existing-suite verification:
+python -B -m pytest -q -p no:cacheprovider --confcutdir=ai_research ai_research/tests
+284 passed in 1.34s
+
+Final combined verification (PYTEST_DISABLE_PLUGIN_AUTOLOAD=1):
+python -B -m pytest -q -p no:cacheprovider --confcutdir=ai_research ai_research/tests ai_research/contracts/responses-v1/test_contract_pin.py
+303 passed in 5.88s
+284 existing cases plus 19 evidence/integrity/audit cases.
+
+All four downloaded official HTML sources and readable derivatives match their
+manifest byte counts and SHA256 hashes. Readable extraction is reproducible.
+Pre-existing ai_research implementation, documents and tests match pinned hashes.
+Existing frozen research and trading source hash tests passed.
+Network and credential helpers are denied during the added audit checks.
+Only FakeHTTPExchange and literal offline dummy data are used.
+
+These tests intentionally reproduce existing gaps, not R2 fixes. Passing tests
+do not establish Responses compatibility, model access, pricing or live readiness.
+Offline R2 implementation: READY. Runtime API locks remain unchanged.

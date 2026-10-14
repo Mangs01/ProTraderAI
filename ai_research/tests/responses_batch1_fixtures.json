@@ -1,0 +1,162 @@
+{
+  "provenance": "Synthetic offline fragments derived from responses-v1 sources C/S/M/R; never API captures",
+  "positive": [
+    {
+      "completed_at": 1756315697,
+      "background": false,
+      "max_output_tokens": 2048,
+      "max_tool_calls": null,
+      "previous_response_id": null,
+      "conversation": null,
+      "service_tier": "default"
+    },
+    {
+      "metadata": null,
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "instructions": "Offline report",
+      "temperature": 1,
+      "top_p": 0.5
+    },
+    {
+      "completed_at": null,
+      "background": null,
+      "service_tier": null
+    }
+  ],
+  "negative": [
+    {
+      "created_at": true
+    },
+    {
+      "created_at": null
+    },
+    {
+      "created_at": "timestamp"
+    },
+    {
+      "id": null
+    },
+    {
+      "id": ""
+    },
+    {
+      "object": "chat.completion"
+    },
+    {
+      "metadata": []
+    },
+    {
+      "metadata": {
+        "key": 1
+      }
+    },
+    {
+      "access_programs": {}
+    },
+    {
+      "parallel_tool_calls": null
+    },
+    {
+      "temperature": true
+    },
+    {
+      "top_p": 2
+    },
+    {
+      "tools": [
+        {
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "tool_choice": "required"
+    },
+    {
+      "instructions": []
+    },
+    {
+      "background": true
+    },
+    {
+      "completed_at": "time"
+    },
+    {
+      "conversation": {
+        "id": 1
+      }
+    },
+    {
+      "service_tier": "invented"
+    },
+    {
+      "unknown": null
+    },
+    {
+      "error": {
+        "code": "server_error",
+        "message": "Synthetic error"
+      }
+    },
+    {
+      "error": {}
+    },
+    {
+      "incomplete_details": {}
+    },
+    {
+      "usage": null
+    },
+    {
+      "status": null
+    },
+    {
+      "status": "invented"
+    },
+    {
+      "status": "failed"
+    },
+    {
+      "status": "in_progress"
+    },
+    {
+      "status": "cancelled"
+    },
+    {
+      "status": "queued"
+    },
+    {
+      "status": "incomplete"
+    },
+    {
+      "status": "incomplete",
+      "output": [],
+      "incomplete_details": {
+        "reason": "max_output_tokens"
+      }
+    },
+    {
+      "status": "incomplete",
+      "output": [],
+      "incomplete_details": {
+        "reason": "max_messages"
+      }
+    },
+    {
+      "status": "incomplete",
+      "output": [],
+      "incomplete_details": {
+        "reason": "content_filter"
+      }
+    },
+    {
+      "status": "incomplete",
+      "output": [],
+      "incomplete_details": {
+        "reason": "steered"
+      }
+    }
+  ]
+}
