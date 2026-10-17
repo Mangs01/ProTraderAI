@@ -630,3 +630,36 @@ def test_valid_sparse_input_monitors_existing_position_without_inventing_bars(si
                                   low=99 if side == "BUY" else 96), Signal("HOLD"))
     assert state.position is None
     assert len(exits(engine)) == 1 and exits(engine)[0].reason == "TARGET"
+
+
+@pytest.mark.parametrize("side", ["BUY", "SELL"])
+@pytest.mark.parametrize("costs_enabled", [False, True])
+def test_pure_transition_parity_and_no_publication(side, costs_enabled):
+    from paper.offline.engine import transition
+    cfg = config(slippage_bps=5, **({"costs": cost_profile()} if costs_enabled else {}))
+    engine = PaperEngine(cfg)
+    tape = [(candle(0), Signal(side, 2)), (candle(1), Signal("HOLD")),
+            (candle(2, high=102, close=101), Signal("HOLD")),
+            (candle(3, high=110, low=90), Signal(side, 2)),
+            (candle(5), Signal("HOLD"))]
+    for c, signal in tape:
+        old = engine.state
+        with localcontext() as ctx:
+            ctx.prec = 6
+            candidate = transition(cfg, old, c, signal)
+        assert engine.state is old
+        assert candidate == engine.process(c, signal)
+        assert transition(cfg, candidate, c, signal) is candidate
+    old = engine.state
+    with pytest.raises(ValueError):
+        transition(cfg, old, candle(-1), Signal("HOLD"))
+    assert engine.state is old
+
+
+@pytest.mark.parametrize("config_value,state_value,candle_value,signal_value", [
+    (None, None, None, None),
+])
+def test_transition_requires_explicit_validated_arguments(config_value, state_value, candle_value, signal_value):
+    from paper.offline.engine import transition
+    with pytest.raises(ValueError):
+        transition(config_value, state_value, candle_value, signal_value)
