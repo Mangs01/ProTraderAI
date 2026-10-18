@@ -968,3 +968,334 @@ def test_recovery_rejects_fully_rehashed_fabricated_accounting(setup):
     with pytest.raises(HistoricalCorruption):
         j.recover(expected_tip=HistoryAnchor(1, ch))
     assert j._snapshot is old and j.poisoned
+
+
+# Supported bounded-continuity regressions. Private hooks inject faults between
+# completed operations; callbacks inside pending transaction control are below.
+@pytest.mark.parametrize('existing', [False, True])
+@pytest.mark.parametrize('signal', [Signal('HOLD'), Signal('BUY', 2)])
+def test_write_checkpoints_preserve_rows(setup, existing, signal):
+    db, j = setup
+    if existing:
+        apply(j, candle(0), Signal('BUY', 2))
+    statements = []
+    db.set_trace_callback(statements.append)
+    try:
+        receipt = apply(j, candle(j.version, high=105, low=95), signal)
+    finally:
+        db.set_trace_callback(None)
+    assert receipt.status == 'APPLIED' and not j.poisoned
+    assert any(sql.startswith('RELEASE SAVEPOINT "protrader_write_') for sql in statements)
+    assert not any(sql.startswith('ROLLBACK TO') for sql in statements)
+    verify(db, j)
+    assert j.recover().version == receipt.version
+
+
+@pytest.mark.parametrize('fault', ['begin_before', 'begin_after', 'begin_noop',
+                                   'marker_noop', 'marker_after'])
+def test_write_setup_uncertainty(setup, monkeypatch, fault):
+    db, j = setup
+    raw, old = db._connection, j._snapshot
+    def execute(sql, parameters=()):
+        if sql == 'BEGIN IMMEDIATE':
+            if fault == 'begin_before':
+                raise sqlite3.OperationalError('before begin')
+            if fault == 'begin_noop':
+                return None
+            result = raw.execute(sql, parameters)
+            if fault == 'begin_after':
+                raise sqlite3.OperationalError('after begin')
+            return result
+        if sql.startswith('SAVEPOINT "protrader_write_'):
+            if fault == 'marker_noop':
+                return None
+            result = raw.execute(sql, parameters)
+            if fault == 'marker_after':
+                raise sqlite3.OperationalError('after marker')
+            return result
+        return raw.execute(sql, parameters)
+    monkeypatch.setattr(j, '_execute', execute)
+    try:
+        with pytest.raises(TransactionFailure):
+            apply(j, candle(0), Signal('HOLD'))
+        assert j._snapshot is old and j._pending_attempt is None
+        assert j.poisoned == (fault != 'begin_before')
+        assert raw.in_transaction == (fault in ('begin_after', 'marker_noop', 'marker_after'))
+    finally:
+        raw.rollback()
+
+
+@pytest.mark.parametrize('operation', ['BEGIN', 'RELEASE'])
+def test_write_marker_authorizer_denial(setup, operation):
+    db, j = setup
+    def authorize(action, arg1, arg2, database, source):
+        if action == sqlite3.SQLITE_SAVEPOINT and arg1 == operation:
+            return sqlite3.SQLITE_DENY
+        return j._authorize(action, arg1, arg2, database, source)
+    db.set_authorizer(authorize)
+    try:
+        with pytest.raises(TransactionFailure):
+            apply(j, candle(0), Signal('HOLD'))
+        assert j.poisoned and j.version == 0 and db.in_transaction
+        assert j._pending_attempt is None
+    finally:
+        db.set_authorizer(j._authorize)
+        db._connection.rollback()
+    assert j.recover().version == 0
+
+
+@pytest.mark.parametrize('phase', ['verify', 'lookup', 'commit_row', 'event', 'cas'])
+@pytest.mark.parametrize('replacement', ['none', 'begin', 'savepoint'])
+def test_write_interruption_stops_and_preserves_replacement(setup, monkeypatch, phase, replacement):
+    db, j = setup
+    apply(j, candle(0), Signal('BUY', 2))
+    raw, old, before = db._connection, j._snapshot, rows(db)
+    fired = []
+    def interrupt():
+        fired.append(True)
+        raw.rollback()
+        if replacement == 'begin':
+            raw.execute('BEGIN')
+        elif replacement == 'savepoint':
+            raw.execute('SAVEPOINT callback_owned')
+    original_verify = j._verify
+    def verify_interrupted(snapshot):
+        original_verify(snapshot)
+        interrupt()
+    prefixes = {'lookup': 'SELECT version,input_json', 'commit_row': 'INSERT INTO main.candle_commits',
+                'event': 'INSERT INTO main.events', 'cas': 'UPDATE main.state_head'}
+    def execute(sql, parameters=()):
+        result = raw.execute(sql, parameters)
+        # Interrupt after a partial multi-event suffix, not just the first event.
+        if not fired and sql.startswith(prefixes.get(phase, 'never')):
+            if phase != 'event' or parameters[2] == 1:
+                interrupt()
+        return result
+    monkeypatch.setattr(j, '_execute', execute)
+    if phase == 'verify':
+        monkeypatch.setattr(j, '_verify', verify_interrupted)
+    try:
+        with pytest.raises(TransactionFailure):
+            apply(j, candle(1, high=105, low=95), Signal('SELL', 2))
+        assert fired and j.poisoned and j._snapshot is old and j._pending_attempt is None
+        assert raw.in_transaction == (replacement != 'none')
+        assert rows(db) == before
+        if replacement == 'savepoint':
+            raw.execute('RELEASE callback_owned')
+    finally:
+        raw.rollback()
+    monkeypatch.setattr(j, '_verify', original_verify)
+    assert j.recover().version == old.version
+
+
+@pytest.mark.parametrize('replacement', [False, True])
+def test_interrupted_duplicate_never_returns_receipt(setup, replacement):
+    db, j = setup
+    apply(j, candle(0), Signal('HOLD'))
+    old, fired = j._snapshot, []
+    def trace(sql):
+        if not fired and sql.startswith('SELECT version,input_json'):
+            fired.append(True)
+            db._connection.rollback()
+            if replacement:
+                db._connection.execute('BEGIN')
+    db.set_trace_callback(trace)
+    try:
+        with pytest.raises(TransactionFailure):
+            apply(j, candle(0), Signal('HOLD'))
+        assert fired and j.poisoned and j._snapshot is old
+        assert db.in_transaction == replacement
+    finally:
+        db.set_trace_callback(None)
+        db._connection.rollback()
+
+
+@pytest.mark.parametrize('fault', ['before', 'after'])
+def test_attempt_construction_boundary(setup, monkeypatch, fault):
+    from paper.offline import journal as module
+    db, j = setup
+    original, captured = module.AttemptedCommit, []
+    def construct(*args):
+        if fault == 'before':
+            raise ValueError('attempt construction failed')
+        identity = original(*args)
+        captured.append(identity)
+        db._connection.rollback()
+        return identity
+    monkeypatch.setattr(module, 'AttemptedCommit', construct)
+    with pytest.raises(InvalidInput if fault == 'before' else TransactionFailure):
+        apply(j, candle(0), Signal('BUY', 2))
+    assert j.version == 0 and not db.in_transaction
+    assert j.poisoned == (fault == 'after')
+    assert j._pending_attempt is (None if fault == 'before' else captured[0])
+    monkeypatch.setattr(module, 'AttemptedCommit', original)
+    assert j.recover().version == 0
+
+
+@pytest.mark.parametrize('phase', ['commit', 'cleanup', 'postcommit'])
+def test_replacement_not_blindly_cleaned_up(setup, monkeypatch, phase):
+    db, j = setup
+    raw, old, captured = db._connection, j._snapshot, []
+    def replace():
+        captured.append(j._pending_attempt)
+        raw.rollback()
+        raw.execute('SAVEPOINT callback_owned')
+        raise sqlite3.OperationalError('replacement installed')
+    if phase == 'commit':
+        monkeypatch.setattr(j, '_commit', replace)
+    elif phase == 'postcommit':
+        monkeypatch.setattr(j, '_verify_commit', lambda *args: replace())
+    else:
+        original = j._execute
+        def execute(sql, parameters=()):
+            if sql.startswith('SELECT version,input_json'):
+                replace()
+            return original(sql, parameters)
+        monkeypatch.setattr(j, '_execute', execute)
+    try:
+        with pytest.raises(JournalPoisoned):
+            j.process(candle(0), Signal('HOLD'), expected_version=3 if phase == 'cleanup' else 0)
+        assert j.poisoned and j._snapshot is old and raw.in_transaction
+        assert j._pending_attempt is captured[0]
+        raw.execute('RELEASE callback_owned')
+    finally:
+        raw.rollback()
+
+
+def test_write_rollback_denial_does_not_retry(setup):
+    db, j = setup
+    denied = []
+    def authorize(action, arg1, arg2, database, source):
+        if action == sqlite3.SQLITE_TRANSACTION and arg1 == 'ROLLBACK':
+            denied.append(True)
+            return sqlite3.SQLITE_DENY
+        return j._authorize(action, arg1, arg2, database, source)
+    db.set_authorizer(authorize)
+    try:
+        with pytest.raises(JournalPoisoned):
+            j.process(candle(0), Signal('HOLD'), expected_version=9)
+        assert denied == [True] and j.poisoned and db.in_transaction
+    finally:
+        db.set_authorizer(j._authorize)
+        db._connection.rollback()
+
+
+def test_partial_autocommit_leak_recovery_rejected(setup, monkeypatch):
+    db, j = setup
+    raw, old = db._connection, j._snapshot
+    def execute(sql, parameters=()):
+        if sql.startswith('INSERT INTO main.candle_commits'):
+            raw.rollback()  # Unsupported private interference before pending write.
+        return raw.execute(sql, parameters)
+    monkeypatch.setattr(j, '_execute', execute)
+    with pytest.raises(TransactionFailure):
+        apply(j, candle(0), Signal('BUY', 2))
+    assert j.poisoned and j._snapshot is old and j._pending_attempt is None
+    assert raw.execute('SELECT COUNT(*) FROM main.candle_commits').fetchone() == (1,)
+    with pytest.raises(ReplayError):
+        j.recover()
+    assert j.poisoned and j._snapshot is old and not raw.in_transaction
+
+
+# Unsupported-boundary characterization: these assert SQLite limitations, not
+# Journal guarantees. Every database is disposable and every callback is removed.
+@pytest.mark.parametrize('boundary', ['insert', 'commit', 'rollback', 'setup', 'forgery', 'rollback_to'])
+def test_unsupported_callback_transaction_boundaries(boundary):
+    db = sqlite3.connect(':memory:', isolation_level=None)
+    try:
+        db.execute('CREATE TABLE witness(value)')
+        db.execute('BEGIN IMMEDIATE')
+        if boundary != 'setup':
+            db.execute('SAVEPOINT marker')
+        fired = []
+        target = {'insert': 'INSERT INTO witness VALUES(1)', 'commit': 'COMMIT',
+                  'rollback': 'ROLLBACK', 'setup': 'SAVEPOINT marker',
+                  'forgery': 'RELEASE marker'}.get(boundary)
+        def trace(sql):
+            if sql == target and not fired:
+                fired.append(True)
+                db.rollback()
+                if boundary != 'insert':
+                    db.execute('BEGIN')
+                    db.execute('INSERT INTO witness VALUES(99)')
+                if boundary == 'forgery':
+                    db.execute('SAVEPOINT marker')
+        db.set_trace_callback(trace)
+        if boundary == 'rollback_to':
+            db.execute('INSERT INTO witness VALUES(1)')
+            db.execute('ROLLBACK TO marker')
+            assert db.execute('SELECT * FROM witness').fetchall() == []
+            assert db.in_transaction
+        else:
+            db.execute(target)
+            db.set_trace_callback(None)
+            assert fired == [True]
+            expected = [(1,)] if boundary == 'insert' else ([] if boundary == 'rollback' else [(99,)])
+            assert db.execute('SELECT * FROM witness').fetchall() == expected
+            assert db.in_transaction == (boundary in ('setup', 'forgery'))
+            if boundary == 'setup':
+                db.execute('RELEASE marker')  # Adopted replacement passes marker check.
+                assert db.in_transaction
+    finally:
+        db.set_trace_callback(None)
+        db.rollback()
+        db.close()
+
+
+@pytest.mark.parametrize('fault', ['rearm_denied', 'marker_removed'])
+def test_write_marker_lifecycle_failure(setup, monkeypatch, fault):
+    db, j = setup
+    raw, old, names = db._connection, j._snapshot, []
+    def trace(sql):
+        if sql.startswith('SAVEPOINT "protrader_write_'):
+            names.append(sql[len('SAVEPOINT '):])
+    raw.set_trace_callback(trace)
+    begins = []
+    def authorize(action, arg1, arg2, database, source):
+        if action == sqlite3.SQLITE_SAVEPOINT and arg1 == 'BEGIN':
+            begins.append(arg2)
+            if fault == 'rearm_denied' and len(begins) == 2:
+                return sqlite3.SQLITE_DENY
+        return j._authorize(action, arg1, arg2, database, source)
+    raw.set_authorizer(authorize)
+    def execute(sql, parameters=()):
+        # Authorizers run on preparation, not every execution. Distinguish the
+        # initial hook SQL from direct rearming so the denial is deterministic.
+        if sql.startswith('SAVEPOINT "protrader_write_'):
+            sql += ' -- initial setup'
+        result = raw.execute(sql, parameters)
+        if fault == 'marker_removed' and sql.startswith('INSERT INTO main.candle_commits'):
+            raw.execute('RELEASE SAVEPOINT ' + names[-1])
+        return result
+    monkeypatch.setattr(j, '_execute', execute)
+    try:
+        with pytest.raises(TransactionFailure):
+            apply(j, candle(0), Signal('HOLD'))
+        assert j.poisoned and j._snapshot is old and j._pending_attempt is None
+        assert raw.in_transaction  # Failed evidence never authorizes bare rollback.
+        if fault == 'marker_removed':
+            assert raw.execute('SELECT COUNT(*) FROM main.candle_commits').fetchone() == (1,)
+    finally:
+        raw.set_trace_callback(None)
+        raw.set_authorizer(j._authorize)
+        raw.rollback()
+    assert j.recover().version == 0
+
+
+def test_write_marker_unique_and_publication_last(setup):
+    db, j = setup
+    first_markers = set()
+    for index in range(2):
+        old, statements, observations = j._snapshot, [], []
+        def trace(sql):
+            statements.append(sql)
+            observations.append(j._snapshot is old)
+        db.set_trace_callback(trace)
+        try:
+            apply(j, candle(index), Signal('HOLD'))
+        finally:
+            db.set_trace_callback(None)
+        markers = {sql for sql in statements if sql.startswith('SAVEPOINT "protrader_write_')}
+        assert len(markers) == 1 and not markers.intersection(first_markers)
+        assert observations and all(observations)
+        first_markers.update(markers)

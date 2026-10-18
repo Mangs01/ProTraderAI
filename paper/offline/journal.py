@@ -5,12 +5,20 @@ closes it on close(). The former supplied-connection API is unsupported.
 Private _execute/_commit/_rollback methods are fault-injection seams for tests;
 they cannot select or replace storage through the public constructor. Private
 attributes and Python module monkeypatching are trusted-code boundaries.
+The Journal exclusively owns its connection. Production callbacks must be
+transaction-neutral. Application code must not manipulate _db, transaction hooks,
+or internal snapshot fields. Unique savepoints are continuity evidence, not
+authentication: arbitrary callback transaction replacement, marker forgery and
+private concurrent SQL remain unsupported. Setup/rearming and pending COMMIT or
+ROLLBACK execute inside this trusted boundary. Detected uncertainty fails closed;
+there is no automatic retry or implicit recovery.
 Historical count-preserving corruption detection remains deferred to replay.
 """
 import sqlite3
 from dataclasses import dataclass
 from threading import Lock, local
 from contextlib import contextmanager
+from itertools import count
 
 from . import journal_codec as codec, journal_schema as schema
 from .config import Config
@@ -80,6 +88,62 @@ class _Snapshot:
     input_digest: str
     event_digest: str
     commit_digest: str | None
+
+
+_WRITE_IDS = count(1)
+
+
+class _WriteGuard:
+    """Bounded continuity evidence for an explicit BEGIN IMMEDIATE transaction.
+
+    RELEASE preserves writes and consumes the nested marker; direct SQLite
+    rearming is trusted. Never use the replay guard's destructive ROLLBACK TO.
+    Marker SQL after initial setup bypasses injectable write hooks, as verification
+    reads do. Callback replacement during setup/rearming is unsupported.
+    """
+
+    def __init__(self, journal):
+        self.journal = journal
+        self.db = journal._db
+        self.marker = '"protrader_write_' + str(next(_WRITE_IDS)) + '"'
+        self.active = False
+
+    def _failed(self, exc):
+        self.active = False
+        self.journal._poisoned = True
+        raise TransactionFailure("Write transaction continuity uncertain") from exc
+
+    def start(self):
+        try:
+            self.journal._execute("BEGIN IMMEDIATE")
+        except BaseException:
+            # A hook may execute BEGIN and then raise. No marker proves ownership.
+            if self.db.in_transaction:
+                self.journal._poisoned = True
+            raise
+        try:
+            if not self.db.in_transaction:
+                raise TransactionFailure("BEGIN did not start transaction")
+            self.journal._execute('SAVEPOINT ' + self.marker)
+            self.active = True
+            self.check()
+        except BaseException as exc:
+            self._failed(exc)
+
+    def check(self):
+        try:
+            if not self.active or not self.db.in_transaction:
+                raise TransactionFailure("Write transaction ended")
+            self.active = False
+            self.db.execute('RELEASE SAVEPOINT ' + self.marker)
+            if not self.db.in_transaction:
+                raise TransactionFailure("Write marker was not nested")
+            self.db.execute('SAVEPOINT ' + self.marker)
+            if not self.db.in_transaction:
+                raise TransactionFailure("Write marker rearming failed")
+            self.active = True
+        except BaseException as exc:
+            self._failed(exc)
 
 
 def _memory(connection):
@@ -165,13 +229,18 @@ class Journal:
     def _rollback(self):
         self._db.rollback()
 
-    def _rollback_checked(self, old, verified):
+    def _rollback_checked(self, old, verified, guard):
         try:
+            guard.check()
+            # Retire before the hook: a failed rollback must never be retried.
+            guard.active = False
             self._rollback()
             if self._db.in_transaction:
                 raise TransactionFailure("ROLLBACK did not end transaction")
             if verified:
                 self._verify(old)
+                if self._db.in_transaction:
+                    raise TransactionFailure("Rollback verification opened a transaction")
         except BaseException as exc:
             self._poisoned = True
             raise JournalPoisoned("Rollback postconditions failed") from exc
@@ -298,15 +367,16 @@ class Journal:
             if self._poisoned:
                 raise JournalPoisoned("Coordinator poisoned; recovery required")
             db, old = self._db, self._snapshot
-            began = False
+            guard = None
             committing = False
             verified = False
             try:
                 if db.in_transaction:
                     raise ContractMismatch("Active caller transaction")
-                self._execute("BEGIN IMMEDIATE")
-                began = True
+                guard = _WriteGuard(self)
+                guard.start()
                 self._verify(old)
+                guard.check()
                 verified = True
                 if type(candle) is not Candle or type(signal) is not Signal:
                     raise InvalidInput("Candle and Signal required")
@@ -317,13 +387,14 @@ class Journal:
                 ih = codec.input_hash(candle, signal)
                 duplicate = self._execute("SELECT version,input_json,input_hash FROM main.candle_commits WHERE instrument=? AND interval_seconds=? AND candle_identity=?",
                                        (self._config.instrument, self._config.interval_seconds, identity)).fetchone()
+                guard.check()
                 if duplicate and duplicate[1:] != (payload, ih):
                     raise InputConflict("Conflicting duplicate candle/signal")
                 if type(expected_version) is not int or expected_version != old.version:
                     raise StaleVersion("Expected version does not match committed version")
                 if duplicate:
                     receipt = Receipt('ALREADY_PROCESSED', old.version, duplicate[0], old.state, old.commit_digest)
-                    self._rollback_checked(old, verified)
+                    self._rollback_checked(old, verified, guard)
                     return receipt
                 try:
                     candidate = transition(self._config, old.state, candle, signal)
@@ -354,23 +425,29 @@ class Journal:
                 receipt = Receipt('APPLIED', version, version, candidate, ch)
                 commit_row = (version, 1, old.version or None, self._config.instrument,
                               self._config.interval_seconds, identity, payload, ih, inputs, events, sh, ch)
+                guard.check()
                 self._execute("INSERT INTO main.candle_commits VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", commit_row)
+                guard.check()
                 for row in rows:
                     self._execute("INSERT INTO main.events VALUES (?,?,?,?,?)", row)
+                    guard.check()
                 if old.version:
                     cursor = self._execute("UPDATE main.state_head SET commit_version=?,state_json=?,state_hash=? WHERE singleton=1 AND commit_version=? AND state_hash=?",
                                         (version, state_json, sh, old.version, codec.state_hash(old.state)))
                 else:
                     cursor = self._execute("INSERT INTO main.state_head VALUES (1,?,?,?)", (version, state_json, sh))
+                guard.check()
                 if cursor.rowcount != 1:
                     raise ContractMismatch("State head compare-and-swap failed")
                 self._pending_attempt = AttemptedCommit(
                     HistoryAnchor(old.version, old.commit_digest), commit_row,
                     tuple(rows), (1, version, state_json, sh))
+                guard.check()
                 committing = True
                 self._commit()
                 if db.in_transaction:
                     raise TransactionFailure("COMMIT did not end transaction")
+                guard.active = False
                 self._verify_commit(snapshot, commit_row, rows)
                 if db.in_transaction:
                     raise TransactionFailure("Persistence verification opened a transaction")
@@ -382,13 +459,14 @@ class Journal:
                     self._poisoned = True
                     # Never infer success or retry after a COMMIT exception.
                     try:
-                        if db.in_transaction:
-                            self._rollback_checked(old, False)
+                        if guard.active:
+                            self._rollback_checked(old, False, guard)
                     except BaseException:
                         pass
                     raise AmbiguousCommit("COMMIT/publication outcome uncertain") from exc
-                if began and not self._poisoned:
-                    self._rollback_checked(old, verified)
+                if guard is not None and guard.active and not self._poisoned:
+                    self._rollback_checked(old, verified, guard)
+                    self._pending_attempt = None
                 if isinstance(exc, JournalError):
                     raise
                 if isinstance(exc, ValueError):
