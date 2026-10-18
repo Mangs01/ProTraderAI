@@ -12,6 +12,8 @@ from paper.offline.journal import (Journal, Receipt, ContractMismatch, InputConf
     JournalPoisoned, JournalClosed, JournalReentrant)
 from paper.offline.models import Signal
 from test_offline_paper_engine import config, candle, cost_profile
+from paper.offline.journal_replay import (HistoryAnchor, RecoverySnapshot,
+    HistoricalCorruption, ReplayError, verify_history)
 
 FINGERPRINT = 'engine-v1:sha256:' + 'a' * 64
 
@@ -656,3 +658,313 @@ def test_count_preserving_historical_event_corruption_remains_deferred(setup):
     # suffix is checked; historical replay/corruption reconciliation is B3.
     assert apply(j, candle(1), Signal('HOLD')).status == 'APPLIED'
     assert db.execute('SELECT event_json FROM main.events WHERE sequence=1').fetchone() == (b'\x00',)
+
+
+@pytest.mark.parametrize('count', [0, 1, 3])
+def test_recovery_clean_exact_conversion(setup, count):
+    db, j = setup
+    for i in range(count):
+        apply(j, candle(i), Signal('HOLD'))
+    old, before = j._snapshot, rows(db)
+    result = j.recover(expected_tip=HistoryAnchor(old.version, old.commit_digest))
+    assert type(result) is RecoverySnapshot
+    assert (j.state, j.version, j._snapshot.input_digest, j._snapshot.event_digest,
+            j._snapshot.commit_digest) == (result.state, result.version, result.input_digest,
+                                          result.event_digest, result.commit_digest)
+    assert result.state == old.state and result.event_count == len(j.state.events)
+    assert len(j.state.processed) == j.version
+    assert rows(db) == before and not db.in_transaction and not j.poisoned
+
+
+@pytest.mark.parametrize('fault,version', [('commit_after', 1), ('commit_before', 0),
+    ('commit_rollback', 0), ('commit_noop', 0), ('post_verify', 1)])
+def test_recovery_exact_attempt_resolution(setup, monkeypatch, fault, version):
+    db, j = setup
+    original = j._verify_commit
+    if fault == 'post_verify':
+        monkeypatch.setattr(j, '_verify_commit', lambda *a: (_ for _ in ()).throw(RuntimeError('read')))
+    else:
+        db.fault = fault
+    with pytest.raises(AmbiguousCommit):
+        apply(j, candle(0), Signal('BUY', 2))
+    identity = j._pending_attempt
+    assert identity.prior_anchor == HistoryAnchor(0, None)
+    monkeypatch.setattr(j, '_verify_commit', original)
+    result = j.recover(expected_tip=HistoryAnchor(version, identity.commit_row[11] if version else None))
+    assert result.version == version and j.version == version
+    assert j._pending_attempt is None and not j.poisoned
+    assert apply(j, candle(version), Signal('HOLD')).status == 'APPLIED'
+
+
+def test_attempt_capture_at_commit_boundary(setup, monkeypatch):
+    db, j = setup
+    def commit():
+        identity = j._pending_attempt
+        assert identity.prior_anchor == HistoryAnchor(0, None)
+        assert identity.commit_row == db.execute('SELECT * FROM main.candle_commits').fetchone()
+        assert identity.event_rows == tuple(db.execute('SELECT * FROM main.events ORDER BY sequence'))
+        assert identity.head_row == db.execute('SELECT * FROM main.state_head').fetchone()
+        assert j.version == 0 and db.in_transaction
+        db.commit()
+    monkeypatch.setattr(j, '_commit', commit)
+    apply(j, candle(0), Signal('BUY', 2))
+    assert j._pending_attempt is None
+
+
+@pytest.mark.parametrize('pending', [False, True])
+def test_recovery_wrong_external_anchor_preserves_identity(setup, pending):
+    db, j = setup
+    if pending:
+        db.fault = 'commit_after'
+        with pytest.raises(AmbiguousCommit):
+            apply(j, candle(0), Signal('BUY', 2))
+    old, identity = j._snapshot, j._pending_attempt
+    with pytest.raises(ContractMismatch):
+        j.recover(expected_tip=HistoryAnchor(2, 'a' * 64))
+    assert j._snapshot is old and j._pending_attempt is identity and j.poisoned
+    j.recover()
+    assert not j.poisoned
+
+
+@pytest.mark.parametrize('damage', ['events', 'accounting', 'head', 'missing', 'truncate', 'divergent'])
+@pytest.mark.parametrize('pending', [False, True])
+def test_recovery_corruption_fails_closed(setup, damage, pending):
+    from test_offline_journal_replay import corrupt
+    db, j = setup
+    apply(j, candle(0), Signal('BUY', 2))
+    if pending:
+        db.fault = 'commit_after'
+        with pytest.raises(AmbiguousCommit):
+            apply(j, candle(1), Signal('HOLD'))
+    old, identity = j._snapshot, j._pending_attempt
+    if damage == 'events':
+        corrupt(j._db, "UPDATE main.events SET event_json=X'00'")
+    elif damage == 'accounting':
+        fake = replace(j.state, account=replace(j.state.account, realized_equity=j._config.capital + 1))
+        db.execute('UPDATE main.state_head SET state_json=?,state_hash=?', (codec.encode(fake), codec.state_hash(fake)))
+    elif damage == 'head':
+        db.execute('UPDATE main.state_head SET commit_version=1,state_json=?,state_hash=?',
+                   (codec.encode(old.state), codec.state_hash(old.state)))
+        if not pending:
+            db.execute("UPDATE main.state_head SET state_hash='bad'")
+    elif damage == 'missing':
+        corrupt(j._db, 'DELETE FROM main.candle_commits')
+    elif damage == 'truncate':
+        corrupt(j._db, 'DELETE FROM main.events')
+        corrupt(j._db, 'DELETE FROM main.candle_commits')
+        db.execute('DELETE FROM main.state_head')
+    else:
+        other = Journal(config(), FINGERPRINT)
+        try:
+            apply(other, candle(0), Signal('SELL', 2))
+            if pending:
+                apply(other, candle(1), Signal('HOLD'))
+            other._db.backup(j._db)
+        finally:
+            other.close()
+    with pytest.raises(ReplayError):
+        j.recover()
+    assert j._snapshot is old and j._pending_attempt is identity and j.poisoned
+
+
+def test_recovery_active_transaction_untouched(setup, monkeypatch):
+    db, j = setup
+    monkeypatch.setattr(j, '_rollback_checked', lambda *a: pytest.fail('recovery rollback'))
+    db.execute('BEGIN')
+    old = j._snapshot
+    with pytest.raises(ContractMismatch, match='caller transaction'):
+        j.recover()
+    assert db.in_transaction and j._snapshot is old and j.poisoned
+    db.rollback()
+    j.recover()
+
+
+@pytest.mark.parametrize('phase', ['scan', 'release'])
+@pytest.mark.parametrize('restart', [False, True])
+def test_recovery_callback_transaction_ownership(setup, phase, restart):
+    db, j = setup
+    db.fault = 'commit_after'
+    with pytest.raises(AmbiguousCommit):
+        apply(j, candle(0), Signal('BUY', 2))
+    old, identity, fired = j._snapshot, j._pending_attempt, []
+    def trace(sql):
+        trigger = 'FROM main.candle_commits' in sql if phase == 'scan' else sql.startswith('RELEASE SAVEPOINT')
+        if not fired and trigger:
+            fired.append(True)
+            db.rollback()
+            if restart:
+                db.execute('BEGIN')
+    db.set_trace_callback(trace)
+    try:
+        with pytest.raises(ReplayError):
+            j.recover()
+        assert fired and db.in_transaction == restart
+        assert j._snapshot is old and j._pending_attempt is identity and j.poisoned
+    finally:
+        db.set_trace_callback(None)
+        if db.in_transaction:
+            db.rollback()
+    j.recover()
+
+
+def test_recovery_savepoint_release_failure(setup):
+    db, j = setup
+    old = j._snapshot
+    def authorize(action, arg1, arg2, database, source):
+        if action == sqlite3.SQLITE_SAVEPOINT and arg1 == 'RELEASE':
+            return sqlite3.SQLITE_DENY
+        return j._authorize(action, arg1, arg2, database, source)
+    db.set_authorizer(authorize)
+    try:
+        with pytest.raises(ReplayError):
+            j.recover()
+        assert j._snapshot is old and j.poisoned and db.in_transaction
+    finally:
+        db.set_authorizer(j._authorize)
+        db.rollback()
+    j.recover()
+
+
+@pytest.mark.parametrize('operation', ['recover', 'process', 'close'])
+def test_recovery_same_thread_reentrancy(setup, operation):
+    db, j = setup
+    seen = []
+    def trace(sql):
+        if not seen and sql.startswith('SAVEPOINT'):
+            seen.append(True)
+            with pytest.raises(JournalReentrant):
+                if operation == 'process':
+                    apply(j, candle(0), Signal('HOLD'))
+                else:
+                    getattr(j, operation)()
+    db.set_trace_callback(trace)
+    try:
+        j.recover()
+        assert seen == [True] and not j.closed
+    finally:
+        db.set_trace_callback(None)
+
+
+@pytest.mark.parametrize('operation', ['process', 'close'])
+def test_recovery_serializes_concurrent_operations(setup, operation):
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Event
+    db, j = setup
+    entered, release, started = Event(), Event(), Event()
+    def trace(sql):
+        if sql.startswith('SAVEPOINT'):
+            entered.set()
+            assert release.wait(5)
+    def other():
+        started.set()
+        return apply(j, candle(0), Signal('HOLD')) if operation == 'process' else j.close()
+    db.set_trace_callback(trace)
+    try:
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            recovering = pool.submit(j.recover)
+            assert entered.wait(5)
+            competing = pool.submit(other)
+            assert started.wait(5) and not competing.done()
+            release.set()
+            assert recovering.result(10).version == 0
+            competing.result(10)
+        assert j.closed if operation == 'close' else j.version == 1
+    finally:
+        release.set()
+        if not j.closed:
+            db.set_trace_callback(None)
+
+
+@pytest.mark.parametrize('split', [1, 2, 3])
+@pytest.mark.parametrize('sparse', [False, True])
+@pytest.mark.parametrize('committed', [False, True])
+def test_recovery_continue_engine_parity(split, sparse, committed):
+    cfg = config(costs=cost_profile(), slippage_bps=5)
+    j = Journal(cfg, FINGERPRINT)
+    db = FaultHarness(j)
+    engine = PaperEngine(cfg)
+    tape = [(candle(0), Signal('BUY', 2)), (candle(2 if sparse else 1), Signal('HOLD')),
+            (candle(3, close=101), Signal('SELL', 2)),
+            (candle(4, high=105, low=95), Signal('HOLD'))]
+    try:
+        for index, (c, s) in enumerate(tape):
+            engine.process(c, s)
+            if index == split - 1:
+                db.fault = 'commit_after' if committed else 'commit_before'
+                with pytest.raises(AmbiguousCommit):
+                    apply(j, c, s)
+                recovered = j.recover()
+                assert recovered.version == index + int(committed)
+                if not committed:
+                    apply(j, c, s)
+            else:
+                apply(j, c, s)
+            assert j.state == engine.state
+        assert verify_history(j._db, expected_config=cfg, expected_engine_fingerprint=FINGERPRINT,
+                              expected_tip=HistoryAnchor(j.version, j._snapshot.commit_digest)).state == engine.state
+    finally:
+        j.close()
+
+
+@pytest.mark.parametrize('field', ['state', 'version', 'input_digest', 'event_digest', 'commit_digest', 'event_count'])
+def test_recovery_second_replay_must_match_exactly(setup, monkeypatch, field):
+    import copy
+    import paper.offline.journal as module
+    db, j = setup
+    db.fault = 'commit_after'
+    with pytest.raises(AmbiguousCommit):
+        apply(j, candle(0), Signal('BUY', 2))
+    old, identity = j._snapshot, j._pending_attempt
+    original = module.verify_history
+    def changed(*args, **kwargs):
+        result = copy.copy(original(*args, **kwargs))
+        values = dict(state=replace(result.state, account=replace(result.state.account,
+                          realized_equity=j._config.capital + 1)), version=2,
+                      input_digest='b' * 64, event_digest='b' * 64,
+                      commit_digest='b' * 64, event_count=99)
+        object.__setattr__(result, field, values[field])
+        return result
+    monkeypatch.setattr(module, 'verify_history', changed)
+    with pytest.raises((ReplayError, ContractMismatch)):
+        j.recover()
+    assert j._snapshot is old and j._pending_attempt is identity and j.poisoned
+
+
+def test_recovery_publication_is_last_database_boundary(setup):
+    db, j = setup
+    db.fault = 'commit_after'
+    with pytest.raises(AmbiguousCommit):
+        apply(j, candle(0), Signal('BUY', 2))
+    old, observations = j._snapshot, []
+    db.set_trace_callback(lambda sql: observations.append(j._snapshot is old))
+    try:
+        j.recover()
+        assert observations and all(observations)
+        assert j._snapshot is not old and not j.poisoned and j._pending_attempt is None
+    finally:
+        db.set_trace_callback(None)
+
+
+def test_recovery_closed_refusal(setup):
+    db, j = setup
+    old = j._snapshot
+    j.close()
+    with pytest.raises(JournalClosed):
+        j.recover()
+    assert j._snapshot is old and j.closed
+
+
+def test_recovery_rejects_fully_rehashed_fabricated_accounting(setup):
+    from test_offline_journal_replay import corrupt
+    db, j = setup
+    apply(j, candle(0), Signal('HOLD'))
+    old = j._snapshot
+    fake = replace(j.state, account=replace(j.state.account, realized_equity=j._config.capital + 1))
+    sh = codec.state_hash(fake)
+    ch = codec.commit_hash(None, 1, old.input_digest, old.event_digest, sh, j._metadata[5],
+                           processed_input_count=1, event_count=0)
+    corrupt(j._db, 'UPDATE main.candle_commits SET state_hash=?,commit_hash=?', (sh, ch))
+    db.execute('UPDATE main.state_head SET state_json=?,state_hash=?', (codec.encode(fake), sh))
+    with pytest.raises(HistoricalCorruption):
+        j.recover(expected_tip=HistoryAnchor(1, ch))
+    assert j._snapshot is old and j.poisoned

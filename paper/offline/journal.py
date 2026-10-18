@@ -1,4 +1,4 @@
-"""Private-memory atomic journal; no paths, supplied connections, or recovery.
+"""Private-memory atomic journal with anchored in-place recovery.
 
 Journal(config, engine_fingerprint) owns one literal :memory: connection and
 closes it on close(). The former supplied-connection API is unsupported.
@@ -16,6 +16,8 @@ from . import journal_codec as codec, journal_schema as schema
 from .config import Config
 from .models import Account, Risk, State, Candle, Signal
 from .engine import transition
+from .journal_replay import (AttemptedCommit, HistoryAnchor, RecoverySnapshot,
+                             RecoveryResolution, verify_history, reconcile_attempt)
 
 
 class JournalError(Exception):
@@ -103,6 +105,7 @@ class Journal:
         self._local = local()
         self._closed = False
         self._poisoned = False
+        self._pending_attempt: AttemptedCommit | None = None
         if type(config) is not Config:
             raise ContractMismatch("Validated Config required")
         self._config = config
@@ -232,12 +235,68 @@ class Journal:
             if row != (old.input_digest, old.event_digest, codec.state_hash(old.state), old.commit_digest):
                 raise ContractMismatch("Commit digest mismatch")
 
+    def recover(self, *, expected_tip=None):
+        """Replay and publish only the retained head or exact attempted outcome.
+
+        An optional HistoryAnchor further constrains the resolved tip. Returns
+        the verified RecoverySnapshot; never retries an interrupted input.
+        """
+        with self._operation():
+            if self._closed:
+                raise JournalClosed("Coordinator closed")
+            try:
+                if self._db.in_transaction:
+                    raise ContractMismatch("Active caller transaction")
+                if expected_tip is not None and type(expected_tip) is not HistoryAnchor:
+                    raise ContractMismatch("HistoryAnchor required")
+                old = self._snapshot
+                options = dict(expected_config=self._config,
+                               expected_engine_fingerprint=self._metadata[6])
+                attempt = self._pending_attempt
+                if attempt is None:
+                    anchor = HistoryAnchor(old.version, old.commit_digest)
+                    resolved = None
+                else:
+                    resolution = reconcile_attempt(self._db, attempted_commit=attempt, **options)
+                    if (type(resolution) is not RecoveryResolution or
+                            resolution.outcome not in ('COMMITTED', 'NOT_COMMITTED')):
+                        raise ContractMismatch("Exact recovery resolution required")
+                    resolved = resolution.snapshot
+                    anchor = (HistoryAnchor(attempt.commit_row[0], attempt.commit_row[11])
+                              if resolution.outcome == 'COMMITTED' else attempt.prior_anchor)
+                verified = verify_history(self._db, expected_tip=anchor, **options)
+                if type(verified) is not RecoverySnapshot:
+                    raise ContractMismatch("RecoverySnapshot required")
+                # Revalidate all snapshot accounting before conversion/publication.
+                checked = RecoverySnapshot(verified.state, verified.version, verified.input_digest,
+                                           verified.event_digest, verified.commit_digest,
+                                           verified.event_count)
+                if (HistoryAnchor(checked.version, checked.commit_digest) != anchor or
+                        (expected_tip is not None and expected_tip != anchor) or
+                        (resolved is not None and (resolved != checked or
+                         codec.encode(resolved.state) != codec.encode(checked.state)))):
+                    raise ContractMismatch("Recovery results disagree")
+                snapshot = _Snapshot(checked.state, checked.version, checked.input_digest,
+                                     checked.event_digest, checked.commit_digest)
+                if attempt is None and (snapshot != old or
+                        codec.encode(snapshot.state) != codec.encode(old.state)):
+                    raise ContractMismatch("Recovery differs from published snapshot")
+                if self._db.in_transaction:
+                    raise TransactionFailure("Recovery left an active transaction")
+                self._snapshot = snapshot
+                self._pending_attempt = None
+                self._poisoned = False
+                return checked
+            except BaseException:
+                self._poisoned = True
+                raise
+
     def process(self, candle, signal, *, expected_version):
         with self._operation():
             if self._closed:
                 raise JournalClosed("Coordinator closed")
             if self._poisoned:
-                raise JournalPoisoned("Coordinator poisoned; no recovery supported")
+                raise JournalPoisoned("Coordinator poisoned; recovery required")
             db, old = self._db, self._snapshot
             began = False
             committing = False
@@ -305,6 +364,9 @@ class Journal:
                     cursor = self._execute("INSERT INTO main.state_head VALUES (1,?,?,?)", (version, state_json, sh))
                 if cursor.rowcount != 1:
                     raise ContractMismatch("State head compare-and-swap failed")
+                self._pending_attempt = AttemptedCommit(
+                    HistoryAnchor(old.version, old.commit_digest), commit_row,
+                    tuple(rows), (1, version, state_json, sh))
                 committing = True
                 self._commit()
                 if db.in_transaction:
@@ -313,6 +375,7 @@ class Journal:
                 if db.in_transaction:
                     raise TransactionFailure("Persistence verification opened a transaction")
                 self._snapshot = snapshot
+                self._pending_attempt = None
                 return receipt
             except BaseException as exc:
                 if committing:
