@@ -16,8 +16,9 @@ repository state. A newer plan or uncommitted file is not an accepted checkpoint
    `ai_research/contracts/responses-v1/CONTRACT.md`. Read relevant committed
    documentation; historical commands are not execution authorization.
 4. Identify active phase, blocked work and exact authorized file allowlist.
-   PC-1 is administrative; C2.1 is paused, not completed. PC-1 acceptance and commit
-   remain pending in the initial checkpoint. Verify later acceptance evidence.
+   PC-1 is administrative; C2.1 is paused, not completed. PC-1 source audit PASS and local checkpoint runtime verification PASS are
+   operator-reported. Accepted PC-1 local commit is
+   48d5eed5c5954ab843a8f82ebc5c9db4063c8a9a. PC-1-SYNC awaits independent acceptance.
 5. Distinguish historical plans and approvals from current authorization. Ask
    before implementing, staging, committing or pushing; an explicit current task
    may authorize its exact action without another redundant question.
@@ -36,8 +37,9 @@ Resume ProTraderAI X at D:\Projects\ProTraderAI in OFFLINE mode.
 Read all four docs/project-continuity documents and applicable repository
 instructions first. Verify branch, full HEAD, full untracked Git status and staged
 filenames read-only, then read the frozen durable and C1 ABI contracts.
-Initial expected branch is main; initial baseline HEAD is
-bf928cefb5e2439482971cefd9d317f9eae4d2d6. Verify any later accepted checkpoint.
+Expected branch is main; accepted historical PC-1 local commit is
+48d5eed5c5954ab843a8f82ebc5c9db4063c8a9a. Validate checkpoint metadata.
+PC-1-SYNC awaits independent acceptance. GitHub backup is unverified.
 Identify active phase, blocked gates and evidence of independent acceptance.
 PC-1 creation was authorized historically; it grants no new write authority.
 C2 planning was PARTIAL; C2.1 remains paused unless separately authorized.
@@ -47,3 +49,16 @@ research metadata contents, secrets or .env; do not import config.settings or ru
 main.py. No network, paid AI, brokers, trading or durable storage activation.
 Report verified state and the exact next authorized step before making changes.
 ```
+
+## Checkpoint reconciliation
+
+Accepted historical checkpoints do not authorize new development. The script
+reports AT_ACCEPTED_CHECKPOINT (0 when the workspace baseline also matches),
+DESCENDANT_REVIEW_REQUIRED (2), BEHIND_ACCEPTED_CHECKPOINT (1), or DIVERGED (1).
+Workspace/path discrepancies return 2; Git inspection failures override review
+results with 1. Invalid metadata, wrong/detached branch, missing commit or
+incomplete history fail with 1. Never interpret exit 2 as implementation authority
+or automatically promote a descendant. Acceptance metadata requires separately
+explicit authorization and evidence. GitHub backup remains unverified.
+Native Windows qualification is not established. C2.1 is paused. File-backed
+paper trading, durable storage integration and live trading remain BLOCKED.

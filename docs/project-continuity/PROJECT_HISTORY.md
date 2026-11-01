@@ -18,9 +18,15 @@ No tests were rerun to reconstruct this history.
 | 9 | Native ABI Option C design | Declaration/design alternative recorded in the C1 native contract; acquisition, loader and qualification remain future work. Option C selection history follows the operator brief. |
 | 10 | C1 declaration/documentation | `bf928ce`: native ABI header and design committed. Operator reports independent declaration-level review; no native implementation or DLL qualification follows from that review. |
 | 11 | C2 planning | Operator reports verdict **PARTIAL**. C2.1 source implementation paused, not completed; no implementation authorization transfers to a resumed session. |
-| 12 | PC-1 continuity foundation | Current administrative documentation and local Git inspection task. Independent PC-1 audit and acceptance pending; no PC-1 commit claimed. |
+| 12 | PC-1 continuity foundation | Initial administrative foundation was pending audit when recorded. Subsequently locally committed and accepted at `48d5eed5c5954ab843a8f82ebc5c9db4063c8a9a`. Operator reports PC-1 source audit PASS and local checkpoint runtime verification PASS. GitHub backup unverified. |
+| 13 | PC-1-SYNC checkpoint consistency | Explicit accepted-checkpoint metadata and read-only local ancestry classification implemented; pending independent acceptance. No automatic acceptance of descendants; historical acceptance grants no new development authority. |
 
 Primary storage references: `docs/offline/durable-journal-contract.md`,
 `docs/offline/windows-b1-native-inspection.md` and
 `paper/offline/native/journal_storage_windows_inspect.h`.
 Research metadata contents, secrets and `.env` files were excluded from inspection.
+
+PC-1 acceptance evidence is operator-reported, not a new independent audit by this
+implementation. GitHub backup is unverified. C2.1 remains paused; native Windows
+qualification is not established. File-backed paper trading, durable storage
+integration and live trading remain BLOCKED. Locked workflow remains in force.
