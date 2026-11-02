@@ -5,16 +5,22 @@ Repository: `D:\Projects\ProTraderAI`
 Verified branch: `main`
 Checkpoint-Schema: 1
 Expected-Branch: main
-Accepted-Checkpoint: 48d5eed5c5954ab843a8f82ebc5c9db4063c8a9a
+Accepted-Checkpoint: 55b0fd34b45f2a4b144f8c44d9ce71f101143332
 Accepted-Phase: PC-1
 Acceptance-Evidence: operator-reported acceptance following independent source audit and local PowerShell runtime verification
 Remote-Backup: unverified
-Baseline verification date: 2026-11-01
+Baseline verification date: 2026-11-02
 
-Active phase: **PC-1**, administrative continuity foundation only.
+Active phase: **PC-1-FINAL**, documentation synchronization in progress only.
+The latest operator-accepted continuity checkpoint is
+`55b0fd34b45f2a4b144f8c44d9ce71f101143332`, verified locally on `main`.
 PC-1 source audit PASS and local checkpoint runtime verification PASS are
-operator-reported. PC-1 is accepted at the historical local commit above.
-PC-1-SYNC implementation is pending independent acceptance. GitHub backup is unverified.
+operator-reported. PC-1-SYNC security remediation and independent audit PASS
+(H1, H2 and M1 closed) are operator-reported. Acceptance is for continuity only;
+it does not authorize trading functionality or any new implementation.
+PC-1-FINAL has not been independently audited, committed or pushed.
+Accepted-Phase and Acceptance-Evidence retain the parser's fixed PC-1 schema;
+the newer acceptance and backup evidence is recorded explicitly below.
 Latest committed technical foundation is C1. Independent declaration-level C1
 review is operator-reported; PC-1 does not reperform that independent review.
 
@@ -54,10 +60,10 @@ Create only; do not modify pre-existing files:
 This historical creation authorization is not permission for a future session to
 edit these files. Obtain a fresh phase scope and exact allowlist for new work.
 
-## PC-1-SYNC scope and reconciliation
+## Historical PC-1-SYNC scope and reconciliation
 
-Only CURRENT_CHECKPOINT.md, NEW_CHAT_HANDOFF.md, PROJECT_HISTORY.md and
-tools/offline/New-ProjectCheckpoint.ps1 are authorized for this implementation.
+The historical PC-1-SYNC authorization covered only CURRENT_CHECKPOINT.md, NEW_CHAT_HANDOFF.md, PROJECT_HISTORY.md and
+tools/offline/New-ProjectCheckpoint.ps1. It is not the current write scope.
 LOCKED_WORKFLOW.md remains unchanged. No staging, commit, push or C2.1 work.
 
 The accepted checkpoint is an existing historical local commit, not the commit
@@ -70,9 +76,35 @@ working-tree/path discrepancies also return 2. Exit 2 grants no implementation
 or acceptance authority. Behind, diverged, wrong/detached branch, invalid metadata,
 missing local commit, incomplete history or any Git inspection error return 1.
 Git errors take precedence over review results. Future commits are never accepted
-automatically. GitHub backup remains unverified; no remote inspection is implied.
+automatically. Remote-Backup retains the literal unverified solely for the fixed
+parser contract; it does not describe the newer operator evidence below.
 
-Next: independent read-only audit of PC-1-SYNC, then explicitly scoped remediation
-or acceptance. Selective staging and commit require separate explicit approval.
+## PC-1-FINAL accepted checkpoint and backup evidence
+
+Evidence source: the operator's verified checkpoint and backup record, reconciled
+with local HEAD on 2026-11-02. No network requests or backup-file inspection were
+performed in this documentation batch.
+
+- GitHub repository: `https://github.com/Mangs01/ProTraderAI.git`.
+- Operator verified the push: local HEAD matched `git ls-remote origin refs/heads/main`
+  at `55b0fd34b45f2a4b144f8c44d9ce71f101143332` on `main`.
+- GitHub backup verification: PASS, operator-reported for that committed checkpoint.
+- Private offline ZIP: `D:\ProTraderAI-Backups\ProTraderAI-20261101-182354-534.zip`.
+- Size: 63.38 MB; files: 1118.
+- SHA-256: `74C3C9F9CDA9396940E1C49BAB1AC12743AB1169379112BF14EB495A7E34EFFB`.
+- Checksum file: `D:\ProTraderAI-Backups\ProTraderAI-20261101-182354-534.zip.sha256`.
+- Operator backup verification: required files PASS; `.env` excluded PASS;
+  ZIP readable PASS; checksum verified.
+- Complete disaster-recovery restoration was NOT tested.
+- Untracked files are not included in the GitHub push; they are represented in
+  the offline ZIP backup subject to the operator-verified inventory. This batch
+  did not inspect protected untracked contents or independently verify ZIP inventory.
+
+Current write scope is only CURRENT_CHECKPOINT.md, PROJECT_HISTORY.md and
+NEW_CHAT_HANDOFF.md under docs/project-continuity/. The locked workflow and
+checkpoint script remain unchanged. No staging, commit, push or trading execution.
+Next: independent read-only audit of PC-1-FINAL, then explicit final acceptance.
+Selective staging, commit and push require separate explicit authorization.
 C2.1 remains paused pending a separately approved plan and exact file allowlist.
 Read the locked workflow and authoritative contracts before any next phase.
+ChatGPT Project Source uploads must be refreshed manually after final acceptance.

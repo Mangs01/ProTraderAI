@@ -27,6 +27,40 @@ Primary storage references: `docs/offline/durable-journal-contract.md`,
 Research metadata contents, secrets and `.env` files were excluded from inspection.
 
 PC-1 acceptance evidence is operator-reported, not a new independent audit by this
-implementation. GitHub backup is unverified. C2.1 remains paused; native Windows
+implementation. GitHub backup was unverified at that historical point; see the later record below. C2.1 remains paused; native Windows
 qualification is not established. File-backed paper trading, durable storage
 integration and live trading remain BLOCKED. Locked workflow remains in force.
+
+## Subsequent continuity and backup record (PC-1-FINAL)
+
+Recorded 2026-11-02 in chronological order. External verification and audit results
+below are supplied operator evidence; only repository state was checked locally
+in this batch. Earlier pending/unverified entries describe their historical state.
+
+1. PC-1 established the five-file continuity foundation, accepted at
+   `48d5eed5c5954ab843a8f82ebc5c9db4063c8a9a`, with operator-reported source audit
+   PASS and local PowerShell checkpoint runtime verification PASS.
+2. PC-1-SYNC security remediation completed; operator reports independent audit
+   PASS, with H1, H2 and M1 closed.
+3. Local commit `55b0fd3` (`55b0fd34b45f2a4b144f8c44d9ce71f101143332`),
+   "Harden ProTraderAI checkpoint synchronization and safety checks", landed on main.
+4. Operator pushed to `https://github.com/Mangs01/ProTraderAI.git` and verified
+   local HEAD matched `git ls-remote origin refs/heads/main` at that full hash.
+   This is the latest operator-accepted continuity checkpoint, not trading authority.
+5. Operator created and verified the private offline backup
+   `D:\ProTraderAI-Backups\ProTraderAI-20261101-182354-534.zip`:
+   63.38 MB, 1118 files; SHA-256
+   `74C3C9F9CDA9396940E1C49BAB1AC12743AB1169379112BF14EB495A7E34EFFB`.
+   Checksum file: `D:\ProTraderAI-Backups\ProTraderAI-20261101-182354-534.zip.sha256`.
+   Required files PASS, `.env` excluded PASS, ZIP readable PASS, checksum verified.
+   Complete disaster-recovery restoration was NOT tested. Untracked files are
+   absent from the GitHub push and represented in the ZIP subject to the verified
+   inventory; protected contents were not inspected in this batch.
+6. PC-1-FINAL documentation synchronization is in progress. It has not been
+   independently audited, committed or pushed. The fixed parser metadata is
+   preserved, including legacy `Remote-Backup: unverified`; the newer GitHub
+   verification is recorded in prose without changing the script contract.
+
+C2.1 remains paused. All locked-workflow safety blocks remain in force. No native
+qualification, durable storage activation or trading authorization is established.
+ChatGPT Project Source uploads require manual refresh after final acceptance.
