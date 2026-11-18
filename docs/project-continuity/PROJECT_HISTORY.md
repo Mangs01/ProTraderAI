@@ -27,7 +27,7 @@ Primary storage references: `docs/offline/durable-journal-contract.md`,
 Research metadata contents, secrets and `.env` files were excluded from inspection.
 
 PC-1 acceptance evidence is operator-reported, not a new independent audit by this
-implementation. GitHub backup was unverified at that historical point; see the later record below. C2.1 remains paused; native Windows
+implementation. GitHub backup was unverified at that historical point; see the later record below. C2.1 was paused at that historical point; native Windows
 qualification is not established. File-backed paper trading, durable storage
 integration and live trading remain BLOCKED. Locked workflow remains in force.
 
@@ -61,6 +61,61 @@ in this batch. Earlier pending/unverified entries describe their historical stat
    preserved, including legacy `Remote-Backup: unverified`; the newer GitHub
    verification is recorded in prose without changing the script contract.
 
-C2.1 remains paused. All locked-workflow safety blocks remain in force. No native
+At the PC-1-FINAL recording point, C2.1 remained paused. All locked-workflow safety blocks remain in force. No native
 qualification, durable storage activation or trading authorization is established.
 ChatGPT Project Source uploads require manual refresh after final acceptance.
+
+## Subsequent PC-1-FINAL completion (reconciled 2026-11-18)
+
+After the earlier pending entry above and before C2.1 Batch 1, the operator
+reported PC-1-FINAL independent read-only audit PASS, documentation commit and
+GitHub push completed, and local/GitHub main verified at
+b2a1eb506ca5e0c9022d6673fe6b460ee1f2c5fa.
+The reconciliation date is not an audit or commit timestamp. No auditor identity,
+commit subject or additional test result is asserted.
+Local read-only preflight confirms this commit as the parent of current C2.1
+Batch 1 HEAD afa6c1304c3de28ec0a9862d91899f699a64d5bc; this corroborates local
+ancestry only, not the external audit or GitHub verification.
+No historical accepted-checkpoint promotion occurred in this reconciliation:
+the fixed PC-1 metadata remains unchanged. Earlier pending history is preserved.
+
+## Subsequent C2.1 Batch 1 record (recorded 2026-11-17)
+
+The recording date does not assert individual event dates. Audit/check results,
+acceptance and remote verification are supplied operator evidence; this batch
+verified local Git only. Earlier pending/paused records remain historical.
+
+1. Batch 1 source implementation and initial source audit preceded remediation.
+   No initial audit verdict beyond the supplied findings is inferred.
+2. H1, M1 and M2 were remediated and are FIXED.
+3. Independent read-only source re-audit: PASS, operator-reported.
+   Fifteen Python source-only checks: PASS per operator evidence.
+4. C2.1 Batch 1 source-only acceptance was explicitly approved.
+5. Local commit on main: afa6c1304c3de28ec0a9862d91899f699a64d5bc.
+   Parent: b2a1eb506ca5e0c9022d6673fe6b460ee1f2c5fa.
+   Subject: Add accepted C2.1 native B1 ownership state source foundation.
+   Read-only preflight confirmed four additions, 800 insertions:
+   paper/offline/native/b1_internal.h, paper/offline/native/b1_state.c,
+   tests/native/test_b1_state.c, tests/test_offline_b1_native_source.py.
+6. Operator reports successful GitHub push and post-push verification for
+   https://github.com/Mangs01/ProTraderAI.git. Latest operator-verified local HEAD
+   and GitHub main are afa6c1304c3de28ec0a9862d91899f699a64d5bc.
+   Reported update: fast-forward b2a1eb5 to afa6c13 using force-capable
+   --force-with-lease. No remote history rewrite is asserted.
+   No network re-verification was authorized or performed in this batch.
+7. L1: LOW, tracked. I1: INFORMATIONAL, tracked.
+8. Nineteen native synthetic scenarios: NOT compiled or executed.
+   Native Windows qualification remains pending; no qualified DLL, installed
+   toolchain or runtime/storage qualification follows from source acceptance.
+
+The entire C2.1 phase is not complete. Further implementation requires new
+explicit authorization and an exact allowlist. Historical PC-1 Accepted-Checkpoint
+remains 55b0fd34b45f2a4b144f8c44d9ce71f101143332; no checkpoint promotion
+is authorized. Documentation acceptance grants no operational authorization.
+
+Offline-first development continues. No broker, network/API trading, paid AI
+calls, live trading, file-backed paper trading activation or durable Journal
+storage activation. No frozen contract/ABI changes, secret access, native Windows
+qualification claim, checkpoint promotion without separate approval, or automatic
+staging, commit or push. All 11 protected untracked files remain untouched.
+No tests, checkpoint script, native binaries or trading code executed in this batch.

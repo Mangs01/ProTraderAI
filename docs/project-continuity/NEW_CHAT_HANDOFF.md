@@ -16,11 +16,21 @@ repository state. A newer plan or uncommitted file is not an accepted checkpoint
    `paper/offline/native/journal_storage_windows_inspect.h`, and, where relevant,
    `ai_research/contracts/responses-v1/CONTRACT.md`. Read relevant committed
    documentation; historical commands are not execution authorization.
-4. Identify active phase, blocked work and exact authorized file allowlist.
-   PC-1 is administrative; C2.1 is paused, not completed. PC-1 source audit PASS and local checkpoint runtime verification PASS are
-   operator-reported. Latest operator-accepted continuity commit is
-   55b0fd34b45f2a4b144f8c44d9ce71f101143332. PC-1-SYNC independent audit PASS (H1, H2 and M1 closed) is operator-reported;
-   PC-1-FINAL documentation synchronization is in progress, not audited, committed or pushed.
+4. Identify active phase, blocked work and exact authorized allowlist.
+   Historical Accepted-Checkpoint remains PC-1 at
+   55b0fd34b45f2a4b144f8c44d9ce71f101143332. PC-1 audit/runtime PASS and
+   PC-1-SYNC independent audit PASS are operator-reported historical evidence.
+   Latest operator-verified local/GitHub main HEAD is
+   afa6c1304c3de28ec0a9862d91899f699a64d5bc (afa6c13).
+   C2.1 Batch 1 source-only work is explicitly accepted, committed and pushed.
+   Native Windows qualification remains pending; the entire C2.1 is not complete.
+   No automatic continuation is authorized; further implementation needs new
+   explicit authorization. Operator-provided evidence records subsequent
+   PC-1-FINAL completion: independent read-only audit PASS, documentation commit
+   and GitHub push completed, local/GitHub main verified at
+   b2a1eb506ca5e0c9022d6673fe6b460ee1f2c5fa. This earlier milestone does not
+   change historical PC-1 metadata; C2.1 Batch 1 remains the latest documented
+   technical foundation. See PROJECT_HISTORY.md for chronological reconciliation.
 5. Distinguish historical plans and approvals from current authorization. Ask
    before implementing, staging, committing or pushing; an explicit current task
    may authorize its exact action without another redundant question.
@@ -39,14 +49,21 @@ Resume ProTraderAI X at D:\Projects\ProTraderAI in OFFLINE mode.
 Read all four docs/project-continuity documents and applicable repository
 instructions first. Verify branch, full HEAD, full untracked Git status and staged
 filenames read-only, then read the frozen durable and C1 ABI contracts.
-Expected branch is main; latest operator-accepted continuity commit is
-55b0fd34b45f2a4b144f8c44d9ce71f101143332. Validate checkpoint metadata.
-PC-1-SYNC independent audit PASS (H1, H2 and M1 closed) is operator-reported;
-PC-1-FINAL documentation synchronization is in progress, not audited, committed
-or pushed. GitHub push/remote HEAD verification PASS is operator-reported.
-Identify active phase, blocked gates and evidence of independent acceptance.
-PC-1 creation was authorized historically; it grants no new write authority.
-C2 planning was PARTIAL; C2.1 remains paused unless separately authorized.
+Expected branch is main. Historical Accepted-Checkpoint remains PC-1:
+55b0fd34b45f2a4b144f8c44d9ce71f101143332.
+Latest operator-verified local/GitHub main HEAD is
+afa6c1304c3de28ec0a9862d91899f699a64d5bc (afa6c13).
+Fresh local Git verification is mandatory before any repository action.
+C2.1 Batch 1 source-only work is explicitly accepted, committed and pushed.
+Independent source re-audit PASS is operator-reported; H1/M1/M2 FIXED;
+15 Python source-only checks PASS; 19 native scenarios NOT compiled or executed.
+L1 LOW and I1 INFORMATIONAL remain tracked. Native Windows qualification pending.
+PC-1-FINAL subsequently completed per operator evidence; see startup guidance
+and PROJECT_HISTORY.md. Historical PC-1 metadata remains unchanged.
+No checkpoint promotion follows.
+Further C2.1 implementation requires new explicit authorization.
+Uploaded Project Sources may lag local repository documentation; reconcile them.
+Identify current scope, blocked gates and acceptance evidence before acting.
 Do not implement, stage, commit or push without explicit current authorization
 and an exact file allowlist. Preserve unrelated untracked files. Do not read
 research metadata contents, secrets or .env; do not import config.settings or run
@@ -65,12 +82,12 @@ incomplete history fail with 1. Never interpret exit 2 as implementation authori
 or automatically promote a descendant. Acceptance metadata requires separately
 explicit authorization and evidence. The fixed Remote-Backup field remains
 unverified for parser compatibility; current GitHub evidence is recorded separately.
-Native Windows qualification is not established. C2.1 is paused. File-backed
+Native Windows qualification is not established. Further C2.1 implementation requires new explicit authorization. File-backed
 paper trading, durable storage integration and live trading remain BLOCKED.
 
 ## Backup evidence and Project Source refresh
 
-The operator verified local and GitHub main HEAD at
+Historically, the operator verified local and GitHub main HEAD at
 `55b0fd34b45f2a4b144f8c44d9ce71f101143332` for
 `https://github.com/Mangs01/ProTraderAI.git`. No network re-verification was
 performed in PC-1-FINAL. Continuity acceptance grants no trading authorization.
@@ -85,8 +102,21 @@ the operator-verified inventory; do not infer an independently inspected invento
 
 Read all four Project Source continuity documents at every new-chat startup.
 Verify fresh Git HEAD/status and staged filenames before repository modifications.
-After PC-1-FINAL independent audit and explicit final acceptance, ChatGPT Project
-Source uploads must be refreshed manually; local edits do not update uploads.
-Until refreshed, compare uploaded records with the repository and resolve stale
-records before acting. This batch authorizes only the three continuity Markdown
-updates, no staging, commit, push, checkpoint-script execution or trading work.
+Uploaded Project Sources may lag local repository documentation. Refresh manually
+after acceptance; local edits do not update uploads. Reconcile stale records with
+fresh local Git before any repository action.
+Latest GitHub evidence is operator-reported for
+https://github.com/Mangs01/ProTraderAI.git at
+afa6c1304c3de28ec0a9862d91899f699a64d5bc. Reported push: fast-forward
+b2a1eb5 to afa6c13 using force-capable --force-with-lease; no remote history
+rewrite is asserted. No network re-verification occurred in this batch.
+
+Preserve all 11 protected untracked paths listed in CURRENT_CHECKPOINT.md and
+the checkpoint script, without reading research metadata contents.
+Offline-first restrictions remain: no broker, network/API trading or paid AI calls,
+live trading, file-backed paper trading activation or durable Journal storage
+activation. No frozen contract/ABI changes, secret access, native Windows
+qualification claim, or checkpoint promotion without separate approval.
+Documentation acceptance grants no operational authorization. This batch permits
+only three continuity Markdown edits; no automatic staging, commit or push,
+checkpoint-script execution, tests, native binaries or trading code.
